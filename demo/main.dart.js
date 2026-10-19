@@ -1375,7 +1375,7 @@ return B.h.aj(r,"*")},
 bA5(a,b){var s,r=A.aq(a.h(0,"uniqueIdentifier")),q=t.L.a(a.h(0,"hints")),p=q==null||J.h7(q)?null:A.aq(J.rH(q)),o=A.bHo(t.a.a(a.h(0,"editingValue")))
 if(p!=null){s=$.bPP().a.h(0,p)
 if(s==null)s=p}else s=null
-return new A.apD(o,r,s,A.ai(a.h(0,"hintText")))},
+return new A.apD(o,r,s,A.ah(a.h(0,"hintText")))},
 bDw(a,b,c){var s=c.a,r=c.b,q=Math.min(s,r)
 r=Math.max(s,r)
 return B.i.a6(a,0,q)+b+B.i.d8(a,r)},
@@ -1436,7 +1436,7 @@ r=A.aq(s.a(a.h(0,i)).h(0,"name"))
 q=A.hJ(s.a(a.h(0,i)).h(0,"decimal"))
 p=A.hJ(s.a(a.h(0,i)).h(0,"isMultiline"))
 r=A.bHr(r,q===!0,p===!0)
-q=A.ai(a.h(0,"inputAction"))
+q=A.ah(a.h(0,"inputAction"))
 if(q==null)q="TextInputAction.done"
 p=A.hJ(a.h(0,"obscureText"))
 o=A.hJ(a.h(0,"readOnly"))
@@ -4888,7 +4888,7 @@ if(A.AQ(s))r=A.c2T
 else if(s===t.K)r=A.bZ
 else if(A.Ho(s)){r=A.c40
 if(s===t.bo)r=A.hK
-else if(s===t.ob)r=A.ai
+else if(s===t.ob)r=A.ah
 else if(s===t.X7)r=A.hJ
 else if(s===t.R7)r=A.b_
 else if(s===t.PM)r=A.AK
@@ -4970,7 +4970,7 @@ throw A.hp(A.mF(a,"num?"),new Error())},
 c4B(a){return typeof a=="string"},
 aq(a){if(typeof a=="string")return a
 throw A.hp(A.mF(a,"String"),new Error())},
-ai(a){if(typeof a=="string")return a
+ah(a){if(typeof a=="string")return a
 if(a==null)return a
 throw A.hp(A.mF(a,"String?"),new Error())},
 hn(a){if(A.bNc(a))return a
@@ -24979,7 +24979,7 @@ a2=A.hK(a3.h(0,"selectionBase"))
 if(a2==null)a2=-1
 s=A.hK(a3.h(0,"selectionExtent"))
 if(s==null)s=-1
-q=A.c5O(A.ai(a3.h(0,"selectionAffinity")))
+q=A.c5O(A.ah(a3.h(0,"selectionAffinity")))
 if(q==null)q=B.U
 p=A.hJ(a3.h(0,"selectionIsDirectional"))
 o=A.dQ(q,a2,s,p===!0)
@@ -25065,7 +25065,7 @@ bKN(a){var s,r,q,p,o=A.aq(a.h(0,"text")),n=A.hK(a.h(0,"selectionBase"))
 if(n==null)n=-1
 s=A.hK(a.h(0,"selectionExtent"))
 if(s==null)s=-1
-r=A.c5P(A.ai(a.h(0,"selectionAffinity")))
+r=A.c5P(A.ah(a.h(0,"selectionAffinity")))
 if(r==null)r=B.U
 q=A.hJ(a.h(0,"selectionIsDirectional"))
 p=A.dQ(r,n,s,q===!0)
@@ -37919,9 +37919,9 @@ n=t.L.a(c.h(0,"p_checklist"))
 n=J.P(n==null?B.aA:n)
 m=t.f
 while(n.l()){l=m.a(n.gq())
-o.push(new A.Iz(A.b(l.h(0,"item")),J.d(l.h(0,"ok"),!0),A.ai(l.h(0,"note"))))}n=A.ai(c.h(0,"p_findings"))
+o.push(new A.Iz(A.b(l.h(0,"item")),J.d(l.h(0,"ok"),!0),A.ah(l.h(0,"note"))))}n=A.ah(c.h(0,"p_findings"))
 if(n==null)n=""
-m=A.ai(c.h(0,"p_spare_parts"))
+m=A.ah(c.h(0,"p_spare_parts"))
 s=9
 return A.f(a.Yx(p,o,n,m==null?"":m,d),$async$Wr)
 case 9:q=null
@@ -37930,12 +37930,12 @@ break
 case 7:p=A.aq(c.h(0,"p_id"))
 o=A.aq(c.h(0,"p_side"))
 n=J.d(c.h(0,"p_approved"),!0)
-m=A.ai(c.h(0,"p_reason"))
+m=A.ah(c.h(0,"p_reason"))
 l=A.hJ(c.h(0,"p_equipment_runs_ok"))
 k=A.hJ(c.h(0,"p_clean_no_grease"))
 j=A.hJ(c.h(0,"p_no_missing_parts"))
 i=A.hJ(c.h(0,"p_line_clearance_ok"))
-A.ai(c.h(0,"p_row_id"))
+A.ah(c.h(0,"p_row_id"))
 s=10
 return A.f(a.Ry(new A.a1n(p,o,n,m,l,k,j,i)),$async$Wr)
 case 10:q=null
@@ -38119,9 +38119,9 @@ if(k)d5=B.F
 else{j=o.h(0,new A.v(b0,d3))
 d5=j==null?B.F:j}if(!k&&d5.ga_(d5)){k=d2==="CCP"?f0:e9
 f2.push(c5+": "+d3+" \u0645\u0627\u0644\u0647\u0627\u0634 \u0635\u0641 \u0641\u064a \u0634\u064a\u062a "+k)}if((20<l.gt(c4)?l.h(c4,20):e8)!=null)d6=A.fG(7<l.gt(c4)?l.h(c4,7):e8)
-else{k=A.ai(d5.h(0,"param"))
+else{k=A.ah(d5.h(0,"param"))
 if(k==null){k=A.fG(7<l.gt(c4)?l.h(c4,7):e8)
-d6=k}else d6=k}k=A.c4J(d3,A.ai(d5.h(0,"param"))).a
+d6=k}else d6=k}k=A.c4J(d3,A.ah(d5.h(0,"param"))).a
 d7=k[0]
 d8=e8
 d9=e8
@@ -38386,13 +38386,13 @@ _.e=e},
 kc:function kc(a,b,c){this.a=a
 this.b=b
 this.c=c},
-bYj(a){var s,r="rpc_args",q=A.aq(a.h(0,"key")),p=A.aq(a.h(0,"fn")),o=t.f,n=t.N,m=t.z,l=A.d0(o.a(a.h(0,"args")),n,m),k=A.ai(a.h(0,"rpc")),j=a.h(0,r)==null?null:A.d0(o.a(a.h(0,r)),n,m),i=A.cR(A.aq(a.h(0,"performed_at"))),h=A.ai(a.h(0,"user_id")),g=A.a([],t.qU),f=t.L.a(a.h(0,"photos"))
+bYj(a){var s,r="rpc_args",q=A.aq(a.h(0,"key")),p=A.aq(a.h(0,"fn")),o=t.f,n=t.N,m=t.z,l=A.d0(o.a(a.h(0,"args")),n,m),k=A.ah(a.h(0,"rpc")),j=a.h(0,r)==null?null:A.d0(o.a(a.h(0,r)),n,m),i=A.cR(A.aq(a.h(0,"performed_at"))),h=A.ah(a.h(0,"user_id")),g=A.a([],t.qU),f=t.L.a(a.h(0,"photos"))
 f=J.P(f==null?B.aA:f)
 while(f.l()){s=A.d0(o.a(f.gq()),n,m)
 g.push(new A.y_(A.aq(s.h(0,"blob")),A.aq(s.h(0,"ref_table")),A.aq(s.h(0,"ref_id")),A.aq(s.h(0,"attachment_id")),J.d(s.h(0,"uploaded"),!0)))}o=A.b_(a.h(0,"attempts"))
 o=B.o.B(o==null?0:o)
-n=A.ai(a.h(0,"last_error"))
-m=A.ai(a.h(0,"status"))
+n=A.ah(a.h(0,"last_error"))
+m=A.ah(a.h(0,"status"))
 return new A.tU(q,p,l,k,j,i,h,g,o,n,m==null?"pending":m)},
 c8g(a){var s,r
 if(a instanceof A.M0||a instanceof A.zy)return!0
@@ -39562,7 +39562,7 @@ break B}if(6===r){s=26
 break B}if(12===r){s=52
 break B}s=B.e.aS(B.o.aH(r*52/12),1,32768)
 break B}break A}return s},
-vx(a){var s,r=A.b_(a.h(0,"interval_value")),q=A.ai(a.h(0,"interval_unit"))
+vx(a){var s,r=A.b_(a.h(0,"interval_value")),q=A.ah(a.h(0,"interval_unit"))
 if(r!=null&&r>0&&B.h.i(B.P0,q)){s=B.o.B(r)
 q.toString
 return new A.hI(q,s)}s=A.b_(a.h(0,"interval_weeks"))
@@ -39783,7 +39783,7 @@ for(;;)switch(s){case 0:k=t.z
 j=A.ay(k)
 i=J
 s=3
-return A.f(A.ah(a,"ops_policies",B.F),$async$ano)
+return A.f(A.ai(a,"ops_policies",B.F),$async$ano)
 case 3:p=i.P(d)
 case 4:if(!p.l()){s=5
 break}j.E(0,p.gq().h(0,"code"))
@@ -40110,8 +40110,8 @@ i=A.AL(c.a.a)!==j.h(0,"md5")}else i=!0
 if(i){n.push(A.b(j.h(0,"id")))
 continue}i=A.b(j.h(0,"id"))
 h=A.b(j.h(0,"ref_table"))
-a=A.ai(j.h(0,"ref_id"))
-a0=A.ai(j.h(0,"path"))
+a=A.ah(j.h(0,"ref_id"))
+a0=A.ah(j.h(0,"path"))
 a1=A.jD(A.b(j.h(0,"uploaded_at")))
 a1=a1==null?a2:a1.v0()
 o.push(new A.Ie(i,h,a,a0,a1==null?A.bl(2000,1,1,0,0,0,0):a1,e))}p=A.b(J.z(r,a3))
@@ -40133,7 +40133,7 @@ l=B.o.B(a5==null?0:a5)
 a5=t.N
 k=t.z
 s=4
-return A.f(A.ah(a8,"ops_photo_pending",A.k(["p_limit",300],a5,k)),$async$WG)
+return A.f(A.ai(a8,"ops_photo_pending",A.k(["p_limit",300],a5,k)),$async$WG)
 case 4:j=b4
 i=J.ap(j)
 if(i.ga_(j)){q=null
@@ -40166,8 +40166,8 @@ case 10:if(m==null){++c
 s=5
 break}b=A.b(J.z(n,"id"))
 a0=A.b(J.z(n,"ref_table"))
-a1=A.ai(J.z(n,"ref_id"))
-a2=A.ai(J.z(n,"storage_path"))
+a1=A.ah(J.z(n,"ref_id"))
+a2=A.ah(J.z(n,"storage_path"))
 a3=A.jD(A.b(J.z(n,"uploaded_at")))
 a3=a3==null?null:a3.v0()
 if(a3==null)a3=b1
@@ -40234,7 +40234,7 @@ anF(a){var s=0,r=A.o(t.BC),q,p,o,n,m,l,k,j,i,h
 var $async$anF=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:p=t.N,o=t.z,n=0,m=0
 case 3:s=5
-return A.f(A.ah(a,"ops_photo_space_candidates",B.F),$async$anF)
+return A.f(A.ai(a,"ops_photo_space_candidates",B.F),$async$anF)
 case 5:l=c
 k=J.ap(l)
 if(k.ga_(l)){s=4
@@ -41182,11 +41182,11 @@ return A.f(A.bt(a,j,i,null,k?"\u0627\u0644\u062a\u0627\u0644\u064a: \u062e\u0637
 case 3:m=e
 if(m==null){q=null
 s=1
-break}l=A.ai(m.h(0,"perm"))
+break}l=A.ah(m.h(0,"perm"))
 j=k?null:c.a
 if(j==null)j="req_"+B.e.iE(1000*Date.now(),36)
 i=A.aq(m.h(0,"title"))
-h=A.ai(m.h(0,"description"))
+h=A.ah(m.h(0,"description"))
 g=l==null||l.length===0?null:l
 f=J.d(m.h(0,"amount"),!0)
 p=J.d(m.h(0,"active"),!0)
@@ -41486,7 +41486,7 @@ bzo(a){var s=0,r=A.o(t.S),q,p
 var $async$bzo=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:p=J
 s=3
-return A.f(A.ah(a,"ops_my_company_messages",B.F),$async$bzo)
+return A.f(A.ai(a,"ops_my_company_messages",B.F),$async$bzo)
 case 3:q=p.dE(c,new A.bzp()).gt(0)
 s=1
 break
@@ -42595,7 +42595,7 @@ s=p}for(;;)switch(s){case 0:p=4
 n=A.C(t.P,t.a)
 i=J
 s=7
-return A.f(A.ah(a,"ops_branch_orders",B.F),$async$anp)
+return A.f(A.ai(a,"ops_branch_orders",B.F),$async$anp)
 case 7:l=i.P(c)
 case 8:if(!l.l()){s=9
 break}m=l.gq()
@@ -42967,7 +42967,7 @@ s=p}for(;;)switch(s){case 0:p=4
 n=A.C(t.P,t.a)
 i=J
 s=7
-return A.f(A.ah(a.gJ(),"ops_governance_flags",A.k(["p_table",b],t.N,t.z)),$async$vu)
+return A.f(A.ai(a.gJ(),"ops_governance_flags",A.k(["p_table",b],t.N,t.z)),$async$vu)
 case 7:l=i.P(d)
 case 8:if(!l.l()){s=9
 break}m=l.gq()
@@ -42999,7 +42999,7 @@ s=p}for(;;)switch(s){case 0:p=4
 n=A.C(t.P,t.a)
 i=J
 s=7
-return A.f(A.ah(a.gJ(),"ops_quality_labels",A.k(["p_ref_table",b],t.N,t.z)),$async$anL)
+return A.f(A.ai(a.gJ(),"ops_quality_labels",A.k(["p_ref_table",b],t.N,t.z)),$async$anL)
 case 7:l=i.P(d)
 case 8:if(!l.l()){s=9
 break}m=l.gq()
@@ -43224,7 +43224,7 @@ a=a5.a8(t.I).f
 q=3
 g=a6.gJ()
 s=6
-return A.f(A.ah(g,"ops_haccp_plans",B.F),$async$Ww)
+return A.f(A.ai(g,"ops_haccp_plans",B.F),$async$Ww)
 case 6:o=a9
 n=A.a([],t.nb)
 f=J.P(o),e=t.N,d=t.z
@@ -43235,7 +43235,7 @@ a2=n
 a3=A
 a4=m
 s=9
-return A.f(A.ah(g,"ops_haccp_steps",A.k(["p_plan",J.z(m,"id")],e,d)),$async$Ww)
+return A.f(A.ai(g,"ops_haccp_steps",A.k(["p_plan",J.z(m,"id")],e,d)),$async$Ww)
 case 9:a1.d_(a2,new a3.v(a4,a9))
 s=7
 break
@@ -43357,7 +43357,7 @@ s=3
 return A.f(A.fb(m,"ops_hr_me",B.F),$async$vo)
 case 3:l=d
 s=4
-return A.f(A.ah(m,"ops_directory",B.F),$async$vo)
+return A.f(A.ai(m,"ops_directory",B.F),$async$vo)
 case 4:k=d
 if(b.e.i(0,"payroll:update")){q=new A.v(l,k)
 s=1
@@ -43376,7 +43376,7 @@ bNi(a){var s=t.F5.a(a.h(0,"employee"))
 return s==null?null:s.h(0,"id")},
 buZ(a,b,c,d,e,f,g,h){var s=null,r="status",q=A.b(d.h(0,"no")),p=A.bOq(c),o=A.bOq(c),n=A.w(h,s,s,s,s,s,B.az,s,s,s),m=A.w(g,s,s,s,s,s,s,s,s,s),l=B.rJ.h(0,d.h(0,r))
 if(l==null)l=A.b(d.h(0,r))
-l=A.a([A.b7(!1,s,s,s,!0,s,s,s,!0,s,s,new A.cF(p.a,o.b,36,s),s,s,s,s,s,!1,s,s,s,s,s,m,s,n,s,new A.bv(l,A.Wy(A.ai(d.h(0,r))),s),s)],t.p)
+l=A.a([A.b7(!1,s,s,s,!0,s,s,s,!0,s,s,new A.cF(p.a,o.b,36,s),s,s,s,s,s,!1,s,s,s,s,s,m,s,n,s,new A.bv(l,A.Wy(A.ah(d.h(0,r))),s),s)],t.p)
 B.h.u(l,f)
 if(A.al(["draft","rejected"],t.N).i(0,d.h(0,r)))l.push(A.bE1(a,b,c,d,e))
 l.push(B.bb)
@@ -43393,7 +43393,7 @@ break A}j.push(r)
 j=A.w(B.h.aj(j," \xb7 "),q,q,q,q,q,q,q,q,q)
 r=B.Wq.h(0,a.h(0,o))
 if(r==null)r=A.b(a.h(0,o))
-r=A.a([A.b7(!1,q,q,q,!0,q,q,q,!0,q,q,B.agV,q,q,q,q,q,!1,q,q,q,q,q,j,q,k,q,new A.bv(r,A.Wy(A.ai(a.h(0,o))),q),q)],t.p)
+r=A.a([A.b7(!1,q,q,q,!0,q,q,q,!0,q,q,B.agV,q,q,q,q,q,!1,q,q,q,q,q,j,q,k,q,new A.bv(r,A.Wy(A.ah(a.h(0,o))),q),q)],t.p)
 if(J.d(a.h(0,o),"issued"))r.push(new A.a9("\u0622\u062e\u0631 \u0645\u064a\u0639\u0627\u062f \u0644\u0644\u0631\u062f",A.e3(a.h(0,"appeal_deadline")),q))
 if(a.h(0,n)!=null)r.push(new A.a9("\u0627\u0644\u062a\u0638\u0644\u0645",A.b(a.h(0,n)),q))
 if(a.h(0,m)!=null)r.push(new A.a9("\u0646\u062a\u064a\u062c\u0629 \u0627\u0644\u062a\u062d\u0642\u064a\u0642",A.b(a.h(0,m)),q))
@@ -44244,7 +44244,7 @@ break A}if("done"===a){s=B.a0
 break A}s=B.S
 break A}return s},
 bLT(a){var s,r=a.h(0,"source")
-A:{if("area"===r){s=A.ai(a.h(0,"location_name"))
+A:{if("area"===r){s=A.ah(a.h(0,"location_name"))
 break A}if("equipment"===r){s=new A.c6([a.h(0,"asset_code"),a.h(0,"asset_name")],t.sQ).aj(0," \xb7 ")
 break A}if("material_supplier"===r){s=new A.c6([a.h(0,"supplier_name"),a.h(0,"item_name")],t.sQ).aj(0," \xb7 ")
 break A}s=null
@@ -44507,7 +44507,7 @@ c8y(a){var s=0,r=A.o(t.b5),q,p=2,o=[],n,m,l
 var $async$rB=A.p(function(b,c){if(b===1){o.push(c)
 s=p}for(;;)switch(s){case 0:p=4
 s=7
-return A.f(A.ah(a.gJ(),"ops_warehouses",B.F),$async$rB)
+return A.f(A.ai(a.gJ(),"ops_warehouses",B.F),$async$rB)
 case 7:n=c
 q=n
 s=1
@@ -46966,7 +46966,7 @@ r.toString
 q.push(r)}return q},
 c3J(){return A.C(t.N,t.fs)},
 c3I(){return A.C(t.N,t.fz)},
-bwn(){var s=A.ai($.aR.h(0,B.bID))
+bwn(){var s=A.ah($.aR.h(0,B.bID))
 return s==null?$.bDh:s},
 any(a,b,c){var s,r
 if(a===1)return b
@@ -47175,10 +47175,10 @@ s=$.bFw()
 r=B.i.a1(b)
 if(!s.b.test(r.toLowerCase()))return"\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645 \u0644\u0627\u0632\u0645 \u064a\u0643\u0648\u0646 \u0628\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a (\u062d\u0631\u0648\u0641 \u0648\u0623\u0631\u0642\u0627\u0645 \u0648\u0646\u0642\u0637\u0629 \u0648\u0634\u0631\u0637\u0629)"
 return null},
-ah(a,b,c){var s=0,r=A.o(t.b5),q,p,o,n,m,l,k
-var $async$ah=A.p(function(d,e){if(d===1)return A.l(e,r)
+ai(a,b,c){var s=0,r=A.o(t.b5),q,p,o,n,m,l,k
+var $async$ai=A.p(function(d,e){if(d===1)return A.l(e,r)
 for(;;)switch(s){case 0:s=3
-return A.f(a.$2(b,c),$async$ah)
+return A.f(a.$2(b,c),$async$ai)
 case 3:k=e
 if(k==null){q=A.a([],t.X)
 s=1
@@ -47188,7 +47188,7 @@ q=p
 s=1
 break
 case 1:return A.m(q,r)}})
-return A.n($async$ah,r)},
+return A.n($async$ai,r)},
 fb(a,b,c){var s=0,r=A.o(t.a),q,p,o,n
 var $async$fb=A.p(function(d,e){if(d===1)return A.l(e,r)
 for(;;)switch(s){case 0:s=3
@@ -47336,6 +47336,7 @@ if(B.i.i(c,"no in-process"))return"\u0644\u0627\u0632\u0645 \u064a\u062a\u0633\u
 if(B.i.i(c,"no final inspection"))return"\u0644\u0627\u0632\u0645 \u0627\u0644\u0641\u062d\u0635 \u0627\u0644\u0646\u0647\u0627\u0626\u064a \u064a\u062a\u0633\u062c\u0644 \u0642\u0628\u0644 \u0627\u0644\u0625\u0641\u0631\u0627\u062c"
 if(B.i.i(c,"no first article"))return e
 if(B.i.i(c,"only quality releases"))return"\u0627\u0644\u0625\u0641\u0631\u0627\u062c \u0644\u0644\u062c\u0648\u062f\u0629 \u0628\u0633"
+if(B.i.i(c,"write the effectiveness check"))return"\u0627\u0643\u062a\u0628 \u0646\u062a\u064a\u062c\u0629 \u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0641\u0639\u0627\u0644\u064a\u0629: \u0627\u062a\u0623\u0643\u062f\u062a \u0625\u0632\u0627\u064a\u060c \u0648\u0644\u0642\u064a\u062a \u0625\u064a\u0647 (10 \u062d\u0631\u0648\u0641 \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644)"
 if(B.i.i(c,"quality assurance verifies"))return"\u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u062a\u0635\u062d\u064a\u062d\u064a \u0644\u0644\u062c\u0648\u062f\u0629\u060c \u0645\u0634 \u0644\u0635\u0627\u062d\u0628 \u0627\u0644\u0625\u062c\u0631\u0627\u0621"
 if(B.i.i(c,"more than what is in stock")||B.i.i(c,"in stock"))return"\u0627\u0644\u0643\u0645\u064a\u0629 \u0623\u0643\u062a\u0631 \u0645\u0646 \u0627\u0644\u0631\u0635\u064a\u062f \u0627\u0644\u0644\u064a \u0641\u064a \u0627\u0644\u0645\u062e\u0632\u0646"
 if(B.i.i(c,"against a work order"))return"\u0637\u0644\u0628 \u0627\u0644\u0635\u0631\u0641 \u0644\u0627\u0632\u0645 \u064a\u0643\u0648\u0646 \u0639\u0644\u0649 \u0623\u0645\u0631 \u0634\u063a\u0644"
@@ -49032,7 +49033,7 @@ s=1
 break
 s=8
 break
-case 9:m=A.bZC(A.ai(l.gai(a)))
+case 9:m=A.bZC(A.ah(l.gai(a)))
 s=m!=null?10:11
 break
 case 10:p=13
@@ -50854,13 +50855,13 @@ p=t.e8
 if(p.a(q.h(0,0))!=null)p.a(q.h(0,0)).gY4().GF().dC(new A.az1(a,a3),t.b)
 else a.jE(a3,B.bL.e9([!0]))
 return
-case"HapticFeedback.vibrate":o=a.aE8(A.ai(s.b))
+case"HapticFeedback.vibrate":o=a.aE8(A.ah(s.b))
 n=v.G.window.navigator
 if("vibrate" in n)n.vibrate(o)
 a.jE(a3,B.bL.e9([!0]))
 return
 case u.p:m=t.xE.a(s.b)
-l=A.ai(m.h(0,"label"))
+l=A.ah(m.h(0,"label"))
 if(l==null)l=""
 k=A.hK(m.h(0,"primaryColor"))
 if(k==null)k=4278190080
@@ -50876,9 +50877,9 @@ case"SystemChrome.setPreferredOrientations":B.a6I.IU(t.j.a(s.b)).dC(new A.az2(a,
 return
 case"SystemSound.play":a.jE(a3,B.bL.e9([!0]))
 return
-case"Clipboard.setData":new A.IN(new A.IP()).aot(a3,A.ai(t.xE.a(s.b).h(0,"text")))
+case"Clipboard.setData":new A.IN(new A.IP()).aot(a3,A.ah(t.xE.a(s.b).h(0,"text")))
 return
-case"Clipboard.getData":new A.IN(new A.IP()).anl(a3,A.ai(s.b))
+case"Clipboard.getData":new A.IN(new A.IP()).anl(a3,A.ah(s.b))
 return
 case"Clipboard.hasStrings":new A.IN(new A.IP()).b2f(a3)
 return}break
@@ -50902,7 +50903,7 @@ switch(s.a){case"activateSystemCursor":q=a.gfg().b
 q=A.ar(new A.bM(q,A.B(q).j("bM<2>")))
 if(q!=null){if(q.w===$){q.giO()
 q.w!==$&&A.aP()
-q.w=new A.aL6()}h=B.biU.h(0,A.ai(m.h(0,"kind")))
+q.w=new A.aL6()}h=B.biU.h(0,A.ah(m.h(0,"kind")))
 if(h==null)h="default"
 q=v.G
 if(h==="default")q.document.body.style.removeProperty("cursor")
@@ -50921,7 +50922,7 @@ case"flutter/accessibility":e=$.dr
 if(e==null)e=$.dr=A.hx()
 if(e.b){q=t.f
 d=q.a(q.a(B.fw.kE(a2)).h(0,"data"))
-c=A.ai(d.h(0,"message"))
+c=A.ah(d.h(0,"message"))
 if(c!=null&&c.length!==0){b=A.bBc(d,"assertiveness")
 e.a.afK(c,B.b2X[b==null?0:b])}}a.jE(a3,B.fw.e9(!0))
 return
@@ -54667,7 +54668,7 @@ s=J.ap(p)
 if(s.gt(p)===1)return s.h(p,0)
 r=!1
 if(s.gt(p)===3)if(typeof s.h(p,0)=="string")r=s.h(p,1)==null||typeof s.h(p,1)=="string"
-if(r)throw A.e(new A.a61(A.aq(s.h(p,0)),A.ai(s.h(p,1)),s.h(p,2)))
+if(r)throw A.e(new A.a61(A.aq(s.h(p,0)),A.ah(s.h(p,1)),s.h(p,2)))
 throw A.e(A.d8("Invalid envelope: "+A.b(p),q,q))}}
 A.aWB.prototype={
 e9(a){var s=A.bCF()
@@ -55326,9 +55327,9 @@ r=this.c
 r.toString
 s.jT(r)
 return s},
-b1b(a){var s,r,q,p,o=this,n=A.ai(a.data)
+b1b(a){var s,r,q,p,o=this,n=A.ah(a.data)
 if(n==null)n=null
-s=A.ai(a.inputType)
+s=A.ah(a.inputType)
 if(s==null)s=null
 if(s!=null){r=o.e
 q=r.b
@@ -55643,7 +55644,7 @@ o=A.bc(s.h(0,"textAlignIndex"))
 n=A.bc(s.h(0,"textDirectionIndex"))
 m=A.hK(s.h(0,"fontWeightIndex"))
 l=m!=null?A.bOA(m):"normal"
-p=new A.aYy(new A.ayB(A.aGz(s,"fontSize"),l,A.ai(s.h(0,"fontFamily")),B.b2p[o],B.xY[n],A.aGz(s,"letterSpacing"),A.aGz(s,"wordSpacing"),A.aGz(s,"lineHeight")))
+p=new A.aYy(new A.ayB(A.aGz(s,"fontSize"),l,A.ah(s.h(0,"fontFamily")),B.b2p[o],B.xY[n],A.aGz(s,"letterSpacing"),A.aGz(s,"wordSpacing"),A.aGz(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.a6N
 break
@@ -57468,13 +57469,13 @@ return A.f(p.a.MB(),$async$$0)
 case 9:q=!0
 s=1
 break
-case 7:o=A.ai(h.h(0,"uri"))
+case 7:o=A.ah(h.h(0,"uri"))
 if(o!=null){n=A.kI(o,0,null)
 m=n.gjB().length===0?"/":n.gjB()
 l=n.gxC()
 l=l.ga_(l)?null:n.gxC()
 m=A.bsX(n.gpQ().length===0?null:n.gpQ(),null,m,null,l,null).gFn()
-k=A.AE(m,0,m.length,B.br,!1)}else{m=A.ai(h.h(0,"location"))
+k=A.AE(m,0,m.length,B.br,!1)}else{m=A.ah(h.h(0,"location"))
 m.toString
 k=m}m=p.a.gY4()
 l=h.h(0,"state")
@@ -62156,7 +62157,7 @@ else if(b==null)this.a.set(a,"")
 else for(s=J.P(b),r=this.a;s.l();){b=s.gq()
 if(typeof b=="string")r.append(a,b)
 else if(b==null)r.append(a,"")
-else A.ai(b)}},
+else A.ah(b)}},
 $S:175}
 A.a_K.prototype={
 $0(){var s=this
@@ -69854,13 +69855,13 @@ return s}}
 A.azk.prototype={
 $1(a){var s,r,q=null,p="value"
 t.f.a(a)
-s=A.ai(a.h(0,"event"))
+s=A.ah(a.h(0,"event"))
 switch(s){case"audio.onDuration":r=A.hK(a.h(0,p))
 return new A.hR(B.uJ,r!=null?A.dA(0,0,0,r,0):B.aJ,q,q)
 case"audio.onComplete":return B.Bh
 case"audio.onSeekComplete":return B.Bg
 case"audio.onPrepared":return new A.hR(B.uK,q,q,A.hJ(a.h(0,p)))
-case"audio.onLog":return new A.hR(B.Bd,q,A.ai(a.h(0,p)),q)
+case"audio.onLog":return new A.hR(B.Bd,q,A.ah(a.h(0,p)),q)
 default:throw A.e(A.fP("Event Method does not exist "+A.b(s)))}},
 $S:837}
 A.act.prototype={}
@@ -69875,8 +69876,8 @@ return new A.lD(new A.azm(),s,A.B(s).j("lD<dw.T,m_>"))}}
 A.azm.prototype={
 $1(a){var s
 t.f.a(a)
-s=A.ai(a.h(0,"event"))
-switch(s){case"audio.onLog":return new A.m_(B.E9,A.ai(a.h(0,"value")))
+s=A.ah(a.h(0,"event"))
+switch(s){case"audio.onLog":return new A.m_(B.E9,A.ah(a.h(0,"value")))
 default:throw A.e(A.fP("Global Event Method does not exist "+A.b(s)))}},
 $S:832}
 A.afh.prototype={}
@@ -104176,12 +104177,12 @@ if(s.gt(o)===1)return s.h(o,0)
 r=!1
 if(s.gt(o)===3)if(typeof s.h(o,0)=="string")r=s.h(o,1)==null||typeof s.h(o,1)=="string"
 if(r){r=A.aq(s.h(o,0))
-q=A.ai(s.h(o,1))
+q=A.ah(s.h(o,1))
 throw A.e(A.aOk(r,s.h(o,2),q,p))}r=!1
 if(s.gt(o)===4)if(typeof s.h(o,0)=="string")if(s.h(o,1)==null||typeof s.h(o,1)=="string")r=s.h(o,3)==null||typeof s.h(o,3)=="string"
 if(r){r=A.aq(s.h(o,0))
-q=A.ai(s.h(o,1))
-throw A.e(A.aOk(r,s.h(o,2),q,A.ai(s.h(o,3))))}throw A.e(A.d8("Invalid envelope: "+A.b(o),p,p))},
+q=A.ah(s.h(o,1))
+throw A.e(A.aOk(r,s.h(o,2),q,A.ah(s.h(o,3))))}throw A.e(A.d8("Invalid envelope: "+A.b(o),p,p))},
 GC(a){var s=B.i3.e9([a])
 s.toString
 return s},
@@ -104369,10 +104370,10 @@ if(s.y6(0)===0)return B.cN.nR(s)
 r=B.cN.nR(s)
 q=B.cN.nR(s)
 p=B.cN.nR(s)
-o=s.b<a.byteLength?A.ai(B.cN.nR(s)):null
+o=s.b<a.byteLength?A.ah(B.cN.nR(s)):null
 if(typeof r=="string")n=(q==null||typeof q=="string")&&s.b>=a.byteLength
 else n=!1
-if(n)throw A.e(A.aOk(r,p,A.ai(q),o))
+if(n)throw A.e(A.aOk(r,p,A.ah(q),o))
 else throw A.e(B.aeu)}}
 A.aL7.prototype={
 b1e(a,b,c){var s,r,q,p
@@ -104672,7 +104673,7 @@ o===$&&A.c()
 n=A
 s=3
 return A.f(o.eG("ProcessText.processTextAction",[a,b,c],t.z),$async$PS)
-case 3:q=n.ai(e)
+case 3:q=n.ah(e)
 s=1
 break
 case 1:return A.m(q,r)}})
@@ -104687,11 +104688,11 @@ for(s=0;s<9;++s){r=B.QI[s]
 if(this.b3i(r))q.k(0,r,B.jP)}return q}}
 A.qA.prototype={}
 A.aQ4.prototype={
-$0(){var s,r,q,p=this.b,o=A.ai(p.h(0,"key")),n=o==null
+$0(){var s,r,q,p=this.b,o=A.ah(p.h(0,"key")),n=o==null
 if(!n){s=o.length
 s=s!==0&&s===1}else s=!1
 if(s)this.a.a=o
-s=A.ai(p.h(0,"code"))
+s=A.ah(p.h(0,"code"))
 if(s==null)s=""
 n=n?"":o
 r=A.hK(p.h(0,"location"))
@@ -115294,7 +115295,7 @@ Hb(a){this.y=a},
 qc(){return this.y},
 gux(){return this.y!=null}}
 A.bdZ.prototype={
-$2(a,b){return new A.cl(A.ai(a),A.kv(t.j.a(b),!0,t.K),t.qE)},
+$2(a,b){return new A.cl(A.ah(a),A.kv(t.j.a(b),!0,t.K),t.qE)},
 $S:563}
 A.qd.prototype={
 n(a){return"NavigationNotification canHandlePop: "+this.a}}
@@ -117638,7 +117639,7 @@ pR(a){var s,r
 if(a==null)return null
 t.Dn.a(a)
 s=J.bR(a)
-r=A.ai(s.gai(a))
+r=A.ah(s.gai(a))
 if(r==null)return null
 return new A.up(A.kI(r,0,null),s.gaY(a))},
 qc(){var s,r=this,q=r.y,p=q==null
@@ -147256,7 +147257,7 @@ gjR(){var s=this.d
 return A.bl(A.ag(s),A.ao(s),A.b8(s),0,0,0,0)},
 eN(a){return B.i.a6(this.gjR().bN(A.dA(a,0,0,0,0).a).a9(),0,10)},
 d0(a){return A.bc(B.h.fe(this.r,new A.atL(a)).h(0,"id"))},
-fi(a){var s=A.ai(B.h.eA(this.r,new A.atN(a),new A.atO()).h(0,"name_ar"))
+fi(a){var s=A.ah(B.h.eA(this.r,new A.atN(a),new A.atO()).h(0,"name_ar"))
 return s==null?"":s},
 aRT(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c="id",b="temperature",a="spare_part",a0=t.N,a1=t.z,a2=t.X
 B.h.u(d.w,A.a([A.k(["id","loc-site","code","SITE","name_ar","\u0645\u0635\u0646\u0639 \u0627\u0644\u0646\u0648\u0631","level","site","parent_id",null],a0,a1),A.k(["id","loc-B1","code","B1","name_ar","\u0645\u0628\u0646\u0649 \u0627\u0644\u0625\u0646\u062a\u0627\u062c","level","plant","parent_id","loc-site"],a0,a1),A.k(["id","loc-B1-F0","code","B1-F0","name_ar","\u0627\u0644\u062f\u0648\u0631 \u0627\u0644\u0623\u0631\u0636\u064a","level","floor","parent_id","loc-B1","floor_no",0],a0,a1),A.k(["id","loc-B1-F1","code","B1-F1","name_ar","\u0627\u0644\u062f\u0648\u0631 \u0627\u0644\u0623\u0648\u0644","level","floor","parent_id","loc-B1","floor_no",1],a0,a1),A.k(["id","loc-B2","code","B2","name_ar","\u0645\u0628\u0646\u0649 \u0627\u0644\u0645\u0631\u0627\u0641\u0642 \u0648\u0627\u0644\u0645\u062e\u0627\u0632\u0646","level","plant","parent_id","loc-site"],a0,a1),A.k(["id","loc-L1","code","L1","name_ar","\u062e\u0637 \u0627\u0644\u0628\u0633\u0643\u0648\u064a\u062a 1","level","line","parent_id","loc-B1-F0","department_id",8],a0,a1),A.k(["id","loc-L2","code","L2","name_ar","\u062e\u0637 \u0627\u0644\u0643\u064a\u0643 2","level","line","parent_id","loc-B1-F1","department_id",8],a0,a1),A.k(["id","loc-BOIL","code","BOIL","name_ar","\u063a\u0631\u0641\u0629 \u0627\u0644\u0645\u0631\u0627\u0641\u0642 \u0648\u0627\u0644\u063a\u0644\u0627\u064a\u0627\u062a","level","section","parent_id","loc-B2","department_id",5],a0,a1),A.k(["id","loc-WH","code","WH","name_ar","\u0627\u0644\u0645\u062e\u0632\u0646 \u0627\u0644\u0631\u0626\u064a\u0633\u064a","level","section","parent_id","loc-B2","department_id",6],a0,a1)],a2))
@@ -147469,9 +147470,9 @@ if(J.d(a.h(0,q),"scrap")&&n){n=s.y1
 if(n!=null)n.$1(a)}s.go.push(A.k(["id",s.aU(),"no",s.dc("CAPA"),"ncr_id",a.h(0,"id"),"method",null,"root_cause",null,"corrective_action",null,"preventive_action",null,"owner",null,"due_date",null,"status","open","verified_by",null,"created_at",s.d.a9()],t.N,t.z))},
 $2(a,b){return this.amP(a,b)},
 $1(a){return this.$2(a,B.F)},
-amP(f5,f6){var s=0,r=A.o(t.z),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,f0,f1,f2,f3,f4
-var $async$$2=A.p(function(f7,f8){if(f7===1)return A.l(f8,r)
-for(;;)A:switch(s){case 0:switch(f5){case"ops_locations":o=p.w
+amP(f6,f7){var s=0,r=A.o(t.z),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,f0,f1,f2,f3,f4,f5
+var $async$$2=A.p(function(f8,f9){if(f8===1)return A.l(f9,r)
+for(;;)A:switch(s){case 0:switch(f6){case"ops_locations":o=p.w
 q=p.ph(new A.x(o,new A.auB(),A.J(o).j("x<1>")))
 s=1
 break A
@@ -147488,7 +147489,7 @@ break A
 case"ops_people":o=A.a([],t.m0)
 for(n=$.d3(),n=new A.bB(n,A.B(n).j("bB<1,2>")).gA(0),m=t.N;n.l();){l=n.d
 l.toString
-if(f6.h(0,"p_department_code")==null||l.b.b===f6.h(0,"p_department_code")){k=l.b
+if(f7.h(0,"p_department_code")==null||l.b.b===f7.h(0,"p_department_code")){k=l.b
 o.push(A.k(["user_id",l.a,"name",k.a,"job",k.c],m,m))}}q=o
 s=1
 break A
@@ -147505,19 +147506,19 @@ for(n=p.Q,m=A.J(n).j("aN<1>"),n=new A.aN(n,m),n=new A.aj(n,n.gt(0),m.j("aj<ac.E>
 o.push(p.ax4(l==null?m.a(l):l))}q=o
 s=1
 break A
-case"ops_report_breakdown":g=A.aq(f6.h(0,"p_category"))
-f=g==="asset"?p.X(p.x,f6.h(0,"p_asset")):null
-o=f6.h(0,"p_location")
+case"ops_report_breakdown":g=A.aq(f7.h(0,"p_category"))
+f=g==="asset"?p.X(p.x,f7.h(0,"p_asset")):null
+o=f7.h(0,"p_location")
 if(o==null)o=f==null?null:f.h(0,"location_id")
-A.ai(o)
+A.ah(o)
 if(o==null)throw A.e(A.r("choose the place"))
-if(g==="infrastructure"&&f6.h(0,"p_infra_type")==null)throw A.e(A.r("choose the infrastructure type"))
+if(g==="infrastructure"&&f7.h(0,"p_infra_type")==null)throw A.e(A.r("choose the infrastructure type"))
 n=f==null
-e=p.afj(g,A.ai(n?null:f.h(0,"id")),o,A.ai(f6.h(0,"p_infra_type")),A.aq(f6.h(0,"p_priority")),A.aq(f6.h(0,"p_description")),J.d(f6.h(0,"p_quality_affected"),!0),p.gI().a)
+e=p.afj(g,A.ah(n?null:f.h(0,"id")),o,A.ah(f7.h(0,"p_infra_type")),A.aq(f7.h(0,"p_priority")),A.aq(f7.h(0,"p_description")),J.d(f7.h(0,"p_quality_affected"),!0),p.gI().a)
 p.Q.push(e)
 m=A.b(e.h(0,"wo_no"))
 l=n?null:f.h(0,"name")
-p.mj("MNT","\u0628\u0644\u0627\u063a \u0639\u0637\u0644 "+m+": "+A.b(l==null?B.yA.h(0,f6.h(0,"p_infra_type")):l))
+p.mj("MNT","\u0628\u0644\u0627\u063a \u0639\u0637\u0644 "+m+": "+A.b(l==null?B.yA.h(0,f7.h(0,"p_infra_type")):l))
 if(J.d(e.h(0,"quality_affected"),!0)){m=p.dy
 d=A.ar(new A.x(m,new A.auO(o),A.J(m).j("x<1>")))
 o=d==null
@@ -147525,22 +147526,22 @@ e.k(0,"batch_id",o?null:d.h(0,"id"))
 n=n?null:f.h(0,"name")
 n=A.b(n==null?"":n)
 m=A.b(e.h(0,"description"))
-p.aN6("breakdown","\u0639\u0637\u0644 \u0623\u062b\u0631 \u0639\u0644\u0649 \u0627\u0644\u062c\u0648\u062f\u0629: "+n+" \xb7 "+m,A.ai(o?null:d.h(0,"id")),A.aq(e.h(0,"id")))}q=e.h(0,"wo_no")
+p.aN6("breakdown","\u0639\u0637\u0644 \u0623\u062b\u0631 \u0639\u0644\u0649 \u0627\u0644\u062c\u0648\u062f\u0629: "+n+" \xb7 "+m,A.ah(o?null:d.h(0,"id")),A.aq(e.h(0,"id")))}q=e.h(0,"wo_no")
 s=1
 break A
 case"ops_assign_breakdown":if(!p.gI().e.i(0,"work_orders:update"))A.G(A.r(u.s))
-e=p.X(p.Q,f6.h(0,"p_id"))
+e=p.X(p.Q,f7.h(0,"p_id"))
 o=t.N
 if(!A.al(["reported","scheduled"],o).i(0,e.h(0,"status")))throw A.e(A.r("wrong status"))
-n=f6.h(0,"p_user")
+n=f7.h(0,"p_user")
 m=e.h(0,"received_at")
 e.u(0,A.k(["assigned_to",n,"received_at",m==null?p.d.a9():m,"status","scheduled"],o,t.z))
-if(f6.h(0,"p_diagnosis")!=null&&B.i.a1(A.b(f6.h(0,"p_diagnosis"))).length!==0)e.k(0,"diagnosis",f6.h(0,"p_diagnosis"))
-p.b.$2(A.aq(f6.h(0,"p_user")),"\u0627\u062a\u0639\u064a\u0646 \u0639\u0644\u064a\u0643 \u0627\u0644\u0639\u0637\u0644 "+A.b(e.h(0,"wo_no")))
+if(f7.h(0,"p_diagnosis")!=null&&B.i.a1(A.b(f7.h(0,"p_diagnosis"))).length!==0)e.k(0,"diagnosis",f7.h(0,"p_diagnosis"))
+p.b.$2(A.aq(f7.h(0,"p_user")),"\u0627\u062a\u0639\u064a\u0646 \u0639\u0644\u064a\u0643 \u0627\u0644\u0639\u0637\u0644 "+A.b(e.h(0,"wo_no")))
 q=null
 s=1
 break A
-case"ops_start_breakdown":e=p.X(p.Q,f6.h(0,"p_id"))
+case"ops_start_breakdown":e=p.X(p.Q,f7.h(0,"p_id"))
 if(!J.d(e.h(0,"assigned_to"),p.gI().a))throw A.e(A.r(u.s))
 o=t.N
 if(!A.al(["scheduled","rejected"],o).i(0,e.h(0,"status")))throw A.e(A.r("wrong status"))
@@ -147550,18 +147551,18 @@ e.u(0,A.k(["status","in_progress","repair_started_at",n==null?p.d.a9():n],o,t.z)
 q=null
 s=1
 break A
-case"ops_finish_breakdown":e=p.X(p.Q,f6.h(0,"p_id"))
+case"ops_finish_breakdown":e=p.X(p.Q,f7.h(0,"p_id"))
 if(!J.d(e.h(0,"assigned_to"),p.gI().a))throw A.e(A.r(u.s))
 if(!J.d(e.h(0,"status"),"in_progress"))throw A.e(A.r("wrong status"))
-o=f6.h(0,"p_root_cause")
+o=f7.h(0,"p_root_cause")
 if(B.i.a1(A.b(o==null?"":o)).length===0)throw A.e(A.r('violates check constraint "work_orders_breakdown_close"'))
-e.u(0,A.k(["status","awaiting_handover","root_cause",f6.h(0,"p_root_cause"),"preventive_action",f6.h(0,"p_preventive_action"),"findings",f6.h(0,"p_findings"),"restored_at",p.d.bN(6e7).a9(),"completed_by",p.gI().a],t.N,t.z))
+e.u(0,A.k(["status","awaiting_handover","root_cause",f7.h(0,"p_root_cause"),"preventive_action",f7.h(0,"p_preventive_action"),"findings",f7.h(0,"p_findings"),"restored_at",p.d.bN(6e7).a9(),"completed_by",p.gI().a],t.N,t.z))
 p.mj("PRD","\u0627\u0644\u0639\u0637\u0644 "+A.b(e.h(0,"wo_no"))+" \u0627\u062a\u0635\u0644\u062d \u0648\u0645\u0633\u062a\u0646\u064a \u0627\u0633\u062a\u0644\u0627\u0645\u0643")
 q=null
 s=1
 break A
-case"ops_sign_breakdown":e=p.X(p.Q,f6.h(0,"p_id"))
-c=A.aq(f6.h(0,"p_side"))
+case"ops_sign_breakdown":e=p.X(p.Q,f7.h(0,"p_id"))
+c=A.aq(f7.h(0,"p_side"))
 o=c==="qa"
 n=o?"handover_qa:approve":"handover_production:approve"
 if(!p.gI().e.i(0,n))A.G(A.r(u.s))
@@ -147571,14 +147572,14 @@ b=e.h(0,"attempt")
 n=p.as
 if(B.h.aA(n,new A.auZ(e,c,b)))throw A.e(A.r("already signed"))
 if(o&&!B.h.aA(n,new A.av9(e,b)))throw A.e(A.r("production must accept before QA"))
-a=J.d(f6.h(0,"p_approved"),!0)
+a=J.d(f7.h(0,"p_approved"),!0)
 m=!a
-if(m){l=f6.h(0,"p_reason")
+if(m){l=f7.h(0,"p_reason")
 l=B.i.a1(A.b(l==null?"":l)).length===0}else l=!1
 if(l)throw A.e(A.r("a rejection needs a reason"))
 l=e.h(0,"id")
 k=a?"approved":"rejected"
-n.push(A.k(["work_order_id",l,"side",c,"decision",k,"reason",f6.h(0,"p_reason"),"signed_by",p.gI().a,"attempt",b],t.N,t.z))
+n.push(A.k(["work_order_id",l,"side",c,"decision",k,"reason",f7.h(0,"p_reason"),"signed_by",p.gI().a,"attempt",b],t.N,t.z))
 if(m){e.k(0,"status","rejected")
 p.b.$2(A.aq(e.h(0,"assigned_to")),"\u0627\u0644\u0627\u0633\u062a\u0644\u0627\u0645 \u0627\u062a\u0631\u0641\u0636: "+A.b(e.h(0,"wo_no")))}else if(o||!J.d(e.h(0,"quality_affected"),!0))e.k(0,"status","closed")
 else p.mj("QA","\u0627\u0644\u0639\u0637\u0644 "+A.b(e.h(0,"wo_no"))+" \u0623\u062b\u0651\u0631 \u0639\u0644\u0649 \u0627\u0644\u062c\u0648\u062f\u0629 \u0648\u0645\u0633\u062a\u0646\u064a \u0625\u0641\u0631\u0627\u062c\u0643")
@@ -147622,11 +147623,11 @@ n.push(a8)}q=n
 s=1
 break A
 case"ops_request_parts":if(!p.gI().e.i(0,"requisitions:create"))A.G(A.r(u.s))
-e=f6.h(0,"p_wo")==null?null:p.X(p.Q,f6.h(0,"p_wo"))
+e=f7.h(0,"p_wo")==null?null:p.X(p.Q,f7.h(0,"p_wo"))
 o=e==null
 if(!o&&!J.d(e.h(0,"status"),"in_progress"))throw A.e(A.r("wrong status"))
 b2=A.a([],t.X)
-for(n=J.P(t.j.a(f6.h(0,"p_lines"))),m=t.N,l=t.z,k=p.at,b3=null;n.l();){b4=n.gq()
+for(n=J.P(t.j.a(f7.h(0,"p_lines"))),m=t.N,l=t.z,k=p.at,b3=null;n.l();){b4=n.gq()
 h=J.ap(b4)
 b5=p.X(k,h.h(b4,"item_id"))
 if(J.d(b5.h(0,"category"),"spare_part")&&o)throw A.e(A.r("spare parts are drawn against a work order"))
@@ -147651,12 +147652,12 @@ else p.mj("WH",b7)
 q=b6.h(0,"no")
 s=1
 break A
-case"ops_issue_requisition":b6=p.X(p.ax,f6.h(0,"p_id"))
+case"ops_issue_requisition":b6=p.X(p.ax,f7.h(0,"p_id"))
 o=p.x2
 b3=A.ar(new A.x(o,new A.avd(b6),A.J(o).j("x<1>")))
 if(!p.wL(b3)){if(b3==null)throw A.e(A.r(u.s))
 throw A.e(A.WI("only the keeper of "+A.b(b3.h(0,"name_ar"))+" issues from it"))}if(!J.d(b6.h(0,"status"),"requested"))throw A.e(A.r("wrong status"))
-b8=t.L.a(f6.h(0,"p_lines"))
+b8=t.L.a(f7.h(0,"p_lines"))
 e=b6.h(0,"work_order_id")==null?null:p.X(p.Q,b6.h(0,"work_order_id"))
 for(o=J.P(t.j.a(b6.h(0,"lines"))),n=t.a0,m=b8==null,l=p.at,k=e==null,h=!k,a1=t.N,a2=t.z,a3=p.ok,b9=!0,c0=!1;o.l();){b4=o.gq()
 a4=J.ap(b4)
@@ -147710,11 +147711,11 @@ case"ops_create_pr":if(!p.gI().e.i(0,"purchase_requests:create"))A.G(A.r(u.s))
 o=p.aU()
 n=p.dc("PR")
 m=p.d0(p.ghH())
-l=f6.h(0,"p_reason")
+l=f7.h(0,"p_reason")
 k=p.gI()
 h=p.d.a9()
 a1=A.a([],t.X)
-for(a2=J.P(t.j.a(f6.h(0,"p_lines"))),a3=t.N,a4=t.z;a2.l();){b4=a2.gq()
+for(a2=J.P(t.j.a(f7.h(0,"p_lines"))),a3=t.N,a4=t.z;a2.l();){b4=a2.gq()
 a5=J.ap(b4)
 a1.push(A.k(["item_id",a5.h(b4,"item_id"),"qty",a5.h(b4,"qty")],a3,a4))}b6=A.k(["id",o,"no",n,"department_id",m,"reason",l,"auto",!1,"status","draft","approval_round",0,"created_by",k.a,"created_at",h,"lines",a1],a3,a4)
 p.ch.push(b6)
@@ -147722,20 +147723,20 @@ q=b6.h(0,"no")
 s=1
 break A
 case"ops_add_quote":if(!p.gI().e.i(0,"purchasing:update"))A.G(A.r(u.s))
-b6=p.X(p.ch,f6.h(0,"p_pr"))
+b6=p.X(p.ch,f7.h(0,"p_pr"))
 if(!J.d(b6.h(0,"status"),"approved"))throw A.e(A.r("the purchase request is not approved"))
 o=p.CW
-if(B.h.aA(o,new A.auF(b6,f6)))throw A.e(A.r("duplicate key"))
-o.push(A.k(["id",p.aU(),"pr_id",b6.h(0,"id"),"supplier_id",f6.h(0,"p_supplier"),"total",f6.h(0,"p_total"),"lead_days",f6.h(0,"p_lead_days"),"selected",!1],t.N,t.z))
+if(B.h.aA(o,new A.auF(b6,f7)))throw A.e(A.r("duplicate key"))
+o.push(A.k(["id",p.aU(),"pr_id",b6.h(0,"id"),"supplier_id",f7.h(0,"p_supplier"),"total",f7.h(0,"p_total"),"lead_days",f7.h(0,"p_lead_days"),"selected",!1],t.N,t.z))
 q=null
 s=1
 break A
 case"ops_po_from_request":if(!p.gI().e.i(0,"purchasing:update"))A.G(A.r(u.s))
-b6=p.X(p.ch,f6.h(0,"p_pr"))
+b6=p.X(p.ch,f7.h(0,"p_pr"))
 if(!J.d(b6.h(0,"status"),"approved"))throw A.e(A.r("the purchase request is not approved"))
 o=p.CW
 if(new A.x(o,new A.auG(b6),A.J(o).j("x<1>")).gt(0)<2)throw A.e(A.r("at least 2 quotes"))
-c2=p.X(o,f6.h(0,"p_quote"))
+c2=p.X(o,f7.h(0,"p_quote"))
 c2.k(0,"selected",!0)
 b2=t.j.a(b6.h(0,"lines"))
 o=J.bR(b2)
@@ -147746,7 +147747,7 @@ l=b6.h(0,"id")
 k=c2.h(0,"supplier_id")
 h=b6.h(0,"department_id")
 a1=c2.h(0,"total")
-a2=f6.h(0,"p_expected")
+a2=f7.h(0,"p_expected")
 a3=p.gI()
 a4=p.d.a9()
 a5=A.a([],t.X)
@@ -147777,17 +147778,17 @@ n.push(a7)}q=n
 s=1
 break A
 case"ops_po_mark_sent":if(!p.gI().e.i(0,"purchasing:update"))A.G(A.r(u.s))
-c8=p.X(p.cx,f6.h(0,"p_po"))
+c8=p.X(p.cx,f7.h(0,"p_po"))
 if(!J.d(c8.h(0,"status"),"approved"))throw A.e(A.r("the purchase order is not approved"))
 c8.k(0,"status","sent")
 q=null
 s=1
 break A
-case"ops_receive_goods":c8=p.X(p.cx,f6.h(0,"p_po"))
+case"ops_receive_goods":c8=p.X(p.cx,f7.h(0,"p_po"))
 o=t.N
 if(!A.al(["sent","partial"],o).i(0,c8.h(0,"status")))throw A.e(A.r("the purchase order was not sent"))
 n=A.a([],t.X)
-for(m=t.j,l=J.P(m.a(f6.h(0,"p_lines"))),k=t.f,h=t.z;l.l();){b4=l.gq()
+for(m=t.j,l=J.P(m.a(f7.h(0,"p_lines"))),k=t.f,h=t.z;l.l();){b4=l.gq()
 a1=J.ap(b4)
 n.push(A.k(["id","x"+p.p2++,"po_line_id",a1.h(b4,"po_line_id"),"qty",a1.h(b4,"qty"),"item_id",k.a(J.X6(m.a(c8.h(0,"lines")),new A.auI(b4),new A.auJ())).h(0,"item_id")],o,h))}m=n.length
 if(m===0)throw A.e(A.r("line is not on this order"))
@@ -147804,7 +147805,7 @@ l=p.dc("GRN")
 k=c8.h(0,"id")
 a1=b3==null
 a2=a1?null:b3.h(0,"id")
-c9=A.k(["id",m,"no",l,"po_id",k,"warehouse_id",a2,"delivery_note",f6.h(0,"p_delivery_note"),"status","pending_inspection","received_by",p.gI().a,"received_at",p.d.a9(),"lines",n],o,h)
+c9=A.k(["id",m,"no",l,"po_id",k,"warehouse_id",a2,"delivery_note",f7.h(0,"p_delivery_note"),"status","pending_inspection","received_by",p.gI().a,"received_at",p.d.a9(),"lines",n],o,h)
 p.cy.push(c9)
 if(J.d(a1?null:b3.h(0,"receipt_check"),"direct"))p.ab6(c9,"accepted","\u0627\u0633\u062a\u0644\u0627\u0645 \u0645\u0628\u0627\u0634\u0631 \u0628\u0645\u0639\u0631\u0641\u0629 "+A.b(b3.h(0,"name_ar")),null)
 else{o=p.UY(c9)
@@ -147838,7 +147839,7 @@ n.push(a8)}q=n
 s=1
 break A
 case"ops_inspect_receipt":if(!p.gI().e.i(0,"receipts:approve"))throw A.e(A.r("only an inspector signs the receipt report"))
-b6=p.X(p.cy,f6.h(0,"p_receipt"))
+b6=p.X(p.cy,f7.h(0,"p_receipt"))
 if(!J.d(b6.h(0,"status"),"pending_inspection"))throw A.e(A.r("wrong status"))
 d0=p.UY(b6)
 o=p.r
@@ -147851,19 +147852,19 @@ if(d0!=="WH")if(!d2.i(0,d0)){if(d0==="QA"){n=t.N
 n=A.al(["QC","LAB","QM"],n).i(0,p.ghH())||A.al(["QC","LAB"],n).i(0,d1)}else n=!1
 if(!n)o=!(d0==="TRN"&&d2.i(0,"HR"))}if(o)throw A.e(A.r("this receipt is inspected by "+d0))
 if(J.d(b6.h(0,"received_by"),p.gI().a))throw A.e(A.r("the person who received the goods cannot inspect them"))
-i=A.aq(f6.h(0,"p_decision"))
+i=A.aq(f7.h(0,"p_decision"))
 if(!A.al(["accepted","conditional","rejected"],t.N).i(0,i))throw A.e(A.r("decision is accepted, conditional or rejected"))
-if(i==="rejected"){o=f6.h(0,"p_note")
+if(i==="rejected"){o=f7.h(0,"p_note")
 o=B.i.a1(A.b(o==null?"":o)).length===0}else o=!1
 if(o)throw A.e(A.r("a rejection needs a reason"))
-q=p.ab6(b6,i,A.ai(f6.h(0,"p_note")),t.L.a(f6.h(0,"p_lines")))
+q=p.ab6(b6,i,A.ah(f7.h(0,"p_note")),t.L.a(f7.h(0,"p_lines")))
 s=1
 break A
-case"ops_submit_doc":p.aTz(A.aq(f6.h(0,"p_doc_type")),f6.h(0,"p_id"))
+case"ops_submit_doc":p.aTz(A.aq(f7.h(0,"p_doc_type")),f7.h(0,"p_id"))
 q=null
 s=1
 break A
-case"ops_decide":q=p.aA3(A.aq(f6.h(0,"p_doc_type")),f6.h(0,"p_id"),A.aq(f6.h(0,"p_decision")),A.ai(f6.h(0,"p_reason")))
+case"ops_decide":q=p.aA3(A.aq(f7.h(0,"p_doc_type")),f7.h(0,"p_id"),A.aq(f7.h(0,"p_decision")),A.ah(f7.h(0,"p_reason")))
 s=1
 break A
 case"ops_my_approvals":o=A.a([],t.X)
@@ -147891,15 +147892,15 @@ case"ops_instrument_save":if(!p.gI().e.i(0,"calibration:update"))A.G(A.r(u.s))
 o=t.N
 n=t.z
 m=A.C(o,n)
-for(l=t.f.a(f6.h(0,"p_fields")).gci(),l=l.gA(l);l.l();){k=l.gq()
+for(l=t.f.a(f7.h(0,"p_fields")).gci(),l=l.gA(l);l.l();){k=l.gq()
 h=k.a
-if(B.bFM.i(0,h))m.k(0,A.aq(h),k.b)}if(m.a5("tag")||f6.h(0,"p_id")==null){l=m.h(0,"tag")
+if(B.bFM.i(0,h))m.k(0,A.aq(h),k.b)}if(m.a5("tag")||f7.h(0,"p_id")==null){l=m.h(0,"tag")
 d5=B.i.a1(A.b(l==null?"":l))}else d5=null
 l=d5!=null
 if(l&&d5.length===0)throw A.e(A.r('null value in column "tag"'))
-if(l&&B.h.aA(p.y,new A.auN(d5,f6)))throw A.e(A.r('duplicate key value violates unique constraint "instruments_company_id_tag_key"'))
-if(f6.h(0,"p_id")!=null){p.X(p.y,f6.h(0,"p_id")).u(0,m)
-q=f6.h(0,"p_id")
+if(l&&B.h.aA(p.y,new A.auN(d5,f7)))throw A.e(A.r('duplicate key value violates unique constraint "instruments_company_id_tag_key"'))
+if(f7.h(0,"p_id")!=null){p.X(p.y,f7.h(0,"p_id")).u(0,m)
+q=f7.h(0,"p_id")
 s=1
 break A}d6=p.aU()
 o=A.C(o,n)
@@ -147914,23 +147915,23 @@ q=d6
 s=1
 break A
 case"ops_record_calibration":if(!p.gI().e.i(0,"calibration:create"))A.G(A.r(u.s))
-a0=p.X(p.y,f6.h(0,"p_instrument"))
-d7=A.aq(f6.h(0,"p_result"))
-if(d7!=="fail"){o=f6.h(0,"p_certificate")
+a0=p.X(p.y,f7.h(0,"p_instrument"))
+d7=A.aq(f7.h(0,"p_result"))
+if(d7!=="fail"){o=f7.h(0,"p_certificate")
 o=B.i.a1(A.b(o==null?"":o)).length===0}else o=!1
 if(o)throw A.e(A.r("a certificate number is required"))
-if(A.cR(A.aq(f6.h(0,"p_next_due"))).iS(A.cR(A.aq(f6.h(0,"p_date"))).bN(864e8)))throw A.e(A.r("the next due date must be after the calibration date"))
+if(A.cR(A.aq(f7.h(0,"p_next_due"))).iS(A.cR(A.aq(f7.h(0,"p_date"))).bN(864e8)))throw A.e(A.r("the next due date must be after the calibration date"))
 o=t.N
 n=t.z
-m=A.dm(f6,o,n)
+m=A.dm(f7,o,n)
 m.k(0,"id",p.aU())
 m.k(0,"recorded_by",p.gI().a)
 p.z.push(m)
-m=f6.h(0,"p_date")
-l=f6.h(0,"p_next_due")
-k=f6.h(0,"p_certificate")
-h=f6.h(0,"p_provider_type")
-a1=f6.h(0,"p_provider_name")
+m=f7.h(0,"p_date")
+l=f7.h(0,"p_next_due")
+k=f7.h(0,"p_certificate")
+h=f7.h(0,"p_provider_type")
+a1=f7.h(0,"p_provider_name")
 B:{if("pass"===d7){a2="green"
 break B}if("conditional"===d7){a2="yellow"
 break B}a2="red"
@@ -147947,7 +147948,7 @@ q=p.ph(new A.x(o,new A.auQ(),A.J(o).j("x<1>")))
 s=1
 break A
 case"ops_specs":o=p.dx
-q=p.ph(new A.x(o,new A.auR(f6),A.J(o).j("x<1>")))
+q=p.ph(new A.x(o,new A.auR(f7),A.J(o).j("x<1>")))
 s=1
 break A
 case"ops_batches":o=A.a([],t.X)
@@ -147956,12 +147957,12 @@ o.push(p.awR(l==null?m.a(l):l))}q=o
 s=1
 break A
 case"ops_plan_batch":if(!p.gI().e.i(0,"batches:create"))A.G(A.r(u.s))
-d8=p.a4P(A.aq(f6.h(0,"p_product")),A.aq(f6.h(0,"p_line")),A.av(f6.h(0,"p_qty")))
+d8=p.a4P(A.aq(f7.h(0,"p_product")),A.aq(f7.h(0,"p_line")),A.av(f7.h(0,"p_qty")))
 d8.k(0,"created_by",p.gI().a)
 p.dy.push(d8)
 o=A.aq(d8.h(0,"id"))
 n=A.a([],t.s)
-m=t.L.a(f6.h(0,"p_assets"))
+m=t.L.a(f7.h(0,"p_assets"))
 m=J.P(m==null?B.aA:m)
 while(m.l())n.push(A.aq(m.gq()))
 p.p3.k(0,o,n)
@@ -147969,7 +147970,7 @@ q=d8.h(0,"batch_no")
 s=1
 break A
 case"ops_start_batch":if(!p.gI().e.i(0,"batches:update"))A.G(A.r(u.s))
-d8=p.X(p.dy,f6.h(0,"p_batch"))
+d8=p.X(p.dy,f7.h(0,"p_batch"))
 if(!J.d(d8.h(0,"status"),"planned"))throw A.e(A.r("wrong status"))
 o=p.p3
 n=o.h(0,d8.h(0,"id"))
@@ -147985,27 +147986,27 @@ q=null
 s=1
 break A
 case"ops_record_inspection":if(!p.gI().e.i(0,"inspections:create"))A.G(A.r(u.s))
-d8=p.X(p.dy,f6.h(0,"p_batch"))
-e0=A.aq(f6.h(0,"p_stage"))
+d8=p.X(p.dy,f7.h(0,"p_batch"))
+e0=A.aq(f7.h(0,"p_stage"))
 C:{if("fai"===e0){o=A.al(["fai"],t.N)
 break C}if("ipqc"===e0){o=A.al(["running"],t.N)
 break C}o=A.al(["completed","rework"],t.N)
 break C}if(!o.i(0,d8.h(0,"status")))throw A.e(A.r("the batch is not at the "+e0+" stage"))
 o=p.dx
-e1=A.ar(new A.x(o,new A.auS(d8,e0,f6),A.J(o).j("x<1>")))
-d7=A.ai(f6.h(0,"p_result"))
-e2=A.vv(A.b(f6.h(0,"p_actual")))
+e1=A.ar(new A.x(o,new A.auS(d8,e0,f7),A.J(o).j("x<1>")))
+d7=A.ah(f7.h(0,"p_result"))
+e2=A.vv(A.b(f7.h(0,"p_actual")))
 if(d7==null&&e1!=null&&e2!=null&&e1.h(0,"min_value")!=null)d7=e2>=A.av(e1.h(0,"min_value"))&&e2<=A.av(e1.h(0,"max_value"))?"pass":"fail"
 if(d7==null)d7="pass"
-a0=p.UZ(A.aq(d8.h(0,"id")),e0,A.aq(f6.h(0,"p_parameter")),A.b(f6.h(0,"p_actual")),d7,p.gI().a)
-a0.k(0,"note",f6.h(0,"p_note"))
+a0=p.UZ(A.aq(d8.h(0,"id")),e0,A.aq(f7.h(0,"p_parameter")),A.b(f7.h(0,"p_actual")),d7,p.gI().a)
+a0.k(0,"note",f7.h(0,"p_note"))
 p.fr.push(a0)
-if(d7==="fail")p.wb("inspection","\u0641\u062d\u0635 "+A.b(B.yy.h(0,e0))+" \u0645\u0631\u0641\u0648\u0636: "+A.b(f6.h(0,"p_parameter"))+" = "+A.b(f6.h(0,"p_actual")),A.aq(d8.h(0,"id")),A.av(d8.h(0,"target_qty")))
+if(d7==="fail")p.wb("inspection","\u0641\u062d\u0635 "+A.b(B.yy.h(0,e0))+" \u0645\u0631\u0641\u0648\u0636: "+A.b(f7.h(0,"p_parameter"))+" = "+A.b(f7.h(0,"p_actual")),A.aq(d8.h(0,"id")),A.av(d8.h(0,"target_qty")))
 q=a0.h(0,"id")
 s=1
 break A
 case"ops_inspections":o=A.a([],t.X)
-for(n=B.h.gA(p.fr),m=new A.ci(n,new A.auT(f6)),l=t.N,k=t.z;m.l();){h=n.gq()
+for(n=B.h.gA(p.fr),m=new A.ci(n,new A.auT(f7)),l=t.N,k=t.z;m.l();){h=n.gq()
 a1=A.bT(null,null,l,k)
 a1.u(0,h)
 h=h.h(0,"inspector")
@@ -148015,7 +148016,7 @@ o.push(a1)}q=o
 s=1
 break A
 case"ops_approve_fai":if(!p.gI().e.i(0,"fai:approve"))A.G(A.r(u.s))
-d8=p.X(p.dy,f6.h(0,"p_batch"))
+d8=p.X(p.dy,f7.h(0,"p_batch"))
 if(!J.d(d8.h(0,"status"),"fai"))throw A.e(A.r("wrong status"))
 o=p.fr
 e3=new A.x(o,new A.auU(d8),A.J(o).j("x<1>"))
@@ -148026,16 +148027,16 @@ q=null
 s=1
 break A
 case"ops_complete_batch":if(!p.gI().e.i(0,"batches:update"))A.G(A.r(u.s))
-d8=p.X(p.dy,f6.h(0,"p_batch"))
+d8=p.X(p.dy,f7.h(0,"p_batch"))
 if(!J.d(d8.h(0,"status"),"running"))throw A.e(A.r("wrong status"))
 if(!B.h.aA(p.fr,new A.auW(d8)))throw A.e(A.r("no in-process inspection"))
-d8.u(0,A.k(["status","completed","actual_qty",f6.h(0,"p_actual"),"end_at",p.d.a9()],t.N,t.z))
+d8.u(0,A.k(["status","completed","actual_qty",f7.h(0,"p_actual"),"end_at",p.d.a9()],t.N,t.z))
 p.mj("QA","\u0627\u0644\u062a\u0634\u063a\u064a\u0644\u0629 "+A.b(d8.h(0,"batch_no"))+" \u062e\u0644\u0635\u062a \u0648\u0645\u0633\u062a\u0646\u064a\u0629 \u0627\u0644\u0641\u062d\u0635 \u0627\u0644\u0646\u0647\u0627\u0626\u064a")
 q=null
 s=1
 break A
 case"ops_release_batch":if(!p.gI().e.i(0,"batch_release:approve"))throw A.e(A.r("only quality releases a batch"))
-d8=p.X(p.dy,f6.h(0,"p_batch"))
+d8=p.X(p.dy,f7.h(0,"p_batch"))
 o=t.N
 if(!A.al(["completed","rework"],o).i(0,d8.h(0,"status")))throw A.e(A.r("wrong status"))
 if(B.h.aA(p.fx,new A.auX(d8)))throw A.e(A.r("the batch has an open hold"))
@@ -148047,8 +148048,8 @@ q=null
 s=1
 break A
 case"ops_hold_batch":if(!p.gI().e.i(0,"holds:create"))A.G(A.r(u.s))
-d8=p.X(p.dy,f6.h(0,"p_batch"))
-q=p.wb("manual",A.aq(f6.h(0,"p_reason")),A.aq(d8.h(0,"id")),A.b_(f6.h(0,"p_qty"))).h(0,"id")
+d8=p.X(p.dy,f7.h(0,"p_batch"))
+q=p.wb("manual",A.aq(f7.h(0,"p_reason")),A.aq(d8.h(0,"id")),A.b_(f7.h(0,"p_qty"))).h(0,"id")
 s=1
 break A
 case"ops_holds":o=A.a([],t.X)
@@ -148064,38 +148065,38 @@ o.push(a5)}q=o
 s=1
 break A
 case"ops_ncr_from_hold":if(!p.gI().e.i(0,"ncr:create"))A.G(A.r(u.s))
-e4=p.X(p.fx,f6.h(0,"p_hold"))
+e4=p.X(p.fx,f7.h(0,"p_hold"))
 if(!J.d(e4.h(0,"status"),"open"))throw A.e(A.r("wrong status"))
 o=p.fy
 if(B.h.aA(o,new A.av1(e4)))throw A.e(A.r("this hold already has an NCR"))
-e2=A.k(["id",p.aU(),"no",p.dc("NCR"),"hold_id",e4.h(0,"id"),"batch_id",e4.h(0,"batch_id"),"department_id",f6.h(0,"p_department"),"defect_type",f6.h(0,"p_defect"),"description",f6.h(0,"p_description"),"qty",e4.h(0,"qty"),"disposition",null,"status","draft","approval_round",0,"created_by",p.gI().a,"created_at",p.d.a9()],t.N,t.z)
+e2=A.k(["id",p.aU(),"no",p.dc("NCR"),"hold_id",e4.h(0,"id"),"batch_id",e4.h(0,"batch_id"),"department_id",f7.h(0,"p_department"),"defect_type",f7.h(0,"p_defect"),"description",f7.h(0,"p_description"),"qty",e4.h(0,"qty"),"disposition",null,"status","draft","approval_round",0,"created_by",p.gI().a,"created_at",p.d.a9()],t.N,t.z)
 o.push(e2)
 q=e2.h(0,"no")
 s=1
 break A
 case"ops_create_ncr":if(!p.gI().e.i(0,"ncr:create"))A.G(A.r(u.s))
-o=f6.h(0,"p_source")
+o=f7.h(0,"p_source")
 e5=A.b(o==null?"product":o)
 if(!B.mC.a5(e5))throw A.e(A.r("\u0646\u0648\u0639 \u0639\u062f\u0645 \u0627\u0644\u0645\u0637\u0627\u0628\u0642\u0629 \u0645\u0634 \u0645\u0639\u0631\u0648\u0641"))
 e6=e5==="product"
-e7=!e6||f6.h(0,"p_batch")==null?null:p.X(p.dy,f6.h(0,"p_batch"))
-if(e5==="area"&&f6.h(0,"p_location")==null)throw A.e(A.r("\u062d\u062f\u062f \u0627\u0644\u0645\u0643\u0627\u0646 \u0627\u0644\u0644\u064a \u0641\u064a\u0647 \u0639\u062f\u0645 \u0627\u0644\u0645\u0637\u0627\u0628\u0642\u0629"))
-if(e5==="equipment"&&f6.h(0,"p_asset")==null)throw A.e(A.r("\u062d\u062f\u062f \u0627\u0644\u0645\u0639\u062f\u0629"))
-if(e5==="material_supplier"&&f6.h(0,"p_supplier")==null&&f6.h(0,"p_item")==null)throw A.e(A.r("\u062d\u062f\u062f \u0627\u0644\u0645\u0648\u0631\u062f \u0623\u0648 \u0627\u0644\u062e\u0627\u0645\u0629"))
-if(f6.h(0,"p_location")!=null)p.X(p.w,f6.h(0,"p_location"))
-if(f6.h(0,"p_asset")!=null)p.X(p.x,f6.h(0,"p_asset"))
+e7=!e6||f7.h(0,"p_batch")==null?null:p.X(p.dy,f7.h(0,"p_batch"))
+if(e5==="area"&&f7.h(0,"p_location")==null)throw A.e(A.r("\u062d\u062f\u062f \u0627\u0644\u0645\u0643\u0627\u0646 \u0627\u0644\u0644\u064a \u0641\u064a\u0647 \u0639\u062f\u0645 \u0627\u0644\u0645\u0637\u0627\u0628\u0642\u0629"))
+if(e5==="equipment"&&f7.h(0,"p_asset")==null)throw A.e(A.r("\u062d\u062f\u062f \u0627\u0644\u0645\u0639\u062f\u0629"))
+if(e5==="material_supplier"&&f7.h(0,"p_supplier")==null&&f7.h(0,"p_item")==null)throw A.e(A.r("\u062d\u062f\u062f \u0627\u0644\u0645\u0648\u0631\u062f \u0623\u0648 \u0627\u0644\u062e\u0627\u0645\u0629"))
+if(f7.h(0,"p_location")!=null)p.X(p.w,f7.h(0,"p_location"))
+if(f7.h(0,"p_asset")!=null)p.X(p.x,f7.h(0,"p_asset"))
 o=p.aU()
 n=p.dc("NCR")
 m=e7==null?null:e7.h(0,"id")
-l=f6.h(0,"p_location")
-k=f6.h(0,"p_asset")
-h=f6.h(0,"p_supplier")
-a1=f6.h(0,"p_item")
-a2=f6.h(0,"p_immediate_correction")
-a3=f6.h(0,"p_department")
-a4=f6.h(0,"p_defect")
-a5=f6.h(0,"p_description")
-a6=e6?f6.h(0,"p_qty"):null
+l=f7.h(0,"p_location")
+k=f7.h(0,"p_asset")
+h=f7.h(0,"p_supplier")
+a1=f7.h(0,"p_item")
+a2=f7.h(0,"p_immediate_correction")
+a3=f7.h(0,"p_department")
+a4=f7.h(0,"p_defect")
+a5=f7.h(0,"p_description")
+a6=e6?f7.h(0,"p_qty"):null
 e2=A.k(["id",o,"no",n,"hold_id",null,"source",e5,"batch_id",m,"location_id",l,"asset_id",k,"supplier_id",h,"item_id",a1,"immediate_correction",a2,"department_id",a3,"defect_type",a4,"description",a5,"qty",a6,"disposition",null,"status","draft","approval_round",0,"created_by",p.gI().a,"created_at",p.d.a9()],t.N,t.z)
 p.fy.push(e2)
 q=e2.h(0,"no")
@@ -148117,11 +148118,11 @@ o.push(a5)}q=o
 s=1
 break A
 case"ops_update_ncr":if(!p.gI().e.i(0,"ncr:update"))A.G(A.r(u.s))
-e2=p.X(p.fy,f6.h(0,"p_id"))
+e2=p.X(p.fy,f7.h(0,"p_id"))
 o=t.N
 if(!A.al(["draft","rejected"],o).i(0,e2.h(0,"status")))throw A.e(A.r("wrong status"))
 if(!A.bxa(e2))throw A.e(A.r("\u062a\u062d\u062f\u064a\u062f \u0627\u0644\u0642\u0631\u0627\u0631 \u0644\u0644\u0645\u0646\u062a\u062c \u0628\u0633\u061b \u0639\u062f\u0645 \u0627\u0644\u0645\u0637\u0627\u0628\u0642\u0629 \u062f\u064a \u0628\u062a\u062a\u0628\u0639\u062a \u0644\u0644\u0627\u0639\u062a\u0645\u0627\u062f \u0639\u0644\u0649 \u0637\u0648\u0644"))
-e2.u(0,A.k(["disposition",f6.h(0,"p_disposition"),"qty",f6.h(0,"p_qty"),"disposition_note",f6.h(0,"p_note")],o,t.z))
+e2.u(0,A.k(["disposition",f7.h(0,"p_disposition"),"qty",f7.h(0,"p_qty"),"disposition_note",f7.h(0,"p_note")],o,t.z))
 q=null
 s=1
 break A
@@ -148143,19 +148144,23 @@ a6.k(0,"receipt_no",a5==null?null:J.z(a5,"no"))
 o.push(a6)}q=o
 s=1
 break A
-case"ops_update_capa":e8=p.X(p.go,f6.h(0,"p_id"))
+case"ops_update_capa":e8=p.X(p.go,f7.h(0,"p_id"))
 o=t.f
-e9=A.d0(o.a(f6.h(0,"p_fields")),t.N,t.z)
-if(J.d(e9.h(0,"status"),"verified")){if(!p.gI().e.i(0,"capa:approve")||J.d(e8.h(0,"owner"),p.gI().a))throw A.e(A.r("quality assurance verifies the CAPA, not its owner"))
+e9=A.d0(o.a(f7.h(0,"p_fields")),t.N,t.z)
+if(J.d(e9.h(0,"status"),"verified")||J.d(e9.h(0,"status"),"reopened")){if(!p.gI().e.i(0,"capa:approve")||J.d(e8.h(0,"owner"),p.gI().a))throw A.e(A.r("quality assurance verifies the CAPA, not its owner"))
 if(!J.d(e8.h(0,"status"),"done"))throw A.e(A.r("wrong status"))
-e9.k(0,"verified_by",p.gI().a)
+f0=A.ah(e9.h(0,"effectiveness_note"))
+n=f0==null?null:B.i.a1(f0).length
+if((n==null?0:n)>=10){n=e8.h(0,"effectiveness_note")
+n=f0==null?n==null:f0===n}else n=!0
+if(n)throw A.e(A.r("write the effectiveness check: what was checked and what it showed"))}if(J.d(e9.h(0,"status"),"verified")){e9.k(0,"verified_by",p.gI().a)
 e2=e8.h(0,"ncr_id")==null?null:p.X(p.fy,e8.h(0,"ncr_id"))
 if(e2!=null)e2.k(0,"status","closed")}else if(J.d(e9.h(0,"status"),"done")){if(!J.d(e8.h(0,"owner"),p.gI().a))throw A.e(A.r(u.s))
 n=e8.h(0,"id")
-f0=p.R8.$1(n)
-if(f0>0)throw A.e(A.r(A.b(f0)+" CAPA action(s) are still open"))}else if(!J.d(e8.h(0,"owner"),p.gI().a))if(!p.gI().e.i(0,"capa:update"))A.G(A.r(u.s))
-f1=e9.h(0,"fishbone")
-if(o.b(f1)){o=f1.gdH()
+f1=p.R8.$1(n)
+if(f1>0)throw A.e(A.r(A.b(f1)+" CAPA action(s) are still open"))}else if(!J.d(e8.h(0,"owner"),p.gI().a))if(!p.gI().e.i(0,"capa:update"))A.G(A.r(u.s))
+f2=e9.h(0,"fishbone")
+if(o.b(f2)){o=f2.gdH()
 o=o.aA(o,new A.av6())}else o=!1
 if(o)throw A.e(A.r('new row for relation "capas" violates check constraint "capas_fishbone_check"'))
 e8.u(0,e9)
@@ -148179,16 +148184,16 @@ case"ops_create_need":if(!p.gI().e.i(0,"training:create"))A.G(A.r(u.s))
 o=p.aU()
 n=p.dc("TNA")
 m=p.d0(p.ghH())
-l=f6.h(0,"p_topic")
-k=f6.h(0,"p_target_group")
-h=f6.h(0,"p_reason")
-a1=f6.h(0,"p_justification")
-a2=f6.h(0,"p_priority")
-a3=f6.h(0,"p_delivery")
-a4=f6.h(0,"p_est_cost")
+l=f7.h(0,"p_topic")
+k=f7.h(0,"p_target_group")
+h=f7.h(0,"p_reason")
+a1=f7.h(0,"p_justification")
+a2=f7.h(0,"p_priority")
+a3=f7.h(0,"p_delivery")
+a4=f7.h(0,"p_est_cost")
 a5=p.gI()
 a6=p.d.a9()
-a7=t.L.a(f6.h(0,"p_candidates"))
+a7=t.L.a(f7.h(0,"p_candidates"))
 if(a7==null)a7=B.aA
 a8=t.z
 a7=A.Z(a7,a8)
@@ -148198,26 +148203,26 @@ q=e2.h(0,"no")
 s=1
 break A
 case"ops_plan_from_need":if(!p.gI().e.i(0,"training:update"))A.G(A.r(u.s))
-e2=p.X(p.k2,f6.h(0,"p_need"))
+e2=p.X(p.k2,f7.h(0,"p_need"))
 if(!J.d(e2.h(0,"status"),"approved"))throw A.e(A.r("the training need is not approved"))
 o=p.aU()
 n=p.dc("TP")
 m=e2.h(0,"id")
-l=f6.h(0,"p_title")
+l=f7.h(0,"p_title")
 if(l==null)l=e2.h(0,"topic")
 k=t.N
 h=t.z
-f2=A.k(["id",o,"no",n,"need_id",m,"course_title",l,"trainer_type",f6.h(0,"p_trainer_type"),"trainer_name",f6.h(0,"p_trainer_name"),"start_date",f6.h(0,"p_start"),"end_date",f6.h(0,"p_end"),"hours",f6.h(0,"p_hours"),"location",f6.h(0,"p_location"),"cost",f6.h(0,"p_cost"),"status","planned","target_department",e2.h(0,"department_id")],k,h)
-p.k3.push(f2)
-for(o=J.P(t.j.a(e2.h(0,"candidates"))),n=p.k4;o.l();){f3=o.gq()
-n.push(A.k(["id","x"+p.p2++,"plan_id",f2.h(0,"id"),"employee_id",f3,"status","invited"],k,h))}e2.k(0,"status","planned")
-q=f2.h(0,"id")
+f3=A.k(["id",o,"no",n,"need_id",m,"course_title",l,"trainer_type",f7.h(0,"p_trainer_type"),"trainer_name",f7.h(0,"p_trainer_name"),"start_date",f7.h(0,"p_start"),"end_date",f7.h(0,"p_end"),"hours",f7.h(0,"p_hours"),"location",f7.h(0,"p_location"),"cost",f7.h(0,"p_cost"),"status","planned","target_department",e2.h(0,"department_id")],k,h)
+p.k3.push(f3)
+for(o=J.P(t.j.a(e2.h(0,"candidates"))),n=p.k4;o.l();){f4=o.gq()
+n.push(A.k(["id","x"+p.p2++,"plan_id",f3.h(0,"id"),"employee_id",f4,"status","invited"],k,h))}e2.k(0,"status","planned")
+q=f3.h(0,"id")
 s=1
 break A
 case"ops_create_course":if(!p.gI().e.i(0,"training:update"))A.G(A.r(u.s))
-f2=A.k(["id",p.aU(),"no",p.dc("TP"),"need_id",null,"course_title",f6.h(0,"p_title"),"trainer_type",f6.h(0,"p_trainer_type"),"trainer_name",f6.h(0,"p_trainer_name"),"start_date",f6.h(0,"p_start"),"end_date",f6.h(0,"p_end"),"hours",f6.h(0,"p_hours"),"location",f6.h(0,"p_location"),"cost",f6.h(0,"p_cost"),"status","planned","target_department",f6.h(0,"p_department")],t.N,t.z)
-p.k3.push(f2)
-q=f2.h(0,"id")
+f3=A.k(["id",p.aU(),"no",p.dc("TP"),"need_id",null,"course_title",f7.h(0,"p_title"),"trainer_type",f7.h(0,"p_trainer_type"),"trainer_name",f7.h(0,"p_trainer_name"),"start_date",f7.h(0,"p_start"),"end_date",f7.h(0,"p_end"),"hours",f7.h(0,"p_hours"),"location",f7.h(0,"p_location"),"cost",f7.h(0,"p_cost"),"status","planned","target_department",f7.h(0,"p_department")],t.N,t.z)
+p.k3.push(f3)
+q=f3.h(0,"id")
 s=1
 break A
 case"ops_training_plans":o=A.a([],t.X)
@@ -148231,12 +148236,12 @@ o.push(a3)}q=o
 s=1
 break A
 case"ops_update_plan":if(!p.gI().e.i(0,"training:update"))A.G(A.r(u.s))
-p.X(p.k3,f6.h(0,"p_id")).k(0,"status",f6.h(0,"p_status"))
+p.X(p.k3,f7.h(0,"p_id")).k(0,"status",f7.h(0,"p_status"))
 q=null
 s=1
 break A
 case"ops_attendance":o=A.a([],t.X)
-for(n=B.h.gA(p.k4),m=new A.ci(n,new A.avb(f6)),l=t.N,k=t.z,h=p.k1;m.l();){a1=n.gq()
+for(n=B.h.gA(p.k4),m=new A.ci(n,new A.avb(f7)),l=t.N,k=t.z,h=p.k1;m.l();){a1=n.gq()
 a2=A.bT(null,null,l,k)
 a2.u(0,a1)
 a2.k(0,"employee_name",p.X(h,a1.h(0,"employee_id")).h(0,"full_name"))
@@ -148244,12 +148249,12 @@ a2.k(0,"emp_code",p.X(h,a1.h(0,"employee_id")).h(0,"emp_code"))
 o.push(a2)}q=o
 s=1
 break A
-case"ops_update_attendance":d9=p.X(p.k4,f6.h(0,"p_id"))
-e9=A.d0(t.f.a(f6.h(0,"p_fields")),t.N,t.z)
-if(e9.a5("effectiveness_score")){f2=p.X(p.k3,d9.h(0,"plan_id"))
-f4=p.X(p.k1,d9.h(0,"employee_id"))
-if(!p.gI().e.i(0,"training:create")||!J.d(f4.h(0,"department_id"),p.d0(p.ghH())))throw A.e(A.r("only the trainee's manager rates effectiveness"))
-if(B.e.br(p.d.eY(A.cR(A.b(f2.h(0,"end_date")))).a,864e8)<30)throw A.e(A.r("effectiveness is rated 30 days after the course"))
+case"ops_update_attendance":d9=p.X(p.k4,f7.h(0,"p_id"))
+e9=A.d0(t.f.a(f7.h(0,"p_fields")),t.N,t.z)
+if(e9.a5("effectiveness_score")){f3=p.X(p.k3,d9.h(0,"plan_id"))
+f5=p.X(p.k1,d9.h(0,"employee_id"))
+if(!p.gI().e.i(0,"training:create")||!J.d(f5.h(0,"department_id"),p.d0(p.ghH())))throw A.e(A.r("only the trainee's manager rates effectiveness"))
+if(B.e.br(p.d.eY(A.cR(A.b(f3.h(0,"end_date")))).a,864e8)<30)throw A.e(A.r("effectiveness is rated 30 days after the course"))
 e9.k(0,"effectiveness_by",p.gI().a)}else{if(!p.gI().e.i(0,"training:update"))A.G(A.r(u.s))
 if(e9.h(0,"post_score")!=null){e9.k(0,"passed",A.av(e9.h(0,"post_score"))>=70)
 e9.k(0,"status","attended")
@@ -148261,19 +148266,19 @@ case"ops_kpis":q=p.aKb()
 s=1
 break A}o=p.e,n=o.length,m=t.xI,l=t.iG,j=0
 case 3:if(!(j<o.length)){s=5
-break}k=o[j].$3(p,f5,f6)
+break}k=o[j].$3(p,f6,f7)
 if(!l.b(k)){h=new A.aT($.aR,m)
 h.a=8
 h.c=k
 k=h}s=6
 return A.f(k,$async$$2)
-case 6:b6=f8
+case 6:b6=f9
 if(b6!==B.aW){q=b6
 s=1
 break}case 4:o.length===n||(0,A.u)(o),++j
 s=3
 break
-case 5:throw A.e(A.fP(f5))
+case 5:throw A.e(A.fP(f6))
 case 1:return A.m(q,r)}})
 return A.n($async$$2,r)},
 glb(){var s=$.hr().h(0,this.gI().a)
@@ -148352,7 +148357,7 @@ if(J.d(n?null:m.h(0,o),"qa"))return"QA"
 if(J.d(n?null:m.h(0,o),"direct")){n=p.r
 s=B.h.fe(n,new A.atT(m))
 n=A.ar(new A.x(n,new A.atU(s),A.J(n).j("x<1>")))
-n=A.ai(n==null?null:J.z(n,"code"))
+n=A.ah(n==null?null:J.z(n,"code"))
 return n==null?A.aq(s.h(0,"code")):n}n=A.ay(t.z)
 for(r=J.P(t.j.a(a.h(0,"lines"))),q=p.at;r.l();)n.E(0,p.X(q,J.z(r.gq(),"item_id")).h(0,"category"))
 if(n.aA(0,new A.atV()))return"QA"
@@ -149231,7 +149236,7 @@ r=this.gJ()
 s=r.k1
 r=r.r
 r=A.ar(new A.x(r,new A.avs(A.ar(new A.x(s,new A.avt(a),A.J(s).j("x<1>")))),A.J(r).j("x<1>")))
-return A.ai(r==null?null:J.z(r,"code"))},
+return A.ah(r==null?null:J.z(r,"code"))},
 V3(a){var s=A.ej(A.a00(a),t.N),r=this.fx.h(0,a)
 r=r==null?null:r.a[4]
 if(r!=null)s.u(0,r)
@@ -149308,7 +149313,7 @@ var $async$ZA=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:p.lA()
 o=A.a([],t.Yy)
 for(n=p.gJ().k1,m=n.length,l=0;l<n.length;n.length===m||(0,A.u)(n),++l){k=n[l]
-if(k.h(0,"user_id")==null)o.push(new A.wz(A.aq(k.h(0,"id")),A.aq(k.h(0,"full_name")),A.ai(k.h(0,"emp_code"))))}q=o
+if(k.h(0,"user_id")==null)o.push(new A.wz(A.aq(k.h(0,"id")),A.aq(k.h(0,"full_name")),A.ah(k.h(0,"emp_code"))))}q=o
 s=1
 break
 case 1:return A.m(q,r)}})
@@ -149572,7 +149577,7 @@ case 1:return A.m(q,r)}})
 return A.n($async$a19,r)},
 aB4(a){var s=this.gJ().r
 s=A.ar(new A.x(s,new A.avr(a),A.J(s).j("x<1>")))
-return A.ai(s==null?null:J.z(s,"code"))},
+return A.ah(s==null?null:J.z(s,"code"))},
 Rm(a,b){return this.aoq(a,b)},
 aoq(a1,a2){var s=0,r=A.o(t._P),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0
 var $async$Rm=A.p(function(a3,a4){if(a3===1)return A.l(a4,r)
@@ -149997,7 +150002,7 @@ $0(){var s=this,r=s.b.a,q=r[2],p=r[3],o=s.a
 r=o.yX(r[0])
 o=o.gJ().r
 o=A.ar(new A.x(o,new A.avV(s.c),A.J(o).j("x<1>")))
-return new A.qG(q,p,r,A.ai(o==null?null:J.z(o,"name_ar")),A.a00(s.d.a).a)},
+return new A.qG(q,p,r,A.ah(o==null?null:J.z(o,"name_ar")),A.a00(s.d.a).a)},
 $S:734}
 A.avV.prototype={
 $1(a){return J.d(a.h(0,"code"),this.a)},
@@ -150875,7 +150880,7 @@ A.YD.prototype={
 aB6(a,b){var s=$.d3().h(0,b),r=s==null?null:s.b
 s=a.r
 s=A.ar(new A.x(s,new A.ass(r),A.J(s).j("x<1>")))
-return A.ai(s==null?null:J.z(s,"name_ar"))},
+return A.ah(s==null?null:J.z(s,"name_ar"))},
 a50(a){var s=A.ar(new A.c6(a.e,t._L))
 s=s==null?null:s.c
 return s==null?B.d6:s},
@@ -151030,7 +151035,7 @@ d3.fE(c7,"\u0637\u0644\u0628\u064a\u0629 \u0641\u0631\u0639 \u062c\u062f\u064a\u
 return b5
 case"ops_decide_branch_order":b1=b4.aaE(d5.h(0,c3))
 if(!d3.gI().e.i(0,c7))throw A.e(A.jv(u.aL))
-b2=A.ai(d5.h(0,"p_status"))
+b2=A.ah(d5.h(0,"p_status"))
 b3=A.bvB(d5.h(0,"p_note"))
 q=t.N
 if(!A.al(["accepted","rejected","in_production","cancelled"],q).i(0,b2))throw A.e(A.jv("status is accepted, rejected, in_production or cancelled"))
@@ -151136,7 +151141,7 @@ s=A.b(n==null?"":n)
 if(!B.eQ.a5(s))throw A.e(A.r("pick the document type"))
 r=b.h(0,p)!=null?a.X(this.a,b.h(0,p)):null
 n=A.b(b.h(0,o))
-q=A.bOr(n,s,A.ai(r==null?null:r.h(0,o)),B.Wj)
+q=A.bOr(n,s,A.ah(r==null?null:r.h(0,o)),B.Wj)
 if(q!=null)throw A.e(A.r(q))
 if(this.Sx(A.b(b.h(0,o)))!=null)throw A.e(A.r("a document with this code exists"))},
 Le(a,b,c,d,e){return this.b.push(A.k(["doc_id",b.h(0,"id"),"revision",b.h(0,"revision"),"issue",b.h(0,"issue"),"event",c,"summary",d,"request_id",e,"by_user",a.gI().a,"at",a.d.a9()],t.N,t.z))},
@@ -151341,7 +151346,7 @@ if(!b3){f=h1.X(d1.a,h3.h(0,e8))
 if(!J.d(f.h(0,d3),d4))throw A.e(A.r(f6))}else f=d2
 b1="c-demo/"+A.b(b3?f9:f.h(0,f0))+"/"+h1.aU()+".pdf"
 d1.e.k(0,b1,new A.v(b4,h1.gI().a))
-s=A.ai(h3.h(0,"p_name"))
+s=A.ah(h3.h(0,"p_name"))
 r=f==null?d2:f.h(0,e0)
 b6=A.c7d(s,A.b(r==null?"document":r))
 if(b3){s=t.N
@@ -153173,8 +153178,8 @@ s.toString
 a3=B.o.B(s)
 s=A.a([],t.X)
 if(c3.h(0,b7)==null||J.d(c3.h(0,b7),b8))for(r=c1.cy,q=r.length,n=0;n<r.length;r.length===q||(0,A.u)(r),++n){d=r[n]
-s.push(a6.a9T(b8,d.h(0,a8),d.h(0,"no"),A.ai(d.h(0,b9)),d,a3,c1))}if(c3.h(0,b7)==null||J.d(c3.h(0,b7),"batches"))for(r=c1.dy,q=r.length,n=0;n<r.length;r.length===q||(0,A.u)(r),++n){a4=r[n]
-if(!J.d(a4.h(0,b9),"cancelled"))s.push(a6.a9T("batches",a4.h(0,a8),a4.h(0,"batch_no"),A.ai(a4.h(0,b9)),a4,a3,c1))}return s
+s.push(a6.a9T(b8,d.h(0,a8),d.h(0,"no"),A.ah(d.h(0,b9)),d,a3,c1))}if(c3.h(0,b7)==null||J.d(c3.h(0,b7),"batches"))for(r=c1.dy,q=r.length,n=0;n<r.length;r.length===q||(0,A.u)(r),++n){a4=r[n]
+if(!J.d(a4.h(0,b9),"cancelled"))s.push(a6.a9T("batches",a4.h(0,a8),a4.h(0,"batch_no"),A.ah(a4.h(0,b9)),a4,a3,c1))}return s
 case"ops_suppliers_asl":s=A.a([],t.X)
 for(r=c1.ay,q=r.length,p=t.N,o=t.z,n=0;n<r.length;r.length===q||(0,A.u)(r),++n){a5=r[n]
 s.push(A.k(["id",a5.h(0,a8),"code",a5.h(0,"code"),"name",a5.h(0,"name"),"approved",!J.d(a5.h(0,b3),!1)],p,o))}return s
@@ -153203,7 +153208,7 @@ break C}D:{if("released"===s){r="\u0623\u062e\u0636\u0631: \u0645\u0641\u0631\u0
 break D}if("rejected"===s){r="\u0623\u062d\u0645\u0631: \u0645\u0631\u0641\u0648\u0636\u0629"
 break D}r="\u0623\u0632\u0631\u0642: \u0645\u062d\u062c\u0648\u0632\u0629/\u062a\u062d\u062a \u0627\u0644\u0641\u062d\u0635"
 break D}q=r
-k=s}if(l&&d==="rejected"){p=A.ai(e.h(0,n))
+k=s}if(l&&d==="rejected"){p=A.ah(e.h(0,n))
 if(p==null)p=e.h(0,m)==null?null:B.i.a6(A.cR(A.b(e.h(0,m))).bN(A.dA(f,0,0,0,0).a).a9(),0,10)}else p=null
 s=B.bl5.h(0,k)
 return A.k(["ref_table",a,"ref_id",b,"ref_no",c,"status",d,"label",k,"label_ar",q,"color",s,n,p,"since",l?e.h(0,"received_at"):e.h(0,"created_at")],t.N,t.z)}}
@@ -153348,7 +153353,7 @@ aaX(a){this.at===$&&A.c()
 return B.i.a6(A.bl(A.ag(a),A.ao(a),1,0,0,0,0).a9(),0,10)},
 z6(a){var s=this.at
 s===$&&A.c()
-s=A.ai(B.h.eA(s.k1,new A.aE2(a),new A.aE3()).h(0,"full_name"))
+s=A.ah(B.h.eA(s.k1,new A.aE2(a),new A.aE3()).h(0,"full_name"))
 return s==null?"":s},
 wc(){var s,r,q,p,o,n=this.at
 n===$&&A.c()
@@ -154760,7 +154765,7 @@ p.ca("line",new A.aIi(o))
 p.ca("criticality",new A.aIj(p))
 p.ca("status",new A.aIk())
 p.ca("has_instruments",new A.aIl(a,p))}},
-a6A(a,b){var s=A.ai(B.h.eA(a.r,new A.aI4(b),new A.aI5()).h(0,"code"))
+a6A(a,b){var s=A.ah(B.h.eA(a.r,new A.aI4(b),new A.aI5()).h(0,"code"))
 return s==null?"":s},
 $3(c5,c6,c7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0=this,a1=null,a2="assets:create",a3=u.s,a4="p_code",a5="p_name_ar",a6="code",a7="department_id",a8="{TYPE}-{SEQ:3}",a9="p_department",b0="line",b1="name",b2="p_name",b3="location_id",b4="criticality",b5='null value in column "name"',b6='violates check constraint "assets_criticality_check"',b7="level",b8="\u0627\u0644\u0645\u0639\u062f\u0629 \u0628\u062a\u062a\u0633\u062c\u0644 \u0639\u0644\u0649 \u062e\u0637 \u0625\u0646\u062a\u0627\u062c \u0623\u0648 \u0642\u0633\u0645\u060c \u0645\u0634 \u0639\u0644\u0649 \u0627\u0644\u0645\u0635\u0646\u0639 \u0643\u0644\u0647",b9="assets:update",c0="p_id",c1="p_status",c2="active",c3="products:update",c4="\u0627\u0644\u0643\u0648\u062f \u062f\u0647 \u0645\u0633\u062a\u062e\u062f\u0645 \u0642\u0628\u0644 \u0643\u062f\u0647 \u0641\u064a \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a"
 switch(c6){case"ops_machine_types":return c5.ph(a0.a)
@@ -155052,7 +155057,7 @@ case"ops_add_location":if(!d4.gI().e.i(0,c7))if(!d4.gI().e.i(0,c8))A.G(A.r(a8))
 a1=d6.h(0,c9)==null?a6:d4.X(d4.w,d6.h(0,c9))
 a2=A.b(d6.h(0,"p_level"))
 s=a1==null
-p=A.ai(s?a6:a1.h(0,"level"))
+p=A.ah(s?a6:a1.h(0,"level"))
 if(!B.iF.a5(a2))A.G(A.r('violates check constraint "locations_level_check"'))
 o=B.yI.h(0,p)
 if(!B.h.i(o==null?B.aD:o,a2)){a3=p==null?"\u0641\u064a \u0627\u0644\u0623\u0648\u0644":"\u062a\u062d\u062a "+A.b(B.iF.h(0,p))
@@ -155062,7 +155067,7 @@ p=A.b_(d6.h(0,d1))
 a4=p==null?a6:B.o.B(p)
 p=A.mH(d6.h(0,c5))
 b=p==null?a6:p.toUpperCase()
-if(b==null){p=A.ai(s?a6:a1.h(0,d2))
+if(b==null){p=A.ah(s?a6:a1.h(0,d2))
 o=A.a([],t.s)
 for(n=d4.w,m=n.length,j=0;j<n.length;n.length===m||(0,A.u)(n),++j)o.push(A.b(n[j].h(0,d2)))
 b=A.c8N(a2,p,a4,o)}p=d4.w
@@ -155147,7 +155152,7 @@ $S:48}
 A.aMv.prototype={
 $1(a){var s=this.a.k1
 s=A.ar(new A.x(s,new A.aMw(a),A.J(s).j("x<1>")))
-return A.ai(s==null?null:J.z(s,"full_name"))},
+return A.ah(s==null?null:J.z(s,"full_name"))},
 $S:773}
 A.aMw.prototype={
 $1(a){return J.d(a.h(0,"id"),this.a)},
@@ -155908,7 +155913,7 @@ else{r=s.c
 r.toString
 p=s.e
 s=s.r
-s=new A.cO([q,r,p,A.ai(s==null?null:s.h(0,"disposition"))])}o.push(s)}return o},
+s=new A.cO([q,r,p,A.ah(s==null?null:s.h(0,"disposition"))])}o.push(s)}return o},
 $S:777}
 A.aRL.prototype={
 $1(a){return this.a.b.$2(A.b(a.h(0,"created_by")),"\u0637\u0644\u0628\u0643 "+A.b(a.h(0,"no"))+" \u0627\u062a\u0639\u062a\u0645\u062f")},
@@ -156426,7 +156431,7 @@ case 22:if(!f4.gI().e.i(0,"complaints_qa:update"))throw A.e(A.r("only quality as
 d0=f4.X(n.f,f6.h(0,"p_id"))
 j=t.N
 if(!A.al(["new","classified"],j).i(0,d0.h(0,"status")))throw A.e(A.r("complaint "+A.b(d0.h(0,"no"))+" is already "+A.b(d0.h(0,"status"))))
-d1=A.ai(f6.h(0,"p_severity"))
+d1=A.ah(f6.h(0,"p_severity"))
 if(!A.al(["critical","major","minor"],j).i(0,d1))throw A.e(A.r("severity is critical, major or minor"))
 i=f6.h(0,"p_department")
 if(i==null){i=f4.r
@@ -156623,7 +156628,7 @@ e2=A.b(j==null?f4.gI().a:j)
 if(!(e2===f4.gI().a?A.al(["head","top","owner"],t.N).i(0,f4.glb()):n.V2(f4,e2)))throw A.e(A.r(u.s))
 j=f6.h(0,"p_starts")
 e3=A.aq(j==null?f4.eN(0):j)
-e4=A.ai(f6.h(0,"p_ends"))
+e4=A.ah(f6.h(0,"p_ends"))
 if(e4==null||A.cR(e4).iS(A.cR(e3))||J.d(f6.h(0,"p_to_user"),e2))throw A.e(A.r('violates check constraint "delegations_check"'))
 e5=t.L.a(f6.h(0,"p_modules"))
 j=f4.aU()
@@ -156645,7 +156650,7 @@ q=null
 s=1
 break
 case 35:s=37
-return A.f(A.ah(f4,"ops_my_approvals",B.F),$async$$3)
+return A.f(A.ai(f4,"ops_my_approvals",B.F),$async$$3)
 case 37:e7=f8
 e8=n.a4c(f4)
 if(e8.length===0){q=e7
@@ -156818,7 +156823,7 @@ $1(a){var s="branch_id"
 return J.d(a.h(0,"complaint_id"),this.a.h(0,"id"))&&J.d(a.h(0,s),this.b.h(0,s))&&J.d(a.h(0,"batch_id"),this.c.h(0,"id"))},
 $S:1}
 A.aTr.prototype={
-$0(){return A.ah(this.a,"ops_my_approvals",B.F)},
+$0(){return A.ai(this.a,"ops_my_approvals",B.F)},
 $S:6}
 A.aTs.prototype={
 $1(a){return this.a.jo(a.h(0,"from_user"))},
@@ -156871,7 +156876,7 @@ a.y1=new A.aXe(this,a)},
 Aa(a,b){return B.h.eA(a.x2,new A.aWP(b),new A.aWQ())},
 WM(a,b){var s=a.x2
 s=A.ar(new A.x(s,new A.aWO(b),A.J(s).j("x<1>")))
-return A.ai(s==null?null:J.z(s,"name_ar"))},
+return A.ah(s==null?null:J.z(s,"name_ar"))},
 SG(a,b){var s,r=!0
 if(!a.gI().e.i(0,"stores:view"))if(!a.gI().e.i(0,"finance:view"))if(!a.gI().e.i(0,"purchasing:view"))if(!a.wL(b)){r=a.ghH()
 s=a.r
@@ -158814,8 +158819,8 @@ while(n.l())a0.push(A.b(n.gq()))
 a=J.d(b.h(0,"approver"),"direct_manager")
 n=A.aq(b.h(0,"name"))
 m=A.aq(b.h(0,"approver"))
-l=a?null:A.ai(b.h(0,"permission"))
-k=a?"\u0627\u0644\u0645\u062f\u064a\u0631 \u0627\u0644\u0645\u0628\u0627\u0634\u0631":p.aaY(A.ai(b.h(0,"permission")))
+l=a?null:A.ah(b.h(0,"permission"))
+k=a?"\u0627\u0644\u0645\u062f\u064a\u0631 \u0627\u0644\u0645\u0628\u0627\u0634\u0631":p.aaY(A.ah(b.h(0,"permission")))
 j=!a&&J.d(b.h(0,"same"),!0)
 if(a0.length===0)a0=null
 i=o?null:a1.r
@@ -160126,7 +160131,7 @@ this.aZ()},
 Er(){var s=0,r=A.o(t.b5),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f
 var $async$Er=A.p(function(a,b){if(a===1){o.push(b)
 s=p}for(;;)switch(s){case 0:s=3
-return A.f(A.ah(n.a.c.gJ(),"ops_my_company_messages",B.F),$async$Er)
+return A.f(A.ai(n.a.c.gJ(),"ops_my_company_messages",B.F),$async$Er)
 case 3:g=b
 l=J.dE(g,new A.b6r()),k=J.P(l.a),l=new A.ci(k,l.b),j=t.N,i=t.z
 case 4:if(!l.l()){s=5
@@ -160235,7 +160240,7 @@ r.push(A.cg(i,B.I,B.B,B.G,0))
 r.push(B.hI)
 return A.cu(A.au(r,B.be,B.B,B.G),o,new A.t("inbox-"+k,j),o,o)}}
 A.asD.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_company_inbox",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_company_inbox",B.F)},
 $S:6}
 A.asE.prototype={
 $3(a,b,c){var s,r,q=J.ap(b)
@@ -160285,7 +160290,7 @@ case 3:k=b
 j=null
 p=5
 s=8
-return A.f(A.ah(l.gJ(),"ops_departments",B.F),$async$Dy)
+return A.f(A.ai(l.gJ(),"ops_departments",B.F),$async$Dy)
 case 8:j=b
 p=2
 s=7
@@ -160416,7 +160421,7 @@ return A.n($async$vY,r)},
 w9(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h
 var $async$w9=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_docs",B.F),$async$w9)
+return A.f(A.ai(p.a.c.gJ(),"ops_docs",B.F),$async$w9)
 case 3:h=b
 if(p.c==null){s=1
 break}o=t.u
@@ -160705,12 +160710,12 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.b.a
 n=p.a
 s=3
-return A.f(A.ah(n.a.c.gJ(),"ops_docs",B.F),$async$$0)
+return A.f(A.ai(n.a.c.gJ(),"ops_docs",B.F),$async$$0)
 case 3:m=b
 s=o==="policies"?4:6
 break
 case 4:s=7
-return A.f(A.ah(n.a.c.gJ(),"ops_policies",B.F),$async$$0)
+return A.f(A.ai(n.a.c.gJ(),"ops_policies",B.F),$async$$0)
 case 7:s=5
 break
 case 6:b=B.d6
@@ -160720,7 +160725,7 @@ j=Date.now()
 s=o==="external"?8:10
 break
 case 8:s=11
-return A.f(A.ah(n.a.c.gJ(),"ops_legal",B.F),$async$$0)
+return A.f(A.ai(n.a.c.gJ(),"ops_legal",B.F),$async$$0)
 case 11:s=9
 break
 case 10:b=B.d6
@@ -160732,13 +160737,13 @@ case 1:return A.m(q,r)}})
 return A.n($async$$0,r)},
 $S:100}
 A.bax.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_docs",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_docs",B.F)},
 $S:6}
 A.bay.prototype={
 $3(a,b,c){return this.a.aQk(b)},
 $S:197}
 A.baz.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_doc_requests",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_doc_requests",B.F)},
 $S:6}
 A.baA.prototype={
 $3(a,b,c){return this.a.aQE(b)},
@@ -160754,7 +160759,7 @@ var $async$DG=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:n=A
 m=J
 s=2
-return A.f(A.ah(q.a.c,"ops_docs",B.F),$async$DG)
+return A.f(A.ai(q.a.c,"ops_docs",B.F),$async$DG)
 case 2:o=n.ar(m.dE(b,new A.ba_(q)))
 if(o!=null&&q.c!=null)q.R(new A.ba0(q,o))
 p=q.e.gZ()
@@ -160917,7 +160922,7 @@ A.ba8.prototype={
 $0(){return this.a.DE(this.b)},
 $S:0}
 A.ba9.prototype={
-$0(){return A.ah(this.a.a.c,"ops_doc_files",A.k(["p_doc",this.b.h(0,"id")],t.N,t.z))},
+$0(){return A.ai(this.a.a.c,"ops_doc_files",A.k(["p_doc",this.b.h(0,"id")],t.N,t.z))},
 $S:6}
 A.baa.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j,i=null,h=A.a([],t.X)
@@ -160937,7 +160942,7 @@ $0(){var s=this.b,r=this.a
 return A.Hu(this.c,s.a.c,A.b(r.a.h(0,"path")),A.b(r.a.h(0,"file_name")),s.a.f)},
 $S:0}
 A.bab.prototype={
-$0(){return A.ah(this.a.a.c,"ops_doc_history",A.k(["p_doc",this.b.h(0,"id")],t.N,t.z))},
+$0(){return A.ai(this.a.a.c,"ops_doc_history",A.k(["p_doc",this.b.h(0,"id")],t.N,t.z))},
 $S:6}
 A.bac.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m=null,l=A.a([],t.p),k=J.ap(b)
@@ -160985,12 +160990,12 @@ return A.n($async$tx,r)},
 w_(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$w_=A.p(function(a,a0){if(a===1)return A.l(a0,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$w_)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$w_)
 case 3:d=a0
 c=A.a([],t.X)
 b=J
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_docs",B.F),$async$w_)
+return A.f(A.ai(p.a.c.gJ(),"ops_docs",B.F),$async$w_)
 case 4:o=b.P(a0)
 case 5:if(!o.l()){s=6
 break}n=o.gq()
@@ -161026,7 +161031,7 @@ Ae(a){return this.aUj(a)},
 aUj(a){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g
 var $async$Ae=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_people",B.F),$async$Ae)
+return A.f(A.ai(p.a.c.gJ(),"ops_people",B.F),$async$Ae)
 case 3:h=c
 g=p.c
 if(g==null){s=1
@@ -161123,7 +161128,7 @@ A.bc_.prototype={
 $0(){return this.a.DT(this.b)},
 $S:0}
 A.bc8.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_findings",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_findings",B.F)},
 $S:6}
 A.bc9.prototype={
 $3(a,b,c){var s,r,q,p,o,n=null,m=t.X,l=A.a([],m)
@@ -161562,7 +161567,7 @@ $1(a){var s=this.a.a
 return new A.xx(s.c,this.b,s.d.e.i(0,"docs:update"),null)},
 $S:862}
 A.bhB.prototype={
-$0(){return A.ah(this.a.a.c,"ops_legal",B.F)},
+$0(){return A.ai(this.a.a.c,"ops_legal",B.F)},
 $S:6}
 A.bhC.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l=null,k=t.X,j=A.a([],k)
@@ -161603,7 +161608,7 @@ return s===$?this.d=this.a.d:s},
 La(){var s=0,r=A.o(t.H),q=this,p
 var $async$La=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=2
-return A.f(A.ah(q.a.c,"ops_legal",B.F),$async$La)
+return A.f(A.ai(q.a.c,"ops_legal",B.F),$async$La)
 case 2:p=b
 if(q.c!=null)q.R(new A.bhl(q,p))
 return A.m(null,r)}})
@@ -161640,7 +161645,7 @@ for(;;)switch(s){case 0:h=t.u
 g=A.a([],h)
 f=J
 s=3
-return A.f(A.ah(p.a.c,"ops_legal",B.F),$async$zW)
+return A.f(A.ai(p.a.c,"ops_legal",B.F),$async$zW)
 case 3:o=f.P(b)
 case 4:if(!o.l()){s=5
 break}n=o.gq()
@@ -161691,7 +161696,7 @@ while(j.l())k.E(0,o.a(j.gq()).h(0,"id"))
 j=A.a([],t.u)
 i=J
 s=3
-return A.f(A.ah(p.a.c,"ops_docs",B.F),$async$zs)
+return A.f(A.ai(p.a.c,"ops_docs",B.F),$async$zs)
 case 3:o=i.P(b)
 case 4:if(!o.l()){s=5
 break}n=o.gq()
@@ -161782,10 +161787,10 @@ s=q}for(;;)switch(s){case 0:q=3
 s=6
 return A.f(A.za(),$async$LU)
 case 6:n=b
-m=A.ai(n.a.h(0,"login.company"))
+m=A.ah(n.a.h(0,"login.company"))
 if(m==null)m=""
 o.d.sjF(m)
-m=A.ai(n.a.h(0,"login.username"))
+m=A.ah(n.a.h(0,"login.username"))
 if(m==null)m=""
 o.e.sjF(m)
 q=1
@@ -162003,7 +162008,7 @@ var $async$JJ=A.p(function(d,e){if(d===1)return A.l(e,r)
 for(;;)switch(s){case 0:j=p.a.c.gJ()
 i=A.a([],t.X)
 for(o=a.length,n=t.N,m=t.z,l=0;l<a.length;a.length===o||(0,A.u)(a),++l){k=a[l]
-i.push(A.k(["doc_type",k.h(0,"doc_type"),"id",k.h(0,"doc_id")],n,m))}q=A.ah(j,"ops_decide_docs",A.k(["p_items",i,"p_decision",b?"approved":"rejected","p_reason",c],n,m))
+i.push(A.k(["doc_type",k.h(0,"doc_type"),"id",k.h(0,"doc_id")],n,m))}q=A.ai(j,"ops_decide_docs",A.k(["p_items",i,"p_decision",b?"approved":"rejected","p_reason",c],n,m))
 s=1
 break
 case 1:return A.m(q,r)}})
@@ -162123,7 +162128,7 @@ n=J
 m=J
 s=2
 return A.f(q.a.JJ(A.a([q.b],t.X),q.c,q.d),$async$$0)
-case 2:p=o.ai(n.z(m.rH(b),"result"))
+case 2:p=o.ah(n.z(m.rH(b),"result"))
 if(p==null)p=""
 if(B.i.cp(p,"error: "))throw A.e(A.r(B.i.d8(p,7)))
 return A.m(null,r)}})
@@ -162169,7 +162174,7 @@ $0(){var s=0,r=A.o(t.b5),q,p=this,o,n,m,l,k
 var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:n=p.a
 s=3
-return A.f(A.ah(n.a.c.gJ(),"ops_approval_inbox",B.F),$async$$0)
+return A.f(A.ai(n.a.c.gJ(),"ops_approval_inbox",B.F),$async$$0)
 case 3:m=b
 s=J.iL(m,new A.b23())?4:5
 break
@@ -162258,7 +162263,7 @@ var $async$yw=A.p(function(a1,a2){if(a1===1)return A.l(a2,r)
 for(;;)switch(s){case 0:a=A.a([],t.X)
 a0=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_people",B.F),$async$yw)
+return A.f(A.ai(p.a.c.gJ(),"ops_people",B.F),$async$yw)
 case 3:o=a0.P(a2)
 case 4:if(!o.l()){s=5
 break}n=o.gq()
@@ -162316,7 +162321,7 @@ q.k(0,"p_note",p.h(0,"note"))
 return r.$2("ops_add_delegation",q)},
 $S:4}
 A.b9E.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_delegations",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_delegations",B.F)},
 $S:6}
 A.b9F.prototype={
 $3(a,b,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e="assigned_by",d="from_user",c=J.ap(b)
@@ -162336,7 +162341,7 @@ else{j=A.a([],p)
 for(i=J.P(q.a(m.h(0,"modules")));i.l();){h=i.gq()
 g=B.WD.h(0,h)
 j.push(g==null?A.b(h):g)}j=B.h.aj(j,"\u060c ")}j=A.a([k,new A.a9("\u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f\u0627\u062a",j,f)],s)
-if(m.h(0,"note")!=null)j.push(new A.a9("\u0645\u0644\u0627\u062d\u0638\u0629",A.ai(m.h(0,"note")),f))
+if(m.h(0,"note")!=null)j.push(new A.a9("\u0645\u0644\u0627\u062d\u0638\u0629",A.ah(m.h(0,"note")),f))
 if(m.h(0,e)!=null&&!J.d(m.h(0,e),m.h(0,d))){k=m.h(0,"assigned_by_name")
 j.push(new A.a9("\u0628\u062a\u0643\u0644\u064a\u0641 \u0645\u0646",A.b(k==null?"":k),f))}if(J.d(m.h(0,"active"),!0))k=J.d(m.h(0,d),n.a.d.a)||J.d(m.h(0,e),n.a.d.a)
 else k=!1
@@ -162374,15 +162379,15 @@ A.Qc.prototype={
 vP(){var s=0,r=A.o(t.p_),q,p=this,o,n,m,l,k,j,i
 var $async$vP=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_asset_register",B.F),$async$vP)
+return A.f(A.ai(p.a.c.gJ(),"ops_asset_register",B.F),$async$vP)
 case 3:m=b
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_machine_types",B.F),$async$vP)
+return A.f(A.ai(p.a.c.gJ(),"ops_machine_types",B.F),$async$vP)
 case 4:l=b
 k=A.a([],t.X)
 j=J
 s=5
-return A.f(A.ah(p.a.c.gJ(),"ops_locations",B.F),$async$vP)
+return A.f(A.ai(p.a.c.gJ(),"ops_locations",B.F),$async$vP)
 case 5:o=j.P(b)
 case 6:if(!o.l()){s=7
 break}n=o.gq()
@@ -162392,7 +162397,7 @@ break
 case 7:j=A
 i=m
 s=8
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$vP)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$vP)
 case 8:q=new j.air([i,b,k,l])
 s=1
 break
@@ -162591,7 +162596,7 @@ if(k==null)k=n.h(0,"machine_type")
 k=A.w(new A.c6([k,n.h(0,"location_name")],q).aj(0," \xb7 "),f,f,f,f,f,f,f,f,f)
 j=B.WV.h(0,n.h(0,d))
 if(j==null){j=n.h(0,d)
-j=A.b(j==null?"\u2014":j)}j=A.a([A.b7(!1,f,f,f,!0,f,f,f,!0,f,f,f,f,f,f,f,f,!1,f,f,f,f,f,k,f,l,f,new A.bv(j,A.c67(A.ai(n.h(0,d))),f),f),new A.a9("\u0627\u0644\u0625\u062f\u0627\u0631\u0629",A.ai(n.h(0,"department_name")),f),new A.a9("\u0627\u0644\u0623\u0647\u0645\u064a\u0629",B.rA.h(0,n.h(0,"criticality")),f)],a2)
+j=A.b(j==null?"\u2014":j)}j=A.a([A.b7(!1,f,f,f,!0,f,f,f,!0,f,f,f,f,f,f,f,f,!1,f,f,f,f,f,k,f,l,f,new A.bv(j,A.c67(A.ah(n.h(0,d))),f),f),new A.a9("\u0627\u0644\u0625\u062f\u0627\u0631\u0629",A.ah(n.h(0,"department_name")),f),new A.a9("\u0627\u0644\u0623\u0647\u0645\u064a\u0629",B.rA.h(0,n.h(0,"criticality")),f)],a2)
 if(n.h(0,c)!=null||n.h(0,"model")!=null)j.push(new A.a9("\u0627\u0644\u0635\u0627\u0646\u0639 / \u0627\u0644\u0645\u0648\u062f\u064a\u0644",new A.c6([n.h(0,c),n.h(0,"model")],q).aj(0," \xb7 "),f))
 if(n.h(0,b)!=null)j.push(new A.a9("\u0627\u0644\u0631\u0642\u0645 \u0627\u0644\u0645\u0633\u0644\u0633\u0644",A.b(n.h(0,b)),f))
 if(n.h(0,a)!=null)j.push(new A.a9("\u0627\u0644\u0643\u0648\u062f \u0627\u0644\u0642\u062f\u064a\u0645",A.b(n.h(0,a)),f))
@@ -162627,10 +162632,10 @@ return s==null?null:s.d6()},
 qA(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$qA=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_branches",B.F),$async$qA)
+return A.f(A.ai(p.a.c.gJ(),"ops_branches",B.F),$async$qA)
 case 3:e=b
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_products",B.F),$async$qA)
+return A.f(A.ai(p.a.c.gJ(),"ops_products",B.F),$async$qA)
 case 4:d=b
 if(p.c==null){s=1
 break}o=A.a([],t.X)
@@ -162699,7 +162704,7 @@ case 1:return A.m(q,r)}})
 return A.n($async$yC,r)},
 F(a){var s=this,r=s.a.d.e.i(0,"branch_orders:create")?A.iv(B.eH,B.bWj,B.bPZ,s.gax3()):null
 return A.bC(null,new A.bk(new A.b3s(s),new A.b3t(s),s.d,t.o),null,r)},
-a5_(a4){var s,r,q,p,o,n,m,l=this,k=null,j="no",i="created_by_name",h="needed_by",g="shipped_qty",f="decision_note",e="decided_by_name",d="partially_shipped",c="branch_orders:approve",b=A.ai(a4.h(0,"status")),a=J.d(a4.h(0,"created_by"),l.a.d.a),a0=A.b(a4.h(0,j)),a1=t.O,a2=A.b(a4.h(0,j)),a3=a4.h(0,"branch_name")
+a5_(a4){var s,r,q,p,o,n,m,l=this,k=null,j="no",i="created_by_name",h="needed_by",g="shipped_qty",f="decision_note",e="decided_by_name",d="partially_shipped",c="branch_orders:approve",b=A.ah(a4.h(0,"status")),a=J.d(a4.h(0,"created_by"),l.a.d.a),a0=A.b(a4.h(0,j)),a1=t.O,a2=A.b(a4.h(0,j)),a3=a4.h(0,"branch_name")
 a2=A.w(a2+" \xb7 "+A.b(a3==null?"":a3),k,k,k,k,k,B.az,k,k,k)
 a3=t.s
 s=A.a([],a3)
@@ -162744,7 +162749,7 @@ break
 case 3:j=J
 i=J
 s=5
-return A.f(A.ah(o.a.c.gJ(),"ops_branch_orders",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_branch_orders",B.F),$async$$0)
 case 5:p=j.z(i.lO(b,new A.b3q(k)),"id")
 s=6
 return A.f(o.a.c.gJ().$2("ops_submit_branch_order",A.k(["p_id",p],m,l)),$async$$0)
@@ -162759,7 +162764,7 @@ $0(){var s=this
 return s.a.a.c.gJ().$2("ops_decide_branch_order",A.k(["p_id",s.b.h(0,"id"),"p_status",s.c,"p_note",s.d],t.N,t.z))},
 $S:4}
 A.b3s.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_branch_orders",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_branch_orders",B.F)},
 $S:6}
 A.b3t.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l=null,k="submitted",j=J.ap(b)
@@ -162812,10 +162817,10 @@ A.Qq.prototype={
 wj(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c
 var $async$wj=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_locations",B.F),$async$wj)
+return A.f(A.ai(p.a.c.gJ(),"ops_locations",B.F),$async$wj)
 case 3:e=b
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_assets",B.F),$async$wj)
+return A.f(A.ai(p.a.c.gJ(),"ops_assets",B.F),$async$wj)
 case 4:d=b
 c=p.c
 if(c==null){s=1
@@ -162865,7 +162870,7 @@ A.b3M.prototype={
 $1(a){return J.d(a.h(0,"id"),this.a.h(0,"asset"))},
 $S:1}
 A.b3Q.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_breakdowns",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_breakdowns",B.F)},
 $S:6}
 A.b3R.prototype={
 $3(a,b,c){var s=new A.b3S(this.a,a,c),r=J.dE(b,new A.b3N())
@@ -162880,13 +162885,13 @@ r=A.a([],s)
 for(c=c.gA(a),q=this.a,p=this.b,o=this.c,n=t.O;c.l();){m=c.gq()
 l=A.b(m.h(0,"wo_no"))
 k=J.d(m.h(0,"category"),"infrastructure")?B.Em:B.jK
-j=A.c9u(A.ai(m.h(0,"priority")))
+j=A.c9u(A.ah(m.h(0,"priority")))
 i=A.bO4(m)
 h=A.b(m.h(0,"wo_no"))
 g=A.b(m.h(0,"description"))
 f=B.Wp.h(0,m.h(0,d))
 if(f==null)f=A.b(m.h(0,d))
-r.push(new A.ds(k,j,i,h+" \xb7 "+g,A.au(A.a([new A.bv(f,A.bO3(A.ai(m.h(0,d))),e),new A.DJ(q.a.c,m.h(0,"id"),e)],s),B.f5,B.B,B.aM),new A.b3P(q,p,m,o),new A.t("bd-"+l,n)))}c=A.aL(r,B.cv,e,B.L,!1)}return c},
+r.push(new A.ds(k,j,i,h+" \xb7 "+g,A.au(A.a([new A.bv(f,A.bO3(A.ah(m.h(0,d))),e),new A.DJ(q.a.c,m.h(0,"id"),e)],s),B.f5,B.B,B.aM),new A.b3P(q,p,m,o),new A.t("bd-"+l,n)))}c=A.aL(r,B.cv,e,B.L,!1)}return c},
 $S:229}
 A.b3P.prototype={
 $0(){var s=0,r=A.o(t.H),q=this
@@ -162911,14 +162916,14 @@ Db(){var s=0,r=A.o(t.Pg),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f
 var $async$Db=A.p(function(a,b){if(a===1){o.push(b)
 s=p}for(;;)switch(s){case 0:f=J
 s=3
-return A.f(A.ah(n.a.c.gJ(),"ops_breakdowns",B.F),$async$Db)
+return A.f(A.ai(n.a.c.gJ(),"ops_breakdowns",B.F),$async$Db)
 case 3:i=f.lO(b,new A.b3y(n))
 h=B.d6
 p=5
 m=A.a([],t.X)
 f=J
 s=8
-return A.f(A.ah(n.a.c.gJ(),"ops_requisitions",B.F),$async$Db)
+return A.f(A.ai(n.a.c.gJ(),"ops_requisitions",B.F),$async$Db)
 case 8:k=f.P(b)
 case 9:if(!k.l()){s=10
 break}l=k.gq()
@@ -162965,7 +162970,7 @@ yz(a){return this.awI(a)},
 awI(a){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g
 var $async$yz=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_people",A.k(["p_department_code","MNT"],t.N,t.z)),$async$yz)
+return A.f(A.ai(p.a.c.gJ(),"ops_people",A.k(["p_department_code","MNT"],t.N,t.z)),$async$yz)
 case 3:h=c
 g=p.c
 if(g==null){s=1
@@ -162990,7 +162995,7 @@ var $async$zF=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:h=A.a([],t.X)
 g=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_items",B.F),$async$zF)
+return A.f(A.ai(p.a.c.gJ(),"ops_items",B.F),$async$zF)
 case 3:o=g.P(c)
 case 4:if(!o.l()){s=5
 break}n=o.gq()
@@ -163071,23 +163076,23 @@ j=A.w(A.bO4(s),a2,a2,a2,a2,a2,B.eW,a2,a2,a2)
 i=A.w(A.b(s.h(0,"wo_no")),a2,a2,a2,a2,a2,a2,a2,a2,a2)
 h=B.Wp.h(0,q)
 if(h==null)h=A.b(q)
-A.ai(q)
+A.ah(q)
 h=A.b7(!1,a2,a2,a2,!0,a2,a2,a2,!0,a2,a2,new A.cF(k,B.Y,36,a2),a2,a2,a2,a2,a2,!1,a2,a2,a2,a2,a2,i,a2,j,a2,new A.bv(h,A.bO3(q),a2),a2)
-j=A.ai(s.h(0,"location_name"))
+j=A.ah(s.h(0,"location_name"))
 i=B.Wn.h(0,s.h(0,"priority"))
-k=A.ai(s.h(0,"description"))
+k=A.ah(s.h(0,"description"))
 g=s.h(0,"requested_by_name")
 f=t.p
 g=A.a([h,new A.a9("\u0627\u0644\u0645\u0643\u0627\u0646",j,a2),new A.a9("\u0627\u0644\u0623\u0648\u0644\u0648\u064a\u0629",i,a2),new A.a9("\u0627\u0644\u0648\u0635\u0641",k,a2),new A.a9("\u0628\u0644\u0651\u063a",A.b(g==null?"":g)+" \xb7 "+A.e3(s.h(0,"breakdown_at")),a2)],f)
 if(J.d(s.h(0,a5),!0))g.push(B.aiI)
-g.push(new A.a9("\u0627\u0644\u0641\u0646\u064a",A.ai(s.h(0,"assigned_to_name")),a2))
-if(s.h(0,a6)!=null)g.push(new A.a9("\u0627\u0644\u062a\u0634\u062e\u064a\u0635",A.ai(s.h(0,a6)),a2))
-if(s.h(0,a7)!=null)g.push(new A.a9("\u0627\u0644\u0633\u0628\u0628 \u0627\u0644\u062c\u0630\u0631\u064a",A.ai(s.h(0,a7)),a2))
-if(s.h(0,a8)!=null)g.push(new A.a9("\u0627\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0648\u0642\u0627\u0626\u064a",A.ai(s.h(0,a8)),a2))
+g.push(new A.a9("\u0627\u0644\u0641\u0646\u064a",A.ah(s.h(0,"assigned_to_name")),a2))
+if(s.h(0,a6)!=null)g.push(new A.a9("\u0627\u0644\u062a\u0634\u062e\u064a\u0635",A.ah(s.h(0,a6)),a2))
+if(s.h(0,a7)!=null)g.push(new A.a9("\u0627\u0644\u0633\u0628\u0628 \u0627\u0644\u062c\u0630\u0631\u064a",A.ah(s.h(0,a7)),a2))
+if(s.h(0,a8)!=null)g.push(new A.a9("\u0627\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0648\u0642\u0627\u0626\u064a",A.ah(s.h(0,a8)),a2))
 if(l!=null)g.push(new A.a9("\u0645\u062f\u0629 \u0627\u0644\u062a\u0648\u0642\u0641",A.aD(l/60,1)+" \u0633\u0627\u0639\u0629",a2))
 if(s.h(0,a9)!=null)g.push(new A.a9("\u0627\u0633\u062a\u0644\u0627\u0645 \u0627\u0644\u0625\u0646\u062a\u0627\u062c","\u2713 "+A.b(s.h(0,a9)),a2))
 if(s.h(0,b0)!=null)g.push(new A.a9("\u0625\u0641\u0631\u0627\u062c \u0627\u0644\u062c\u0648\u062f\u0629","\u2713 "+A.b(s.h(0,b0)),a2))
-if(s.h(0,b1)!=null&&q==="rejected")g.push(new A.a9("\u0633\u0628\u0628 \u0627\u0644\u0631\u0641\u0636",A.ai(s.h(0,b1)),a2))
+if(s.h(0,b1)!=null&&q==="rejected")g.push(new A.a9("\u0633\u0628\u0628 \u0627\u0644\u0631\u0641\u0636",A.ah(s.h(0,b1)),a2))
 k=A.a([A.cu(new A.ad(B.vC,A.au(g,B.I,B.B,B.G),a2),a2,a2,a2,a2)],f)
 j=J.ap(r)
 if(j.gdm(r)){i=A.a([B.afb],f)
@@ -163187,7 +163192,7 @@ var $async$yF=A.p(function(a6,a7){if(a6===1){o.push(a7)
 s=p}for(;;)switch(s){case 0:a2=B.d6
 p=4
 s=7
-return A.f(A.ah(n.c.gJ(),"ops_assets",B.F),$async$yF)
+return A.f(A.ai(n.c.gJ(),"ops_assets",B.F),$async$yF)
 case 7:a2=a7
 p=2
 s=6
@@ -163270,7 +163275,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a
 n=A
 s=3
-return A.f(A.ah(o.c.gJ(),"ops_instruments",B.F),$async$$0)
+return A.f(A.ai(o.c.gJ(),"ops_instruments",B.F),$async$$0)
 case 3:q=n.c6D(b,o.d,new A.b0(Date.now(),0,!1))
 s=1
 break
@@ -163278,7 +163283,7 @@ case 1:return A.m(q,r)}})
 return A.n($async$$0,r)},
 $S:100}
 A.ara.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_instruments",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_instruments",B.F)},
 $S:6}
 A.arb.prototype={
 $3(a4,a5,a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=null,a="state",a0="parameter",a1="days_left",a2="calibration:update",a3=A.C(t.N,t.S)
@@ -163298,7 +163303,7 @@ if(o.i(0,a2))a3.push(new A.aG("\u062c\u0647\u0627\u0632 \u0642\u064a\u0627\u0633
 a3.push(B.aeG)
 for(r=r.gA(a5),n=t.O;r.l();){m=r.gq()
 l=A.b(m.h(0,"tag"))
-k=A.bDF(A.ai(m.h(0,a)))
+k=A.bDF(A.ah(m.h(0,a)))
 j=A.b(m.h(0,"tag"))
 i=A.b(m.h(0,"name"))
 h=B.yH.h(0,m.h(0,a0))
@@ -163310,7 +163315,7 @@ f=A.cv(m.h(0,"next_due"))
 e=m.h(0,a1)==null?"":" ("+A.b(m.h(0,a1))+" \u064a\u0648\u0645)"
 d=B.yF.h(0,m.h(0,a))
 if(d==null)d=A.b(m.h(0,a))
-c=A.bDF(A.ai(m.h(0,a)))
+c=A.bDF(A.ah(m.h(0,a)))
 m=o.i(0,"calibration:create")||o.i(0,a2)?new A.ar8(s,a4,m,a6):b
 a3.push(new A.ds(B.wB,k,j+" \xb7 "+i,h+" \xb7 "+g+" \xb7 \u0627\u0644\u062c\u0627\u064a\u0629 "+f+e,new A.bv(d,c,b),m,new A.t("inst-"+l,n)))}return A.aL(a3,B.b1,b,B.L,!1)},
 $S:12}
@@ -163453,7 +163458,7 @@ return A.n($async$JV,r)},
 F(a){var s,r,q,p,o,n,m,l,k=this,j=null,i="due_date",h=k.a.d.h(0,"capa_no")
 h=A.bX(j,!0,j,A.w("\u062a\u0646\u0641\u064a\u0630 \u0625\u062c\u0631\u0627\u0621 "+A.b(h==null?"":h),j,j,j,j,j,j,j,j,j))
 s=t.p
-r=A.a([new A.a9("\u0627\u0644\u0625\u062c\u0631\u0627\u0621",A.b(k.a.d.h(0,"action")),j),new A.a9("\u0627\u0644\u0642\u0633\u0645",A.ai(k.a.d.h(0,"department_name")),j)],s)
+r=A.a([new A.a9("\u0627\u0644\u0625\u062c\u0631\u0627\u0621",A.b(k.a.d.h(0,"action")),j),new A.a9("\u0627\u0644\u0642\u0633\u0645",A.ah(k.a.d.h(0,"department_name")),j)],s)
 if(k.a.d.h(0,i)!=null)r.push(new A.a9("\u0627\u0644\u0645\u064a\u0639\u0627\u062f",A.cv(k.a.d.h(0,i)),j))
 r=A.cu(A.au(r,B.I,B.B,B.G),j,j,j,j)
 q=k.gJG()
@@ -163533,7 +163538,7 @@ $0(){var s=this.c
 return this.a.c.gJ().$2("ops_decide_supplier_claim",A.k(["p_id",this.b.h(0,"id"),"p_status",s.h(0,"status"),"p_amount",s.h(0,"amount")],t.N,t.z))},
 $S:4}
 A.aXB.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_supplier_claims",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_supplier_claims",B.F)},
 $S:6}
 A.aXC.prototype={
 $3(a1,a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="no",e="status",d="complaint_no",c="settled_amount",b="decided_by_name",a="attachments",a0=J.ap(a2)
@@ -163549,7 +163554,7 @@ i=l.h(0,"note")
 i=A.w(A.b(i==null?"":i),g,g,g,g,g,g,g,g,g)
 h=B.WR.h(0,l.h(0,e))
 if(h==null)h=A.b(l.h(0,e))
-h=A.b7(!1,g,g,g,!0,g,g,g,!0,g,g,B.ah5,g,g,g,g,g,!1,g,g,g,g,g,i,g,j,g,new A.bv(h,A.ca1(A.ai(l.h(0,e))),g),g)
+h=A.b7(!1,g,g,g,!0,g,g,g,!0,g,g,B.ah5,g,g,g,g,g,!1,g,g,g,g,g,i,g,j,g,new A.bv(h,A.ca1(A.ah(l.h(0,e))),g),g)
 j=[l.h(0,"receipt_no")]
 if(l.h(0,"hold_no")!=null)j.push("\u0645\u062a\u062d\u0641\u0638 \u0639\u0644\u064a\u0647 "+A.b(l.h(0,"hold_no")))
 j=A.a([h,new A.a9("\u0627\u0644\u0627\u0633\u062a\u0644\u0627\u0645",new A.c6(j,o).aj(0," \xb7 "),g)],s)
@@ -163589,7 +163594,7 @@ return s==null?null:s.d6()},
 yN(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h
 var $async$yN=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_branches",B.F),$async$yN)
+return A.f(A.ai(p.a.c.gJ(),"ops_branches",B.F),$async$yN)
 case 3:i=b
 h=p.c
 if(h==null){s=1
@@ -163623,7 +163628,7 @@ if(l==null||n.c==null){s=1
 break}m=null
 p=5
 s=8
-return A.f(A.ah(n.a.c.gJ(),"ops_departments",B.F),$async$vR)
+return A.f(A.ai(n.a.c.gJ(),"ops_departments",B.F),$async$vR)
 case 8:m=c
 p=2
 s=7
@@ -163662,7 +163667,7 @@ yH(a){return this.ay7(a)},
 ay7(a){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g
 var $async$yH=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_people",B.F),$async$yH)
+return A.f(A.ai(p.a.c.gJ(),"ops_people",B.F),$async$yH)
 case 3:h=c
 g=p.c
 if(g==null){s=1
@@ -163840,7 +163845,7 @@ $0(){var s=this.c
 return this.a.a.c.gJ().$2("ops_complaint_feedback",A.k(["p_id",this.b.h(0,"id"),"p_score",s.h(0,"score"),"p_satisfied",J.d(s.h(0,"satisfied"),!0),"p_note",s.h(0,"note")],t.N,t.z))},
 $S:4}
 A.b7F.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_complaints",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_complaints",B.F)},
 $S:6}
 A.b7G.prototype={
 $3(b7,b8,b9){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=null,a0="no",a1=" \xb7 ",a2="severity",a3="status",a4="closed",a5="branch_name",a6="batch_no",a7="\u0627\u0644\u062a\u0634\u063a\u064a\u0644\u0629",a8="lab_status",a9="confirmed_at",b0="assigned_department_name",b1="root_cause",b2="compensation",b3="customer_satisfied",b4="pending",b5="branch_manager",b6=J.ap(b8)
@@ -163853,7 +163858,7 @@ g=A.w(A.b(i.h(0,a0))+" \xb7 "+A.b(i.h(0,"customer_name")),a,a,a,a,a,B.az,a,a,a)
 f=A.w(A.b(i.h(0,"description")),a,a,a,a,a,a,a,a,a)
 if(i.h(0,a2)==null||J.d(i.h(0,a3),a4)){e=B.blh.h(0,i.h(0,a3))
 if(e==null)e=A.b(i.h(0,a3))}else{e=B.Wo.h(0,i.h(0,a2))
-if(e==null)e=A.b(i.h(0,a2))}e=A.a([A.b7(!1,a,a,a,!0,a,a,a,!0,a,a,B.agM,a,a,a,a,a,!1,a,a,a,a,a,f,a,g,a,new A.bv(e,A.c6L(A.ai(i.h(0,a2)),A.ai(i.h(0,a3))),a),a),new A.a9("\u0627\u0644\u0645\u0635\u062f\u0631",new A.c6([B.Ws.h(0,i.h(0,"channel")),i.h(0,a5)],m).aj(0,a1),a)],s)
+if(e==null)e=A.b(i.h(0,a2))}e=A.a([A.b7(!1,a,a,a,!0,a,a,a,!0,a,a,B.agM,a,a,a,a,a,!1,a,a,a,a,a,f,a,g,a,new A.bv(e,A.c6L(A.ah(i.h(0,a2)),A.ah(i.h(0,a3))),a),a),new A.a9("\u0627\u0644\u0645\u0635\u062f\u0631",new A.c6([B.Ws.h(0,i.h(0,"channel")),i.h(0,a5)],m).aj(0,a1),a)],s)
 if(i.h(0,a6)!=null){g=[i.h(0,a6),i.h(0,"product_name")]
 if(i.h(0,"batch_id")==null)g.push("\u0645\u0634 \u0645\u062a\u0633\u062c\u0644\u0629 \u0639\u0646\u062f\u0646\u0627")
 e.push(new A.a9(a7,new A.c6(g,m).aj(0,a1),a))}if(i.h(0,"hold_no")!=null)e.push(new A.a9("\u0627\u0644\u062a\u062d\u0641\u0638","\ud83d\udd34 "+A.b(i.h(0,"hold_no")),a))
@@ -163868,8 +163873,8 @@ c=A.b(c==null?"":c)
 if(f.h(d,a9)==null){b=A.aD(f.h(d,"qty"),1)
 f=f.h(d,a6)
 f="\u23f3 "+b+" \u0645\u0646 "+A.b(f==null?a7:f)+" \xb7 \u0645\u0633\u062a\u0646\u064a \u062a\u0623\u0643\u064a\u062f \u0627\u0644\u0641\u0631\u0639"}else f="\u2705 \u0627\u062a\u0633\u062d\u0628\u062a "+A.aD(f.h(d,"qty"),1)+" \xb7 "+new A.c6([f.h(d,"confirmed_by_name"),A.e3(f.h(d,a9))],m).aj(0,a1)
-e.push(new A.a9("\u0633\u062d\u0628 "+c,f,a))}if(i.h(0,b0)!=null)e.push(new A.a9("\u0644\u0644\u062a\u062d\u0642\u064a\u0642",A.ai(i.h(0,b0)),a))
-if(i.h(0,b1)!=null)e.push(new A.a9("\u0627\u0644\u0633\u0628\u0628 \u0627\u0644\u062c\u0630\u0631\u064a",A.ai(i.h(0,b1)),a))
+e.push(new A.a9("\u0633\u062d\u0628 "+c,f,a))}if(i.h(0,b0)!=null)e.push(new A.a9("\u0644\u0644\u062a\u062d\u0642\u064a\u0642",A.ah(i.h(0,b0)),a))
+if(i.h(0,b1)!=null)e.push(new A.a9("\u0627\u0644\u0633\u0628\u0628 \u0627\u0644\u062c\u0630\u0631\u064a",A.ah(i.h(0,b1)),a))
 if(i.h(0,"capa_no")!=null){g=A.b(i.h(0,"capa_no"))
 f=B.yC.h(0,i.h(0,"capa_status"))
 if(f==null)f=""
@@ -163986,13 +163991,13 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a
 n=A
 s=3
-return A.f(A.ah(o.a.c.gJ(),"ops_stock_counts",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_stock_counts",B.F),$async$$0)
 case 3:m=b
 s=4
 return A.f(A.rB(o.a.c),$async$$0)
 case 4:l=b
 s=5
-return A.f(A.ah(o.a.c.gJ(),"ops_count_due",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_count_due",B.F),$async$$0)
 case 5:q=new n.bg(m,l,b)
 s=1
 break
@@ -164020,7 +164025,7 @@ o=J.ap(s)
 if(o.ga_(s))l.push(B.acb)
 for(o=o.gA(s),m=t.O;o.l();){k=o.gq()
 j=A.b(k.h(0,"no"))
-g=A.j9(A.ai(k.h(0,a2)))
+g=A.j9(A.ah(k.h(0,a2)))
 f=A.b(k.h(0,"no"))
 e=k.h(0,"warehouse_name")
 e=A.b(e==null?"":e)
@@ -164030,7 +164035,7 @@ c=A.cv(k.h(0,"period"))
 b=A.aD(k.h(0,"variance_value"),2)
 a=B.eo.h(0,k.h(0,a2))
 if(a==null)a=A.b(k.h(0,a2))
-l.push(new A.ds(B.ck,g,f+" \xb7 "+e,d+" \xb7 "+c+" \xb7 \u0641\u0631\u0648\u0642 "+b+" \u062c",new A.bv(a,A.j9(A.ai(k.h(0,a2))),a0),new A.b7Y(q,a4,k,a6),new A.t("count-"+j,m)))}return A.bC(a0,A.aL(l,B.cv,a0,B.L,!1),a0,n)},
+l.push(new A.ds(B.ck,g,f+" \xb7 "+e,d+" \xb7 "+c+" \xb7 \u0641\u0631\u0648\u0642 "+b+" \u062c",new A.bv(a,A.j9(A.ah(k.h(0,a2))),a0),new A.b7Y(q,a4,k,a6),new A.t("count-"+j,m)))}return A.bC(a0,A.aL(l,B.cv,a0,B.L,!1),a0,n)},
 $S:876}
 A.b7W.prototype={
 $1(a){return J.d(a.h(0,"can_operate"),!0)&&!J.d(a.h(0,"kind"),"finished")},
@@ -164062,7 +164067,7 @@ n=o.c
 m=A
 l=J
 s=3
-return A.f(A.ah(n.gJ(),"ops_stock_counts",B.F),$async$$0)
+return A.f(A.ai(n.gJ(),"ops_stock_counts",B.F),$async$$0)
 case 3:l=l.lO(b,new A.b7Q(o))
 s=4
 return A.f(A.rB(n),$async$$0)
@@ -164076,7 +164081,7 @@ A.b7Q.prototype={
 $1(a){return J.d(a.h(0,"id"),this.a.e)},
 $S:1}
 A.b7S.prototype={
-$3(b1,b2,b3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=null,a4="costing:update",a5="item_code",a6="counted_qty",a7="variance",a8=b2.a,a9=A.ai(a8.h(0,"status")),b0=A.al(["draft","rejected"],t.N).i(0,a9)
+$3(b1,b2,b3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=null,a4="costing:update",a5="item_code",a6="counted_qty",a7="variance",a8=b2.a,a9=A.ah(a8.h(0,"status")),b0=A.al(["draft","rejected"],t.N).i(0,a9)
 if(b0){s=this.a.d
 r=s.e.i(0,a4)||A.bDH(b2.b,a8.h(0,"warehouse_id"),s)}else r=!1
 s=A.a([],t.X)
@@ -164185,7 +164190,7 @@ if(g==null||p.c==null){s=1
 break}b=A.a([],b)
 a0=J
 s=7
-return A.f(A.ah(p.a.c.gJ(),"ops_items",B.F),$async$qC)
+return A.f(A.ai(p.a.c.gJ(),"ops_items",B.F),$async$qC)
 case 7:a=a0.P(a2)
 case 8:if(!a.l()){s=9
 break}o=a.gq()
@@ -164241,7 +164246,7 @@ $1(a){var s=this.b.a
 return new A.AJ(s.c,s.d,this.a.a,null)},
 $S:234}
 A.bu7.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_write_offs",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_write_offs",B.F)},
 $S:6}
 A.bu8.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=null,g="status",f=J.ap(b)
@@ -164249,7 +164254,7 @@ if(f.ga_(b))f=A.aL(B.b4l,h,h,B.L,!1)
 else{s=A.a([],t.p)
 for(f=f.gA(b),r=this.a,q=t.O;f.l();){p=f.gq()
 o=A.b(p.h(0,"no"))
-n=A.j9(A.ai(p.h(0,g)))
+n=A.j9(A.ah(p.h(0,g)))
 m=A.b(p.h(0,"no"))
 l=p.h(0,"warehouse_name")
 if(l==null){l=p.h(0,"batch_no")
@@ -164259,7 +164264,7 @@ k=A.b(k==null?p.h(0,"reason"):k)
 j=A.aD(p.h(0,"value"),2)
 i=B.eo.h(0,p.h(0,g))
 if(i==null)i=A.b(p.h(0,g))
-s.push(new A.ds(B.lI,n,m+" \xb7 "+l,k+" \xb7 "+j+" \u062c",new A.bv(i,A.j9(A.ai(p.h(0,g))),h),new A.bu6(r,a,p,c),new A.t("wof-"+o,q)))}f=A.aL(s,B.cv,h,B.L,!1)}return f},
+s.push(new A.ds(B.lI,n,m+" \xb7 "+l,k+" \xb7 "+j+" \u062c",new A.bv(i,A.j9(A.ah(p.h(0,g))),h),new A.bu6(r,a,p,c),new A.t("wof-"+o,q)))}f=A.aL(s,B.cv,h,B.L,!1)}return f},
 $S:12}
 A.bu6.prototype={
 $0(){var s=0,r=A.o(t.H),q=this
@@ -164283,7 +164288,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a
 n=J
 s=3
-return A.f(A.ah(o.c.gJ(),"ops_write_offs",B.F),$async$$0)
+return A.f(A.ai(o.c.gJ(),"ops_write_offs",B.F),$async$$0)
 case 3:q=n.lO(b,new A.bu0(o))
 s=1
 break
@@ -164294,7 +164299,7 @@ A.bu0.prototype={
 $1(a){return J.d(a.h(0,"id"),this.a.e)},
 $S:1}
 A.bu2.prototype={
-$3(a,b,c){var s,r,q,p,o,n,m=null,l="batch_qty",k="write_off",j=A.ai(b.h(0,"status")),i=A.w(A.b(b.h(0,"no")),m,m,m,m,m,B.eW,m,m,m),h=b.h(0,"warehouse_name")
+$3(a,b,c){var s,r,q,p,o,n,m=null,l="batch_qty",k="write_off",j=A.ah(b.h(0,"status")),i=A.w(A.b(b.h(0,"no")),m,m,m,m,m,B.eW,m,m,m),h=b.h(0,"warehouse_name")
 if(h==null){h=b.h(0,"batch_no")
 h="\u062a\u0634\u063a\u064a\u0644\u0629 "+A.b(h==null?"":h)}h=A.w(A.b(h),m,m,m,m,m,m,m,m,m)
 s=B.eo.h(0,j)
@@ -164308,8 +164313,8 @@ r=t.p
 h=A.a([s,new A.a9("\u0627\u0644\u0633\u0628\u0628",i,m),new A.a9("\u0637\u0631\u064a\u0642\u0629 \u0627\u0644\u062a\u062e\u0644\u0635",h,m)],r)
 if(b.h(0,"ncr_no")!=null)h.push(new A.a9("\u062a\u0642\u0631\u064a\u0631 \u0639\u062f\u0645 \u0627\u0644\u0645\u0637\u0627\u0628\u0642\u0629",A.b(b.h(0,"ncr_no")),m))
 if(b.h(0,l)!=null)h.push(new A.a9("\u0643\u0645\u064a\u0629 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u0629",A.aD(b.h(0,l),1),m))
-h.push(new A.a9("\u0627\u0644\u0648\u0635\u0641",A.ai(b.h(0,"description")),m))
-h.push(new A.a9("\u0627\u0644\u0634\u0647\u0648\u062f",A.ai(b.h(0,"witnesses")),m))
+h.push(new A.a9("\u0627\u0644\u0648\u0635\u0641",A.ah(b.h(0,"description")),m))
+h.push(new A.a9("\u0627\u0644\u0634\u0647\u0648\u062f",A.ah(b.h(0,"witnesses")),m))
 i=b.h(0,"created_by_name")
 h.push(new A.a9("\u0639\u0645\u0644\u0647",A.b(i==null?"":i)+" \xb7 "+A.e3(b.h(0,"created_at")),m))
 for(i=J.P(t.j.a(b.h(0,"lines")));i.l();){q=i.gq()
@@ -164374,10 +164379,10 @@ s=3
 return A.f(A.rB(o.a.c),$async$$0)
 case 3:m=b
 s=4
-return A.f(A.ah(o.a.c.gJ(),"ops_stock_ledger",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_stock_ledger",B.F),$async$$0)
 case 4:l=b
 s=5
-return A.f(A.ah(o.a.c.gJ(),"ops_stock_confirmations",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_stock_confirmations",B.F),$async$$0)
 case 5:q=new n.bg(m,l,b)
 s=1
 break
@@ -164515,10 +164520,10 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a
 n=A
 s=3
-return A.f(A.ah(o.a.c.gJ(),"ops_kpi_definitions",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_kpi_definitions",B.F),$async$$0)
 case 3:m=b
 s=4
-return A.f(A.ah(o.a.c.gJ(),"ops_departments",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_departments",B.F),$async$$0)
 case 4:q=new n.v(m,b)
 s=1
 break
@@ -164579,7 +164584,7 @@ aC0(a){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$o8=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:e={}
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_checklist_roles",B.F),$async$o8)
+return A.f(A.ai(p.a.c.gJ(),"ops_checklist_roles",B.F),$async$o8)
 case 3:d=c
 if(p.c==null){s=1
 break}o=A.a([],t.u)
@@ -164666,7 +164671,7 @@ $1(a){var s=this.a.d.gZ()
 return s==null?null:s.d6()},
 $S:883}
 A.b5U.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_checklist_templates",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_checklist_templates",B.F)},
 $S:6}
 A.b5V.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j=null,i=t.X,h=A.a([],i)
@@ -164766,7 +164771,7 @@ return m.$2("ops_save_checklist_item",A.k(["p_id",l,"p_template",n,"p_item_no",r
 $S:4}
 A.b5K.prototype={
 $0(){var s=this.a
-return A.ah(s.a.c.gJ(),"ops_checklist_template_items",A.k(["p_template",s.a.d.h(0,"id")],t.N,t.z))},
+return A.ai(s.a.c.gJ(),"ops_checklist_template_items",A.k(["p_template",s.a.d.h(0,"id")],t.N,t.z))},
 $S:6}
 A.b5L.prototype={
 $3(a,b,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=null,d="grade",c=A.C(t.P,t.S)
@@ -164833,10 +164838,10 @@ aLD(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a
 var $async$o7=A.p(function(b1,b2){if(b1===1)return A.l(b2,r)
 for(;;)switch(s){case 0:a7={}
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_branches",B.F),$async$o7)
+return A.f(A.ai(p.a.c.gJ(),"ops_branches",B.F),$async$o7)
 case 3:a8=b2
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_finished_stock",B.F),$async$o7)
+return A.f(A.ai(p.a.c.gJ(),"ops_finished_stock",B.F),$async$o7)
 case 4:a9=b2
 if(p.c==null){s=1
 break}o=t.X
@@ -165001,7 +165006,7 @@ case 1:return A.m(q,r)}})
 return A.n($async$F8,r)},
 F(a){var s=this,r=s.a.d.e.i(0,"shipments:create")?A.iv(B.ahV,B.bWC,B.bOe,s.gaBC()):null
 return A.bC(null,new A.bk(new A.brc(s),new A.brd(s),s.d,t.o),null,r)},
-aBB(b1){var s,r,q,p,o,n,m,l,k,j=this,i=null,h="no",g="branch_order_no",f="receive_note",e="batch_no",d="qty_accepted",c="qty_damaged",b="returned",a="dispatched_at",a0="received_at",a1="temperature_c",a2=J.d(b1.h(0,"branch_manager"),j.a.d.a)||j.a.d.e.i(0,"shipment_receipt:update"),a3=A.ai(b1.h(0,"status")),a4=A.b(b1.h(0,h)),a5=t.O,a6=a3==="rejected",a7=a6?B.Y.f3(0.08):i,a8=a6?B.Y:B.f4,a9=A.b(b1.h(0,h)),b0=b1.h(0,"branch_name")
+aBB(b1){var s,r,q,p,o,n,m,l,k,j=this,i=null,h="no",g="branch_order_no",f="receive_note",e="batch_no",d="qty_accepted",c="qty_damaged",b="returned",a="dispatched_at",a0="received_at",a1="temperature_c",a2=J.d(b1.h(0,"branch_manager"),j.a.d.a)||j.a.d.e.i(0,"shipment_receipt:update"),a3=A.ah(b1.h(0,"status")),a4=A.b(b1.h(0,h)),a5=t.O,a6=a3==="rejected",a7=a6?B.Y.f3(0.08):i,a8=a6?B.Y:B.f4,a9=A.b(b1.h(0,h)),b0=b1.h(0,"branch_name")
 a9=A.w(a9+" \xb7 "+A.b(b0==null?"":b0),i,i,i,i,i,B.az,i,i,i)
 b0=[]
 if(b1.h(0,g)!=null)b0.push("\u0639\u0644\u0649 \u0627\u0644\u0637\u0644\u0628\u064a\u0629 "+A.b(b1.h(0,g)))
@@ -165028,7 +165033,7 @@ if((l==null?0:l)>0)m.push("\u0645\u0631\u062a\u062c\u0639 "+A.aD(o.h(0,b),1))
 s.push(new A.a9(n,B.h.aj(m," \xb7 "),i))}if(b1.h(0,a)!=null)s.push(new A.a9("\u062e\u0631\u062c\u062a",A.e3(b1.h(0,a)),i))
 if(b1.h(0,a0)!=null){b0=A.a([A.e3(b1.h(0,a0))],p)
 if(b1.h(0,a1)!=null)b0.push(A.aD(b1.h(0,a1),1)+"\xb0C")
-s.push(new A.a9("\u0627\u062a\u0633\u062a\u0644\u0645\u062a",B.h.aj(b0," \xb7 "),i))}if(a6&&b1.h(0,f)!=null)s.push(new A.a9("\u0645\u0644\u0627\u062d\u0638\u0627\u062a",A.ai(b1.h(0,f)),i))
+s.push(new A.a9("\u0627\u062a\u0633\u062a\u0644\u0645\u062a",B.h.aj(b0," \xb7 "),i))}if(a6&&b1.h(0,f)!=null)s.push(new A.a9("\u0645\u0644\u0627\u062d\u0638\u0627\u062a",A.ah(b1.h(0,f)),i))
 if(a3==="draft"&&j.a.d.e.i(0,"shipments:create"))s.push(new A.aG("\u0637\u0644\u0651\u0639 \u0627\u0644\u0634\u062d\u0646\u0629",B.hk,new A.br2(j,b1),!1,i,new A.t("dispatch-"+A.b(b1.h(0,h)),a5)))
 if(a3==="dispatched"&&a2)B.h.u(s,A.a([new A.aG("\u0627\u0633\u062a\u0644\u0627\u0645 \u0643\u0627\u0645\u0644",B.f9,new A.br3(j,b1),!1,B.S,new A.t("receiveAll-"+A.b(b1.h(0,h)),a5)),new A.aG("\u0627\u0633\u062a\u0644\u0627\u0645 \u062c\u0632\u0626\u064a",B.lL,new A.br4(j,b1),!0,i,new A.t("receivePart-"+A.b(b1.h(0,h)),a5)),new A.aG("\u0631\u0641\u0636 \u0627\u0644\u0634\u062d\u0646\u0629 \u0643\u0644\u0647\u0627",B.jH,new A.br5(j,b1),!0,B.Y,new A.t("rejectShipment-"+A.b(b1.h(0,h)),a5))],r))
 if(A.al(["received","partial"],t.N).i(0,a3)&&a2)for(a6=J.f3(a8.a(b1.h(0,"lines")),a9),a8=a6.$ti,a6=new A.aj(a6,a6.gt(0),a8.j("aj<be.E>")),a8=a8.j("be.E");a6.l();){a9=a6.d
@@ -165064,7 +165069,7 @@ $0(){var s=0,r=A.o(t.b5),q,p=this,o,n,m,l,k,j,i,h
 var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:j=p.a
 s=3
-return A.f(A.ah(j.a.c.gJ(),"ops_shipments",B.F),$async$$0)
+return A.f(A.ai(j.a.c.gJ(),"ops_shipments",B.F),$async$$0)
 case 3:i=b
 h=J.bR(i)
 if(!h.aA(i,new A.brb())){q=i
@@ -165286,7 +165291,7 @@ $S:0}
 A.aeW.prototype={
 F(a){return new A.bk(new A.bca(this),new A.bcb(),null,t.o)}}
 A.bca.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_finished_stock",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_finished_stock",B.F)},
 $S:6}
 A.bcb.prototype={
 $3(a0,a1,a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=null,d="batch_no",c="status",b="came_back",a=J.ap(a1)
@@ -165311,7 +165316,7 @@ $S:12}
 A.acN.prototype={
 F(a){return new A.bk(new A.b3v(this),new A.b3w(),null,t.o)}}
 A.b3v.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_branch_stock",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_branch_stock",B.F)},
 $S:6}
 A.b3w.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="batch_no",e=J.ap(b)
@@ -165339,13 +165344,13 @@ A.aeF.prototype={
 w6(){var s=0,r=A.o(t.ii),q,p=this,o,n,m,l,k,j,i
 var $async$w6=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$w6)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$w6)
 case 3:l=b
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_employee_register",B.F),$async$w6)
+return A.f(A.ai(p.a.c.gJ(),"ops_employee_register",B.F),$async$w6)
 case 4:k=b
 s=5
-return A.f(A.ah(p.a.c.gJ(),"ops_job_titles",B.F),$async$w6)
+return A.f(A.ai(p.a.c.gJ(),"ops_job_titles",B.F),$async$w6)
 case 5:j=b
 i=A.a([],t.X)
 for(o=J.bR(k),n=o.gA(k);n.l();){m=n.gq()
@@ -165461,7 +165466,7 @@ return A.n($async$Fg,r)},
 ys(a){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i
 var $async$ys=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$ys)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$ys)
 case 3:j=c
 i=p.c
 if(i==null){s=1
@@ -165524,17 +165529,17 @@ $S:4}
 A.bb5.prototype={
 $1(a){var s,r,q,p,o,n,m,l,k="active",j=null,i="emp_code",h="hire_date",g=this.b,f=J.d(g.h(0,k),!0)?B.fA:B.a5,e=A.w(A.b(g.h(0,"full_name")),j,j,j,j,j,B.az,j,j,j)
 e=A.b7(!1,j,j,j,!0,j,j,j,!0,j,j,new A.cF(B.eh,f,36,j),j,j,j,j,j,!1,j,j,j,j,j,A.w(A.b(g.h(0,i)),j,j,j,j,j,j,j,j,j),j,e,j,j,j)
-f=A.ai(g.h(0,"job_title"))
-s=A.ai(g.h(0,"department"))
-r=A.ai(g.h(0,"manager_name"))
+f=A.ah(g.h(0,"job_title"))
+s=A.ah(g.h(0,"department"))
+r=A.ah(g.h(0,"manager_name"))
 q=g.h(0,h)==null?j:A.cv(g.h(0,h))
 p=B.rN.h(0,g.h(0,"shift"))
-o=A.ai(g.h(0,"phone"))
-n=A.ai(g.h(0,"national_id"))
+o=A.ah(g.h(0,"phone"))
+n=A.ah(g.h(0,"national_id"))
 m=J.d(g.h(0,"has_account"),!0)?"\u0644\u064a\u0647 \u062d\u0633\u0627\u0628":"\u0645\u0627\u0644\u0648\u0634 \u062d\u0633\u0627\u0628 (\u0628\u064a\u0641\u062a\u062d\u0647 \u0623\u062f\u0645\u0646 \u0627\u0644\u0634\u0631\u0643\u0629)"
 l=t.p
 m=A.a([e,new A.a9("\u0627\u0644\u0648\u0638\u064a\u0641\u0629",f,j),new A.a9("\u0627\u0644\u0625\u062f\u0627\u0631\u0629 / \u0627\u0644\u0642\u0633\u0645",s,j),new A.a9("\u0627\u0644\u0645\u062f\u064a\u0631 \u0627\u0644\u0645\u0628\u0627\u0634\u0631",r,j),new A.a9("\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0639\u064a\u064a\u0646",q,j),new A.a9("\u0627\u0644\u0648\u0631\u062f\u064a\u0629",p,j),new A.a9("\u0627\u0644\u0645\u0648\u0628\u0627\u064a\u0644",o,j),new A.a9("\u0627\u0644\u0631\u0642\u0645 \u0627\u0644\u0642\u0648\u0645\u064a",n,j),new A.a9("\u062d\u0633\u0627\u0628 \u062f\u062e\u0648\u0644",m,j)],l)
-if(!J.d(g.h(0,k),!0))B.h.u(m,A.a([new A.a9("\u0633\u0627\u0628 \u0627\u0644\u0634\u063a\u0644 \u0641\u064a",A.cv(g.h(0,"left_on")),j),new A.a9("\u0627\u0644\u0633\u0628\u0628",A.ai(g.h(0,"termination_reason")),j)],l))
+if(!J.d(g.h(0,k),!0))B.h.u(m,A.a([new A.a9("\u0633\u0627\u0628 \u0627\u0644\u0634\u063a\u0644 \u0641\u064a",A.cv(g.h(0,"left_on")),j),new A.a9("\u0627\u0644\u0633\u0628\u0628",A.ah(g.h(0,"termination_reason")),j)],l))
 f=this.a
 if(f.a.d.e.i(0,"employees:update")&&J.d(g.h(0,k),!0)){e=t.O
 s=this.c
@@ -165558,7 +165563,7 @@ A.bb1.prototype={
 $1(a){return a!=null&&B.i.i(A.b(a).toLowerCase(),this.a)},
 $S:26}
 A.bbf.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_employee_register",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_employee_register",B.F)},
 $S:6}
 A.bbg.prototype={
 $3(a1,a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g="active",f=null,e="emp_code",d="job_title",c="department",b=J.bR(a2),a=b.eD(a2,new A.bb9()).gt(0),a0=A.a([],t.X)
@@ -165617,7 +165622,7 @@ var $async$zb=A.p(function(a1,a2){if(a1===1)return A.l(a2,r)
 for(;;)switch(s){case 0:a=A.a([],t.X)
 a0=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_batches",B.F),$async$zb)
+return A.f(A.ai(p.a.c.gJ(),"ops_batches",B.F),$async$zb)
 case 3:o=a0.P(a2),n=t.N
 case 4:if(!o.l()){s=5
 break}m=o.gq()
@@ -165644,7 +165649,7 @@ return A.f(A.bt(o,"\u0637\u0644\u0628 \u0627\u0633\u062a\u062b\u0646\u0627\u0621
 case 6:d=a2
 if(d==null||p.c==null){s=1
 break}c=A.ar(new A.x(a,new A.bbn(d),t.w_))
-b=A.ai(d.h(0,"subject"))
+b=A.ah(d.h(0,"subject"))
 if(b==null)if(c==null)b=null
 else{a=A.b(c.h(0,"batch_no"))
 o=c.h(0,"product_name")
@@ -165692,7 +165697,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a
 n=A
 s=3
-return A.f(A.ah(o.a.c.gJ(),"ops_exceptions",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_exceptions",B.F),$async$$0)
 case 3:m=b
 s=4
 return A.f(A.vu(o.a.c,"exception_requests"),$async$$0)
@@ -165719,8 +165724,8 @@ i=J.d(i==null?h:i.h(0,"food_safety"),!0)?" \xb7 \u0633\u0644\u0627\u0645\u0629 \
 i=A.w(k+" \xb7 "+j+i,h,h,h,h,h,h,h,h,h)
 j=B.eo.h(0,n.h(0,g))
 k=j==null?A.b(n.h(0,g)):j
-k=A.a([A.b7(!1,h,h,h,!0,h,h,h,!0,h,h,B.agS,h,h,h,h,h,!1,h,h,h,h,h,i,h,l,h,new A.bv(k,A.j9(A.ai(n.h(0,g))),h),h),new A.a9("\u0627\u0644\u0625\u062f\u0627\u0631\u0629",A.ai(n.h(0,"department_name")),h),new A.a9("\u0627\u0644\u0642\u0631\u0627\u0631 \u0627\u0644\u0623\u0635\u0644\u064a",A.ai(n.h(0,"original_decision")),h),new A.a9("\u0627\u0644\u0645\u0628\u0631\u0631\u0627\u062a",A.ai(n.h(0,"justification")),h),new A.JU(q.h(0,n.h(0,"id")),A.ai(n.h(0,g)),new A.t("exceptionQa-"+A.b(n.h(0,"no")),p))],s)
-if(n.h(0,f)!=null)k.push(new A.a9("\u0631\u062f \u0627\u0644\u0645\u0627\u0644\u0643",A.ai(n.h(0,f)),h))
+k=A.a([A.b7(!1,h,h,h,!0,h,h,h,!0,h,h,B.agS,h,h,h,h,h,!1,h,h,h,h,h,i,h,l,h,new A.bv(k,A.j9(A.ah(n.h(0,g))),h),h),new A.a9("\u0627\u0644\u0625\u062f\u0627\u0631\u0629",A.ah(n.h(0,"department_name")),h),new A.a9("\u0627\u0644\u0642\u0631\u0627\u0631 \u0627\u0644\u0623\u0635\u0644\u064a",A.ah(n.h(0,"original_decision")),h),new A.a9("\u0627\u0644\u0645\u0628\u0631\u0631\u0627\u062a",A.ah(n.h(0,"justification")),h),new A.JU(q.h(0,n.h(0,"id")),A.ah(n.h(0,g)),new A.t("exceptionQa-"+A.b(n.h(0,"no")),p))],s)
+if(n.h(0,f)!=null)k.push(new A.a9("\u0631\u062f \u0627\u0644\u0645\u0627\u0644\u0643",A.ah(n.h(0,f)),h))
 k.push(new A.a9("\u0627\u0644\u062a\u0627\u0631\u064a\u062e",A.e3(n.h(0,"created_at")),h))
 if(A.al(["draft","rejected"],d).i(0,n.h(0,g))&&J.d(n.h(0,"created_by"),o.a.d.a)){l=o.a.c
 j=n.h(0,"id")
@@ -165737,7 +165742,7 @@ return A.ki(A.bC(A.bX(s,!0,A.mo(!1,s,A.a([new A.d4("\u062e\u0637\u0637 HACCP",A.
 A.ahg.prototype={
 F(a){return new A.bk(new A.blg(this),new A.blh(this),null,t.o)}}
 A.blg.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_haccp_plans",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_haccp_plans",B.F)},
 $S:6}
 A.blh.prototype={
 $3(a,b,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e="approved_at",d="qa_system:approve",c=A.N(a).ok.Q
@@ -165780,7 +165785,7 @@ o.$0()
 i=A
 h=J
 s=4
-return A.f(A.ah(k.gJ(),"ops_haccp_plans",B.F),$async$$0)
+return A.f(A.ai(k.gJ(),"ops_haccp_plans",B.F),$async$$0)
 case 4:n=i.ar(h.dE(b,new A.bl6(j)))
 s=n!=null&&m.e!=null?5:6
 break
@@ -165852,7 +165857,7 @@ for(;;)switch(s){case 0:b={}
 a=A.a([],t.X)
 a0=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_batches",B.F),$async$wh)
+return A.f(A.ai(p.a.c.gJ(),"ops_batches",B.F),$async$wh)
 case 3:o=a0.P(a3)
 case 4:if(!o.l()){s=5
 break}n=o.gq()
@@ -165875,7 +165880,7 @@ a=A.b(a==null?"\u0627\u0644\u0642\u0631\u0627\u0621\u0629":a)
 k=a1.h(0,"unit")==null?"":" ("+A.b(a1.h(0,"unit"))+")"
 k=A.a([new A.H("batch","\u0627\u0644\u062a\u0634\u063a\u064a\u0644\u0629",B.Q,l,!1,null,"\u0646\u0642\u0637\u0629 CCP \u0628\u0631\u0651\u0647 \u0627\u0644\u062d\u062f \u0628\u062a\u062d\u062c\u0632 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u0629 \u062f\u064a",null),new A.H("value",a+k,B.an,B.v,!0,null,"\u0627\u0644\u062d\u062f \u0627\u0644\u062d\u0631\u062c: "+A.bOI(a1),null)],t.g)
 if(a1.h(0,"min_minutes")!=null)k.push(B.adU)
-k.push(new A.H("corrective","\u0627\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u062a\u0635\u062d\u064a\u062d\u064a (\u0644\u0648 \u0627\u0644\u0642\u0631\u0627\u0621\u0629 \u0628\u0631\u0651\u0647 \u0627\u0644\u062d\u062f)",B.aH,B.v,!1,null,A.ai(a1.h(0,"corrective_ar")),null))
+k.push(new A.H("corrective","\u0627\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u062a\u0635\u062d\u064a\u062d\u064a (\u0644\u0648 \u0627\u0644\u0642\u0631\u0627\u0621\u0629 \u0628\u0631\u0651\u0647 \u0627\u0644\u062d\u062f)",B.aH,B.v,!1,null,A.ah(a1.h(0,"corrective_ar")),null))
 a=a1.h(0,"monitoring_ar")==null?null:"\u0627\u0644\u0645\u0631\u0627\u0642\u0628\u0629: "+A.b(a1.h(0,"monitoring_ar"))
 s=6
 return A.f(A.bt(o,n+" \xb7 "+m,k,a,"\u0633\u062c\u0651\u0644 \u0627\u0644\u0642\u0631\u0627\u0621\u0629"),$async$wh)
@@ -165900,13 +165905,13 @@ var $async$DY=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:n=A
 m=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_haccp_plans",B.F),$async$DY)
+return A.f(A.ai(p.a.c.gJ(),"ops_haccp_plans",B.F),$async$DY)
 case 3:o=n.ar(m.dE(b,new A.bdp(p)))
 if(o==null)o=p.a.e
 n=A
 m=o
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_haccp_steps",A.k(["p_plan",p.a.e.h(0,"id")],t.N,t.z)),$async$DY)
+return A.f(A.ai(p.a.c.gJ(),"ops_haccp_steps",A.k(["p_plan",p.a.e.h(0,"id")],t.N,t.z)),$async$DY)
 case 4:q=new n.v(m,b)
 s=1
 break
@@ -166199,7 +166204,7 @@ $S:1}
 A.a1l.prototype={
 F(a){return new A.bk(new A.aDx(this),new A.aDy(this),null,t.o)}}
 A.aDx.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_haccp_records",A.k(["p_plan",null],t.N,t.z))},
+$0(){return A.ai(this.a.c.gJ(),"ops_haccp_records",A.k(["p_plan",null],t.N,t.z))},
 $S:6}
 A.aDy.prototype={
 $3(a1,a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e="within_limits",d="batch_no",c="corrective_action",b=A.a([],t.p),a=this.a,a0={}
@@ -166316,7 +166321,7 @@ F(a){var s=null,r=this.d
 return A.bC(A.bX(s,!0,s,A.w(A.b(r.h(0,"run_no"))+" \xb7 "+A.aD(r.h(0,"score_pct"),1)+"%",s,s,s,s,s,s,s,s,s)),new A.bk(new A.aLN(this),new A.aLO(this),s,t.o),s,s)}}
 A.aLN.prototype={
 $0(){var s=this.a
-return A.ah(s.c.gJ(),"ops_checklist_run_results",A.k(["p_run",s.d.h(0,"run_id")],t.N,t.z))},
+return A.ai(s.c.gJ(),"ops_checklist_run_results",A.k(["p_run",s.d.h(0,"run_id")],t.N,t.z))},
 $S:6}
 A.aLO.prototype={
 $3(a,b,c){var s,r,q,p="passed",o=null,n="result",m=this.a,l=m.d,k=J.d(l.h(0,p),!0)?B.cS:B.oQ,j=J.d(l.h(0,p),!0)?B.S:B.Y,i=A.w(J.d(l.h(0,p),!0)?"\u0646\u0627\u062c\u062d":"\u0631\u0627\u0633\u0628",o,o,o,o,o,B.az,o,o,o),h=A.aD(l.h(0,"earned"),1),g=A.aD(l.h(0,"possible"),1)
@@ -166337,7 +166342,7 @@ A.Dq.prototype={
 F(a){var s=null
 return A.bC(A.bX(s,!0,s,B.bQU),new A.bk(new A.aLL(this),new A.aLM(),s,t.o),s,s)}}
 A.aLL.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_checklist_items",A.k(["p_template_code","NFSA-F06"],t.N,t.z))},
+$0(){return A.ai(this.a.c.gJ(),"ops_checklist_items",A.k(["p_template_code","NFSA-F06"],t.N,t.z))},
 $S:6}
 A.aLM.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j="grade",i=null,h=A.C(t.P,t.S)
@@ -166389,7 +166394,7 @@ return A.au(q,B.I,B.B,B.G)}}
 A.OH.prototype={
 F(a){return new A.bk(new A.aXF(this),new A.aXG(this),null,t.o)}}
 A.aXF.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_suppliers_asl",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_suppliers_asl",B.F)},
 $S:6}
 A.aXG.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l="code",k=null,j="approved",i=this.a,h=i.d.e.i(0,"qa_system:approve"),g=t.p,f=A.a([B.brk],g),e=J.ap(b)
@@ -166477,7 +166482,7 @@ var $async$$0=A.p(function(a,b){if(a===1){o.push(b)
 s=p}for(;;)switch(s){case 0:p=4
 m=n.a
 s=7
-return A.f(A.ah(m.c.gJ(),"ops_doc_approvals",A.k(["p_doc_type",m.d,"p_id",m.e],t.N,t.z)),$async$$0)
+return A.f(A.ai(m.c.gJ(),"ops_doc_approvals",A.k(["p_doc_type",m.d,"p_id",m.e],t.N,t.z)),$async$$0)
 case 7:m=b
 q=m
 s=1
@@ -166535,7 +166540,7 @@ j=B.d6
 i=!1
 p=5
 s=8
-return A.f(A.ah(n.a.c.gJ(),"ops_attachments",A.k(["p_table","write_offs","p_id",n.a.e.h(0,"id")],t.N,t.z)),$async$tC)
+return A.f(A.ai(n.a.c.gJ(),"ops_attachments",A.k(["p_table","write_offs","p_id",n.a.e.h(0,"id")],t.N,t.z)),$async$tC)
 case 8:k=a1
 p=2
 s=7
@@ -166548,7 +166553,7 @@ case 4:s=2
 break
 case 7:p=10
 s=13
-return A.f(A.ah(n.a.c.gJ(),"ops_doc_approvals",A.k(["p_doc_type","write_off","p_id",n.a.e.h(0,"id")],t.N,t.z)),$async$tC)
+return A.f(A.ai(n.a.c.gJ(),"ops_doc_approvals",A.k(["p_doc_type","write_off","p_id",n.a.e.h(0,"id")],t.N,t.z)),$async$tC)
 case 13:j=a1
 p=2
 s=12
@@ -166564,7 +166569,7 @@ break
 case 14:p=17
 e=J
 s=20
-return A.f(A.ah(n.a.c.gJ(),"ops_my_approvals",B.F),$async$tC)
+return A.f(A.ai(n.a.c.gJ(),"ops_my_approvals",B.F),$async$tC)
 case 20:i=e.iL(a1,new A.btV(n))
 p=2
 s=19
@@ -166669,7 +166674,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a
 n=J
 s=3
-return A.f(A.ah(o.c.gJ(),"ops_write_offs",B.F),$async$$0)
+return A.f(A.ai(o.c.gJ(),"ops_write_offs",B.F),$async$$0)
 case 3:q=n.lO(b,new A.b_B(o))
 s=1
 break
@@ -166683,7 +166688,7 @@ A.b_D.prototype={
 $3(a,b,c){var s,r,q,p,o,n=null,m=A.w(A.b(b.h(0,"no")),n,n,n,n,n,B.eW,n,n,n),l=b.h(0,"warehouse_name")
 if(l==null){l=b.h(0,"batch_no")
 l="\u062a\u0634\u063a\u064a\u0644\u0629 "+A.b(l==null?"":l)}s=t.p
-m=A.a([A.b7(!1,n,n,n,!0,n,n,n,!0,n,n,n,n,n,n,n,n,!1,n,n,n,n,n,A.w(A.b(l),n,n,n,n,n,n,n,n,n),n,m,n,n,n),new A.a9("\u0627\u0644\u0648\u0635\u0641",A.ai(b.h(0,"description")),n),new A.a9("\u0627\u0644\u0634\u0647\u0648\u062f",A.ai(b.h(0,"witnesses")),n)],s)
+m=A.a([A.b7(!1,n,n,n,!0,n,n,n,!0,n,n,n,n,n,n,n,n,!1,n,n,n,n,n,A.w(A.b(l),n,n,n,n,n,n,n,n,n),n,m,n,n,n),new A.a9("\u0627\u0644\u0648\u0635\u0641",A.ah(b.h(0,"description")),n),new A.a9("\u0627\u0644\u0634\u0647\u0648\u062f",A.ah(b.h(0,"witnesses")),n)],s)
 l=t.L.a(b.h(0,"lines"))
 l=J.P(l==null?B.aA:l)
 while(l.l()){r=l.gq()
@@ -166934,7 +166939,7 @@ $S:0}
 A.Gd.prototype={
 F(a){return A.p9(null,"\u0637\u0644\u0628 \u0644\u0645\u0648\u0638\u0641","\u0645\u0641\u064a\u0634 \u0637\u0644\u0628\u0627\u062a \u0625\u062c\u0627\u0632\u0629",new A.bh6(this),new A.bh7(this),new A.bh8(this),"\u0627\u0644\u0625\u062c\u0627\u0632\u0627\u062a \u0648\u0627\u0644\u0623\u0630\u0648\u0646\u0627\u062a")}}
 A.bh7.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_leaves",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_leaves",B.F)},
 $S:6}
 A.bh8.prototype={
 $1(a){return this.an2(a)},
@@ -167006,7 +167011,7 @@ $0(){var s=this.b
 return this.a.c.gJ().$2("ops_create_overtime",A.k(["p_work_date",s.h(0,"date"),"p_reason",s.h(0,"reason"),"p_lines",this.c],t.N,t.z))},
 $S:4}
 A.bjB.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_overtime",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_overtime",B.F)},
 $S:6}
 A.bjA.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j=t.L.a(b.h(0,"lines"))
@@ -167074,7 +167079,7 @@ $0(){var s=this.b
 return this.a.c.gJ().$2("ops_create_bonus",A.k(["p_employee",s.h(0,"employee"),"p_kind",s.h(0,"kind"),"p_amount",s.h(0,"amount"),"p_days",s.h(0,"days"),"p_occasion",s.h(0,"occasion"),"p_period",s.h(0,"period")],t.N,t.z))},
 $S:4}
 A.b3c.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_bonuses",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_bonuses",B.F)},
 $S:6}
 A.b3b.prototype={
 $3(a,b,c){var s,r,q,p=b.h(0,"employee_name")
@@ -167090,7 +167095,7 @@ A.Fx.prototype={
 F(a){var s=this,r=s.d.e.i(0,"payroll:update")?new A.b1n(s):null
 return A.p9(null,"\u0633\u0644\u0641\u0629 \u0644\u0645\u0648\u0638\u0641","\u0645\u0641\u064a\u0634 \u0633\u0644\u0641",new A.b1o(s),new A.b1p(s),r,"\u0627\u0644\u0633\u0644\u0641")}}
 A.b1p.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_advances",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_advances",B.F)},
 $S:6}
 A.b1n.prototype={
 $1(a){return this.an0(a)},
@@ -167135,7 +167140,7 @@ a0=A.a([],t.X)
 a1=b=b.gJ()
 a2=J
 s=4
-return A.f(A.ah(b,"ops_penalty_articles",B.F),$async$f_)
+return A.f(A.ai(b,"ops_penalty_articles",B.F),$async$f_)
 case 4:a1,o=a2.P(a5)
 case 5:if(!o.l()){s=6
 break}n=o.gq()
@@ -167227,7 +167232,7 @@ p.k(0,"p_days",o.h(0,"days"))
 return q.$2("ops_issue_penalty",p)},
 $S:4}
 A.bk6.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_penalties",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_penalties",B.F)},
 $S:6}
 A.bk5.prototype={
 $3(a,b,c){var s=null,r=this.a,q=new A.bk7(r,a,b,c),p=t.p,o=A.a([],p)
@@ -167352,7 +167357,7 @@ $0(){A.aF(this.a,!1).cl(!0)
 return null},
 $S:0}
 A.aNO.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_penalty_articles",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_penalty_articles",B.F)},
 $S:6}
 A.aNM.prototype={
 $2(a,b){var s=null
@@ -167385,13 +167390,13 @@ ob(){var s=0,r=A.o(t.b5),q,p=this,o,n,m,l,k,j,i,h,g
 var $async$ob=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:k=p.c.gJ()
 s=3
-return A.f(A.ah(k,"ops_directory",B.F),$async$ob)
+return A.f(A.ai(k,"ops_directory",B.F),$async$ob)
 case 3:j=b
 i=t.z
 h=A.C(i,t.a)
 g=J
 s=4
-return A.f(A.ah(k,"ops_pay_packages",B.F),$async$ob)
+return A.f(A.ai(k,"ops_pay_packages",B.F),$async$ob)
 case 4:k=g.P(b)
 case 5:if(!k.l()){s=6
 break}o=k.gq()
@@ -167469,14 +167474,14 @@ $0(){var s=0,r=A.o(t.b5),q,p=this,o,n,m,l,k,j,i,h,g,f
 var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:k=p.a.c.gJ()
 s=3
-return A.f(A.ah(k,"ops_directory",B.F),$async$$0)
+return A.f(A.ai(k,"ops_directory",B.F),$async$$0)
 case 3:j=b
 i=t.z
 h=A.C(i,t.a)
 g=o=t.N
 f=J
 s=4
-return A.f(A.ah(k,"ops_hr_attendance",A.k(["p_period",p.b],o,i)),$async$$0)
+return A.f(A.ai(k,"ops_hr_attendance",A.k(["p_period",p.b],o,i)),$async$$0)
 case 4:g,k=f.P(b)
 case 5:if(!k.l()){s=6
 break}n=k.gq()
@@ -167589,12 +167594,12 @@ case 2:return A.m(null,r)}})
 return A.n($async$$0,r)},
 $S:2}
 A.bjX.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_payroll_runs",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_payroll_runs",B.F)},
 $S:6}
 A.bjW.prototype={
-$3(a,b,c){var s="status",r=A.b(b.h(0,"no")),q=A.Wy(A.ai(b.h(0,s))),p=A.mM(b.h(0,"period")),o=A.b(b.h(0,"no")),n=A.b(b.h(0,"employees")),m=A.hL(b.h(0,"total_net")),l=B.rJ.h(0,b.h(0,s))
+$3(a,b,c){var s="status",r=A.b(b.h(0,"no")),q=A.Wy(A.ah(b.h(0,s))),p=A.mM(b.h(0,"period")),o=A.b(b.h(0,"no")),n=A.b(b.h(0,"employees")),m=A.hL(b.h(0,"total_net")),l=B.rJ.h(0,b.h(0,s))
 if(l==null)l=A.b(b.h(0,s))
-return new A.ds(B.oL,q,"\u0645\u0631\u062a\u0628\u0627\u062a "+p,o+" \xb7 "+n+" \u0645\u0648\u0638\u0641 \xb7 \u0635\u0627\u0641\u064a "+m,new A.bv(l,A.Wy(A.ai(b.h(0,s))),null),new A.bjV(this.a,a,b,c),new A.t("run-"+r,t.O))},
+return new A.ds(B.oL,q,"\u0645\u0631\u062a\u0628\u0627\u062a "+p,o+" \xb7 "+n+" \u0645\u0648\u0638\u0641 \xb7 \u0635\u0627\u0641\u064a "+m,new A.bv(l,A.Wy(A.ah(b.h(0,s))),null),new A.bjV(this.a,a,b,c),new A.t("run-"+r,t.O))},
 $C:"$3",
 $R:3,
 $S:193}
@@ -167619,10 +167624,10 @@ var $async$ob=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=A
 n=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_payroll_runs",B.F),$async$ob)
+return A.f(A.ai(p.a.c.gJ(),"ops_payroll_runs",B.F),$async$ob)
 case 3:n=n.X6(b,new A.bpS(p),new A.bpT(p))
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_payroll_lines",A.k(["p_run",p.a.e.h(0,"id")],t.N,t.z)),$async$ob)
+return A.f(A.ai(p.a.c.gJ(),"ops_payroll_lines",A.k(["p_run",p.a.e.h(0,"id")],t.N,t.z)),$async$ob)
 case 4:q=new o.v(n,b)
 s=1
 break
@@ -167648,7 +167653,7 @@ n=B.rJ.h(0,s.h(0,f))
 if(n==null)n=A.b(s.h(0,f))
 m=this.a
 l=t.p
-l=A.a([A.cu(A.au(A.a([A.b7(!1,g,g,g,!0,g,g,g,!0,g,g,g,g,g,g,g,g,!1,g,g,g,g,g,o,g,p,g,new A.bv(n,A.Wy(A.ai(s.h(0,f))),g),g),new A.a9("\u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646",A.b(s.h(0,"employees")),g),new A.a9("\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0645\u0633\u062a\u062d\u0642\u0627\u062a",A.hL(s.h(0,"total_gross")),g),new A.a9("\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0627\u0633\u062a\u0642\u0637\u0627\u0639\u0627\u062a",A.hL(s.h(0,e)),g),new A.a9("\u0635\u0627\u0641\u064a \u0627\u0644\u0645\u0633\u064a\u0631",A.hL(s.h(0,"total_net")),g),new A.a5H(m.a.c,s.h(0,"id"),g),B.bO],l),B.I,B.B,B.G),g,g,g,g)],l)
+l=A.a([A.cu(A.au(A.a([A.b7(!1,g,g,g,!0,g,g,g,!0,g,g,g,g,g,g,g,g,!1,g,g,g,g,g,o,g,p,g,new A.bv(n,A.Wy(A.ah(s.h(0,f))),g),g),new A.a9("\u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646",A.b(s.h(0,"employees")),g),new A.a9("\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0645\u0633\u062a\u062d\u0642\u0627\u062a",A.hL(s.h(0,"total_gross")),g),new A.a9("\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0627\u0633\u062a\u0642\u0637\u0627\u0639\u0627\u062a",A.hL(s.h(0,e)),g),new A.a9("\u0635\u0627\u0641\u064a \u0627\u0644\u0645\u0633\u064a\u0631",A.hL(s.h(0,"total_net")),g),new A.a5H(m.a.c,s.h(0,"id"),g),B.bO],l),B.I,B.B,B.G),g,g,g,g)],l)
 if(!q)l.push(new A.B6(m.a.c,"payroll",s.h(0,"id"),g))
 if(q&&m.a.d.e.i(0,d))l.push(new A.aG("\u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u062d\u0633\u0627\u0628",B.ag9,new A.bpX(c,m,a,a0),!0,g,B.bXD))
 if(q&&m.a.d.e.i(0,d))l.push(A.bE1(a,m.a.c,"payroll",c.a,a0))
@@ -167814,7 +167819,7 @@ $S:0}
 A.G9.prototype={
 F(a){return A.p9(null,null,"\u0645\u0641\u064a\u0634 \u0627\u0633\u062a\u0641\u0633\u0627\u0631\u0627\u062a",new A.bf9(this),new A.bfa(this),null,"\u0627\u0633\u062a\u0641\u0633\u0627\u0631\u0627\u062a \u0627\u0644\u0645\u0631\u062a\u0628\u0627\u062a")}}
 A.bfa.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_payslip_inquiries",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_payslip_inquiries",B.F)},
 $S:6}
 A.bf9.prototype={
 $3(a,b,c){var s=A.a([],t.p)
@@ -167851,7 +167856,7 @@ s=3
 return A.f(A.fb(c,"ops_hr_me",B.F),$async$f_)
 case 3:b=a2
 s=4
-return A.f(A.ah(c,"ops_departments",B.F),$async$f_)
+return A.f(A.ai(c,"ops_departments",B.F),$async$f_)
 case 4:a=a2
 if(a0.e==null){q=!1
 s=1
@@ -167915,7 +167920,7 @@ if(J.d(o.h(0,"target"),"selection"))p.u(0,A.k(["p_departments",o.h(0,"department
 return s.$2("ops_announce",p)},
 $S:4}
 A.aoH.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_announcements",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_announcements",B.F)},
 $S:6}
 A.aoG.prototype={
 $3(a,b,c){return A.bNY(b)},
@@ -168062,7 +168067,7 @@ case 11:h=n.a.d.e
 if(!B.h.aA(B.NK,h.gfl(h))){s=1
 break}p=14
 s=17
-return A.f(A.ah(n.a.c.gJ(),"ops_my_approvals",B.F),$async$pl)
+return A.f(A.ai(n.a.c.gJ(),"ops_my_approvals",B.F),$async$pl)
 case 17:j=b
 if(n.c!=null)n.R(new A.bei(n,j))
 p=2
@@ -168505,7 +168510,7 @@ f=p.a.d
 e=A.a([],t.X)
 d=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_employees",B.F),$async$za)
+return A.f(A.ai(p.a.c.gJ(),"ops_employees",B.F),$async$za)
 case 3:o=d.P(b),n=f.a
 case 4:if(!o.l()){s=5
 break}m=o.gq()
@@ -168727,7 +168732,7 @@ $1(a){return J.d(a.h(0,"status"),"signed")},
 $S:1}
 A.bg4.prototype={
 $0(){var s=this.a
-return A.ah(s.a.c.gJ(),"ops_employee_evaluations",A.k(["p_period",A.mN(s.gkr())],t.N,t.z))},
+return A.ai(s.a.c.gJ(),"ops_employee_evaluations",A.k(["p_period",A.mN(s.gkr())],t.N,t.z))},
 $S:6}
 A.bg5.prototype={
 $3(a,a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e="emp_code",d="total",c="evaluated_by_name",b=A.N(a).ok.Q
@@ -169009,7 +169014,7 @@ $0(){return this.a.tG(this.b)},
 $S:0}
 A.bgZ.prototype={
 $0(){var s=this.a
-return A.ah(s.a.c.gJ(),"ops_lab_samples",A.k(["p_from",A.lN(s.gtH().bN(-5184e9)),"p_to",A.lN(s.gtH().bN(6048e8))],t.N,t.z))},
+return A.ai(s.a.c.gJ(),"ops_lab_samples",A.k(["p_from",A.lN(s.gtH().bN(-5184e9)),"p_to",A.lN(s.gtH().bN(6048e8))],t.N,t.z))},
 $S:6}
 A.bh_.prototype={
 $3(a,b,c){var s,r,q,p,o=A.a([],t.X)
@@ -169021,7 +169026,7 @@ return A.aL(s,B.c2,null,B.L,!1)},
 $S:12}
 A.bgV.prototype={
 $0(){var s=this.a
-return A.ah(s.a.c.gJ(),"ops_lab_samples",A.k(["p_from",A.lN(s.gtH().bN(-31536e9)),"p_to",A.lN(s.gtH())],t.N,t.z))},
+return A.ai(s.a.c.gJ(),"ops_lab_samples",A.k(["p_from",A.lN(s.gtH().bN(-31536e9)),"p_to",A.lN(s.gtH())],t.N,t.z))},
 $S:6}
 A.bgW.prototype={
 $3(a,b,c){var s,r,q,p,o,n=null,m=A.a([],t.X)
@@ -169316,7 +169321,7 @@ s=p}for(;;)switch(s){case 0:a9={}
 b0=null
 p=4
 s=7
-return A.f(A.ah(n.a.c.gJ(),"ops_pm_assets",B.F),$async$tv)
+return A.f(A.ai(n.a.c.gJ(),"ops_pm_assets",B.F),$async$tv)
 case 7:b0=b5
 p=2
 s=6
@@ -169697,23 +169702,23 @@ $S:13}
 A.blW.prototype={
 $1(a){var s,r
 A:{if("prepare"===a){s=this.a
-r=A.ai(s.h(0,"prepared_by_name"))
+r=A.ah(s.h(0,"prepared_by_name"))
 if(r==null)s=s.h(0,"prepared_by")==null?null:"\u2014"
 else s=r
 break A}if("review"===a){s=this.a
-r=A.ai(s.h(0,"reviewed_by_name"))
+r=A.ah(s.h(0,"reviewed_by_name"))
 if(r==null)s=s.h(0,"reviewed_by")==null?null:"\u2014"
 else s=r
 break A}s=this.a
-r=A.ai(s.h(0,"approved_by_name"))
+r=A.ah(s.h(0,"approved_by_name"))
 if(r==null)s=s.h(0,"approved_by")==null?null:"\u2014"
 else s=r
 break A}return s},
 $S:94}
 A.blV.prototype={
 $1(a){var s
-A:{if("review"===a){s=A.ai(this.a.h(0,"reviewed_at"))
-break A}if("approve"===a){s=A.ai(this.a.h(0,"approved_at"))
+A:{if("review"===a){s=A.ah(this.a.h(0,"reviewed_at"))
+break A}if("approve"===a){s=A.ah(this.a.h(0,"approved_at"))
 break A}s=null
 break A}return s},
 $S:94}
@@ -169848,7 +169853,7 @@ aLK(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d
 var $async$tL=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:h={}
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$tL)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$tL)
 case 3:g=b
 f=J.bR(g)
 e=A.ar(f.eD(g,new A.bns()))
@@ -169892,7 +169897,7 @@ tg(a){return this.aw0(a)},
 aw0(a){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i
 var $async$tg=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_products",B.F),$async$tg)
+return A.f(A.ai(p.a.c.gJ(),"ops_products",B.F),$async$tg)
 case 3:j=c
 i=p.c
 if(i==null){s=1
@@ -169966,7 +169971,7 @@ case 1:return A.m(q,r)}})
 return A.n($async$$0,r)},
 $S:2}
 A.bnz.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_production_plans",A.k(["p_from",A.eV(new A.b0(Date.now(),0,!1).bN(-12096e8))],t.N,t.z))},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_production_plans",A.k(["p_from",A.eV(new A.b0(Date.now(),0,!1).bN(-12096e8))],t.N,t.z))},
 $S:6}
 A.bnA.prototype={
 $3(a4,a5,a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d="plan_date",c=null,b="status",a="created_by_name",a0="note",a1=t.p,a2=A.a([],a1),a3=J.ap(a5)
@@ -170028,13 +170033,13 @@ A.Ta.prototype={
 tV(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e
 var $async$tV=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_products",B.F),$async$tV)
+return A.f(A.ai(p.a.c.gJ(),"ops_products",B.F),$async$tV)
 case 3:h=b
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_lines",B.F),$async$tV)
+return A.f(A.ai(p.a.c.gJ(),"ops_lines",B.F),$async$tV)
 case 4:g=b
 s=5
-return A.f(A.ah(p.a.c.gJ(),"ops_assets",B.F),$async$tV)
+return A.f(A.ai(p.a.c.gJ(),"ops_assets",B.F),$async$tV)
 case 5:f=b
 e=p.c
 if(e==null){s=1
@@ -170079,7 +170084,7 @@ $1(a){var s=this.a.a
 return new A.yF(s.c,s.d,null)},
 $S:967}
 A.bnH.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_batches",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_batches",B.F)},
 $S:6}
 A.bnI.prototype={
 $3(a,b,c){var s=new A.bnJ(this.a,a,c),r=J.dE(b,new A.bnC())
@@ -170092,7 +170097,7 @@ if(a.ga_(a0))a=A.aL(B.b5G,d,d,B.L,!1)
 else{s=A.a([],t.p)
 for(a=a.gA(a0),r=this.a,q=this.b,p=this.c,o=t.O;a.l();){n=a.gq()
 m=A.b(n.h(0,c))
-l=A.bDD(A.ai(n.h(0,b)))
+l=A.bDD(A.ah(n.h(0,b)))
 k=A.b(n.h(0,c))
 j=A.b(n.h(0,"product_name"))
 i=A.b(n.h(0,"line_name"))
@@ -170103,7 +170108,7 @@ g=A.b(g==null?"":g)
 f=n.h(0,"hold_no")!=null?" \xb7 \u062a\u062d\u0641\u0638 "+A.b(n.h(0,"hold_no")):""
 e=B.rG.h(0,n.h(0,b))
 if(e==null)e=A.b(n.h(0,b))
-s.push(new A.ds(B.io,l,k+" \xb7 "+j,i+" \xb7 "+h+" "+g+f,new A.bv(e,A.bDD(A.ai(n.h(0,b))),d),new A.bnF(r,q,n,p),new A.t("batch-"+m,o)))}a=A.aL(s,B.cv,d,B.L,!1)}return a},
+s.push(new A.ds(B.io,l,k+" \xb7 "+j,i+" \xb7 "+h+" "+g+f,new A.bv(e,A.bDD(A.ah(n.h(0,b))),d),new A.bnF(r,q,n,p),new A.t("batch-"+m,o)))}a=A.aL(s,B.cv,d,B.L,!1)}return a},
 $S:229}
 A.bnF.prototype={
 $0(){var s=0,r=A.o(t.H),q=this
@@ -170129,10 +170134,10 @@ var $async$ES=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=A
 n=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_batches",B.F),$async$ES)
+return A.f(A.ai(p.a.c.gJ(),"ops_batches",B.F),$async$ES)
 case 3:n=n.lO(b,new A.b2R(p))
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_inspections",A.k(["p_batch",p.a.e],t.N,t.z)),$async$ES)
+return A.f(A.ai(p.a.c.gJ(),"ops_inspections",A.k(["p_batch",p.a.e],t.N,t.z)),$async$ES)
 case 4:q=new o.v(n,b)
 s=1
 break
@@ -170154,7 +170159,7 @@ var $async$tE=A.p(function(c,a0){if(c===1)return A.l(a0,r)
 for(;;)switch(s){case 0:g=t.N
 f=t.z
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_specs",A.k(["p_product",a.h(0,"product_id"),"p_stage",b],g,f)),$async$tE)
+return A.f(A.ai(p.a.c.gJ(),"ops_specs",A.k(["p_product",a.h(0,"product_id"),"p_stage",b],g,f)),$async$tE)
 case 3:e=a0
 d=p.c
 if(d==null){s=1
@@ -170202,7 +170207,7 @@ p=A.w(A.b(s.h(0,"batch_no"))+" \xb7 "+A.b(s.h(0,"product_name")),a1,a1,a1,a1,a1,
 m=A.w(A.b(s.h(0,"line_name")),a1,a1,a1,a1,a1,a1,a1,a1,a1)
 l=B.rG.h(0,q)
 if(l==null)l=A.b(q)
-A.ai(q)
+A.ah(q)
 l=A.b7(!1,a1,a1,a1,!0,a1,a1,a1,!0,a1,a1,B.ah2,a1,a1,a1,a1,a1,!1,a1,a1,a1,a1,a1,m,a1,p,a1,new A.bv(l,A.bDD(q),a1),a1)
 p=A.aD(s.h(0,"target_qty"),1)
 m=s.h(0,a2)==null?"":" \xb7 "+A.aD(s.h(0,a2),1)+" \u0641\u0639\u0644\u064a"
@@ -170402,14 +170407,14 @@ $0(){var s=0,r=A.o(t.b5),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2
 var $async$$0=A.p(function(a3,a4){if(a3===1){o.push(a4)
 s=p}for(;;)switch(s){case 0:a=n.a.c.gJ()
 s=3
-return A.f(A.ah(a,"ops_products_all",B.F),$async$$0)
+return A.f(A.ai(a,"ops_products_all",B.F),$async$$0)
 case 3:a0=a4
 p=5
 d=t.z
 m=A.C(d,d)
 a2=J
 s=8
-return A.f(A.ah(a,"ops_product_haccp",B.F),$async$$0)
+return A.f(A.ai(a,"ops_product_haccp",B.F),$async$$0)
 case 8:c=a2.P(a4)
 case 9:if(!c.l()){s=10
 break}l=c.gq()
@@ -170421,7 +170426,7 @@ m=t.N
 j=A.C(d,m)
 a2=J
 s=11
-return A.f(A.ah(a,"ops_haccp_plans",B.F),$async$$0)
+return A.f(A.ai(a,"ops_haccp_plans",B.F),$async$$0)
 case 11:a=a2.P(a4)
 case 12:if(!a.l()){s=13
 break}i=a.gq()
@@ -170521,7 +170526,7 @@ $S:969}
 A.afq.prototype={
 F(a){return new A.bk(new A.be2(this),new A.be3(this),null,t.o)}}
 A.be2.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_holds",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_holds",B.F)},
 $S:6}
 A.be3.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j,i=null,h="status",g="batch_no",f="ncr_no",e=J.ap(b)
@@ -170536,7 +170541,7 @@ l=A.w(l+" \xb7 "+A.b(k==null?n.h(0,"source"):k),i,i,i,i,i,B.az,i,i,i)
 k=A.w(A.b(n.h(0,"reason")),i,i,i,i,i,i,i,i,i)
 j=B.bl7.h(0,n.h(0,h))
 if(j==null)j=A.b(n.h(0,h))
-j=A.a([A.b7(!1,i,i,i,!0,i,i,i,!0,i,i,B.agY,i,i,i,i,i,!1,i,i,i,i,i,k,i,l,i,new A.bv(j,A.c7T(A.ai(n.h(0,h))),i),i)],s)
+j=A.a([A.b7(!1,i,i,i,!0,i,i,i,!0,i,i,B.agY,i,i,i,i,i,!1,i,i,i,i,i,k,i,l,i,new A.bv(j,A.c7T(A.ah(n.h(0,h))),i),i)],s)
 if(n.h(0,g)!=null)j.push(new A.a9("\u0627\u0644\u062a\u0634\u063a\u064a\u0644\u0629",A.b(n.h(0,g))+" \xb7 "+A.aD(n.h(0,"qty"),1),i))
 if(n.h(0,"wo_no")!=null)j.push(new A.a9("\u0627\u0644\u0639\u0637\u0644",A.b(n.h(0,"wo_no")),i))
 if(n.h(0,f)!=null)j.push(new A.a9("\u0639\u062f\u0645 \u0627\u0644\u0645\u0637\u0627\u0628\u0642\u0629",A.b(n.h(0,f)),i))
@@ -170550,7 +170555,7 @@ $0(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f
 var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:h=p.a
 s=3
-return A.f(A.ah(h.c.gJ(),"ops_departments",B.F),$async$$0)
+return A.f(A.ai(h.c.gJ(),"ops_departments",B.F),$async$$0)
 case 3:g=b
 f=p.b
 if(f.e==null){s=1
@@ -170580,7 +170585,7 @@ aRk(a){var s=0,r=A.o(t.b5),q,p=2,o=[],n=this,m,l,k
 var $async$u0=A.p(function(b,c){if(b===1){o.push(c)
 s=p}for(;;)switch(s){case 0:p=4
 s=7
-return A.f(A.ah(n.c.gJ(),a,B.F),$async$u0)
+return A.f(A.ai(n.c.gJ(),a,B.F),$async$u0)
 case 7:m=c
 q=m
 s=1
@@ -170605,7 +170610,7 @@ aLI(a6){var s=0,r=A.o(t.y),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4
 var $async$pm=A.p(function(a7,a8){if(a7===1)return A.l(a8,r)
 for(;;)switch(s){case 0:a=p.c
 s=3
-return A.f(A.ah(a.gJ(),"ops_departments",B.F),$async$pm)
+return A.f(A.ai(a.gJ(),"ops_departments",B.F),$async$pm)
 case 3:a0=a8
 s=4
 return A.f(p.u0("ops_batches"),$async$pm)
@@ -170660,7 +170665,7 @@ return A.f(A.bt(a6,"\u062a\u0642\u0631\u064a\u0631 \u0639\u062f\u0645 \u0645\u06
 case 9:c=a8
 if(c==null||a6.e==null){q=!1
 s=1
-break}b=A.ai(c.h(0,"source"))
+break}b=A.ah(c.h(0,"source"))
 if(b==null)b="product"
 if(b==="material_supplier"&&c.h(0,"supplier")==null&&c.h(0,"item")==null){a6.a8(t.I).f.bU(B.bI0)
 q=!1
@@ -170695,7 +170700,7 @@ A.biU.prototype={
 $1(a){return this.a.$2(a,"material_supplier")},
 $S:1}
 A.biZ.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_ncrs",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_ncrs",B.F)},
 $S:6}
 A.bj_.prototype={
 $3(a6,a7,a8){var s,r,q,p,o,n,m,l,k,j,i,h,g="ncr:create",f=null,e="status",d="source",c="product",b="immediate_correction",a="disposition",a0="disposition_note",a1="\u0627\u0628\u0639\u062a \u0644\u0644\u0627\u0639\u062a\u0645\u0627\u062f",a2=t.p,a3=A.a([],a2),a4=this.a,a5=a4.d.e
@@ -170709,7 +170714,7 @@ i=l.h(0,"description")
 i=A.w(A.b(i==null?"":i),f,f,f,f,f,f,f,f,f)
 h=B.eo.h(0,l.h(0,e))
 if(h==null)h=A.b(l.h(0,e))
-h=A.b7(!1,f,f,f,!0,f,f,f,!0,f,f,B.ah7,f,f,f,f,f,!1,f,f,f,f,f,i,f,j,f,new A.bv(h,A.j9(A.ai(l.h(0,e))),f),f)
+h=A.b7(!1,f,f,f,!0,f,f,f,!0,f,f,B.ah7,f,f,f,f,f,!1,f,f,f,f,f,i,f,j,f,new A.bv(h,A.j9(A.ah(l.h(0,e))),f),f)
 j=l.h(0,d)
 j=A.a([h,new A.a9("\u0627\u0644\u0646\u0648\u0639",B.mC.h(0,j==null?c:j),f)],a2)
 i=l.h(0,d)
@@ -170717,12 +170722,12 @@ if(J.d(i==null?c:i,c))j.push(new A.a9("\u0627\u0644\u062a\u062d\u0641\u0638",new
 i=l.h(0,d)
 if(!J.d(i==null?c:i,c)&&A.bLT(l)!=null){i=B.mC.h(0,l.h(0,d))
 i.toString
-j.push(new A.a9(i,A.bLT(l),f))}j.push(new A.a9("\u0627\u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u0629",A.ai(l.h(0,"department_name")),f))
-if(l.h(0,b)!=null)j.push(new A.a9("\u0627\u0644\u062a\u0635\u062d\u064a\u062d \u0627\u0644\u0641\u0648\u0631\u064a",A.ai(l.h(0,b)),f))
+j.push(new A.a9(i,A.bLT(l),f))}j.push(new A.a9("\u0627\u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u0629",A.ah(l.h(0,"department_name")),f))
+if(l.h(0,b)!=null)j.push(new A.a9("\u0627\u0644\u062a\u0635\u062d\u064a\u062d \u0627\u0644\u0641\u0648\u0631\u064a",A.ah(l.h(0,b)),f))
 i=l.h(0,d)
 if(J.d(i==null?c:i,c)){i=A.a([B.yD.h(0,l.h(0,a))],n)
 if(l.h(0,"qty")!=null)i.push(A.aD(l.h(0,"qty"),1))
-j.push(new A.a9("\u0627\u0644\u0642\u0631\u0627\u0631",new A.c6(i,o).aj(0," \xb7 "),f))}if(l.h(0,a0)!=null)j.push(new A.a9("\u0645\u0644\u0627\u062d\u0638\u0629",A.ai(l.h(0,a0)),f))
+j.push(new A.a9("\u0627\u0644\u0642\u0631\u0627\u0631",new A.c6(i,o).aj(0," \xb7 "),f))}if(l.h(0,a0)!=null)j.push(new A.a9("\u0645\u0644\u0627\u062d\u0638\u0629",A.ah(l.h(0,a0)),f))
 if(l.h(0,"capa_no")!=null)j.push(new A.a9("\u0627\u0644\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u062a\u0635\u062d\u064a\u062d\u064a",A.b(l.h(0,"capa_no")),f))
 if(A.al(["draft","rejected"],r).i(0,l.h(0,e))){i=l.h(0,d)
 i=!J.d(i==null?c:i,c)&&a5.i(0,g)}else i=!1
@@ -170772,7 +170777,7 @@ zL(a,b,c){return this.aOy(a,b,c)},
 aOy(a,a0,a1){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$zL=A.p(function(a2,a3){if(a2===1)return A.l(a3,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.c.gJ(),"ops_people",B.F),$async$zL)
+return A.f(A.ai(p.c.gJ(),"ops_people",B.F),$async$zL)
 case 3:b=a3
 if(a.e==null){s=1
 break}o=A.b(a0.h(0,"no"))
@@ -170865,10 +170870,10 @@ avN(a,b,c){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e
 var $async$tW=A.p(function(d,a0){if(d===1)return A.l(a0,r)
 for(;;)switch(s){case 0:g=p.c.gJ()
 s=3
-return A.f(A.ah(g,"ops_departments",B.F),$async$tW)
+return A.f(A.ai(g,"ops_departments",B.F),$async$tW)
 case 3:f=a0
 s=4
-return A.f(A.ah(g,"ops_people",B.F),$async$tW)
+return A.f(A.ai(g,"ops_people",B.F),$async$tW)
 case 4:e=a0
 if(a.e==null){s=1
 break}g=A.b(b.h(0,"no"))
@@ -170902,7 +170907,7 @@ var $async$wy=A.p(function(a2,a3){if(a2===1){o.push(a3)
 s=p}for(;;)switch(s){case 0:c=null
 p=4
 s=7
-return A.f(A.ah(n.c.gJ(),"ops_receipts",B.F),$async$wy)
+return A.f(A.ai(n.c.gJ(),"ops_receipts",B.F),$async$wy)
 case 7:c=a3
 p=2
 s=6
@@ -170944,12 +170949,12 @@ EX(){var s=0,r=A.o(t.Y9),q,p=2,o=[],n=this,m,l,k,j,i
 var $async$EX=A.p(function(a,b){if(a===1){o.push(b)
 s=p}for(;;)switch(s){case 0:l=n.c.gJ()
 s=3
-return A.f(A.ah(l,"ops_capas",B.F),$async$EX)
+return A.f(A.ai(l,"ops_capas",B.F),$async$EX)
 case 3:k=b
 j=null
 p=5
 s=8
-return A.f(A.ah(l,"ops_capa_actions",B.F),$async$EX)
+return A.f(A.ai(l,"ops_capa_actions",B.F),$async$EX)
 case 8:j=b
 p=2
 s=7
@@ -171049,7 +171054,7 @@ c=e.h(0,"owner_name")
 c=A.w(A.b(c==null?"\u0644\u0633\u0647 \u0645\u062a\u0643\u0644\u0641\u0634 \u062d\u062f":c)+" \xb7 "+A.cv(e.h(0,"due_date")),a4,a4,a4,a4,a4,a4,a4,a4,a4)
 a=B.yC.h(0,e.h(0,a8))
 if(a==null)a=A.b(e.h(0,a8))
-a=A.a([A.b7(!1,a4,a4,a4,!0,a4,a4,a4,!0,a4,a4,B.agX,a4,a4,a4,a4,a4,!1,a4,a4,a4,a4,a4,c,a4,b,a4,new A.bv(a,A.c6G(A.ai(e.h(0,a8))),a4),a4)],c6)
+a=A.a([A.b7(!1,a4,a4,a4,!0,a4,a4,a4,!0,a4,a4,B.agX,a4,a4,a4,a4,a4,!1,a4,a4,a4,a4,a4,c,a4,b,a4,new A.bv(a,A.c6G(A.ah(e.h(0,a8))),a4),a4)],c6)
 c=m.a(e.h(0,a9))
 c=A.f1(c==null?B.aA:c,0,c5)
 b=J.P(c.a)
@@ -171063,14 +171068,14 @@ a2=a0==null?a4:a0.h(0,b.a)
 if(o.b(a2)){a0=J.io(a2)
 a3=a2}else{a3=a4
 a0=!1}if(a0)a.push(new A.a9("\u0639\u0638\u0645\u0629 \u0627\u0644\u0633\u0645\u0643\u0629 \xb7 "+b.b,J.X7(a3,"\u060c "),a4))}if(e.h(0,b1)!=null){c=B.yE.h(0,e.h(0,b1))
-a.push(new A.a9("\u0646\u0648\u0639 \u0627\u0644\u0633\u0628\u0628",c==null?A.b(e.h(0,b1)):c,a4))}if(e.h(0,b2)!=null)a.push(new A.a9("\u0627\u0644\u0633\u0628\u0628 \u0627\u0644\u062c\u0630\u0631\u064a",A.ai(e.h(0,b2)),a4))
+a.push(new A.a9("\u0646\u0648\u0639 \u0627\u0644\u0633\u0628\u0628",c==null?A.b(e.h(0,b1)):c,a4))}if(e.h(0,b2)!=null)a.push(new A.a9("\u0627\u0644\u0633\u0628\u0628 \u0627\u0644\u062c\u0630\u0631\u064a",A.ah(e.h(0,b2)),a4))
 if(e.h(0,b3)!=null){c=[e.h(0,b3)]
 if(e.h(0,b4)!=null)c.push("\u0627\u0633\u062a\u0644\u0627\u0645 "+A.b(e.h(0,b4)))
-a.push(new A.a9("\u0627\u0644\u0645\u0648\u0631\u062f",B.h.aj(c," \xb7 "),a4))}if(e.h(0,b5)!=null)a.push(new A.a9("\u0627\u0644\u062a\u0635\u062d\u064a\u062d\u064a",A.ai(e.h(0,b5)),a4))
-if(e.h(0,b6)!=null)a.push(new A.a9("\u0627\u0644\u0648\u0642\u0627\u0626\u064a",A.ai(e.h(0,b6)),a4))
+a.push(new A.a9("\u0627\u0644\u0645\u0648\u0631\u062f",B.h.aj(c," \xb7 "),a4))}if(e.h(0,b5)!=null)a.push(new A.a9("\u0627\u0644\u062a\u0635\u062d\u064a\u062d\u064a",A.ah(e.h(0,b5)),a4))
+if(e.h(0,b6)!=null)a.push(new A.a9("\u0627\u0644\u0648\u0642\u0627\u0626\u064a",A.ah(e.h(0,b6)),a4))
 if(e.h(0,b7)!=null&&!J.d(e.h(0,a8),b8))a.push(new A.a9("\u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0641\u0639\u0627\u0644\u064a\u0629",A.cv(e.h(0,b7)),a4))
-if(e.h(0,b9)!=null)a.push(new A.a9("\u0646\u062a\u064a\u062c\u0629 \u0627\u0644\u062a\u062d\u0642\u0642",A.ai(e.h(0,b9)),a4))
-if(e.h(0,c0)!=null)a.push(new A.a9("\u062a\u062d\u0642\u0642",A.ai(e.h(0,c0)),a4))
+if(e.h(0,b9)!=null)a.push(new A.a9("\u0646\u062a\u064a\u062c\u0629 \u0627\u0644\u062a\u062d\u0642\u0642",A.ah(e.h(0,b9)),a4))
+if(e.h(0,c0)!=null)a.push(new A.a9("\u062a\u062d\u0642\u0642",A.ah(e.h(0,c0)),a4))
 if(q.aA(c4,new A.b4J(e))){c=A.a([new A.c2("\u0625\u062c\u0631\u0627\u0621\u0627\u062a \u0627\u0644\u0623\u0642\u0633\u0627\u0645 ("+q.eD(c4,new A.b4K(e)).gt(0)+"/"+q.eD(c4,new A.b4L(e)).gt(0)+")",a4,B.Ei,a4,a4)],c6)
 for(b=q.gA(c4);b.l();){a0=b.gq()
 if(J.d(a0.h(0,"capa_id"),e.h(0,"id")))c.push(new A.Iu(i,h,a0,c9,a4))}c.push(B.hI)
@@ -171140,10 +171145,10 @@ var $async$F5=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.c.gJ()
 n=A
 s=3
-return A.f(A.ah(o,"ops_my_request_types",B.F),$async$F5)
+return A.f(A.ai(o,"ops_my_request_types",B.F),$async$F5)
 case 3:m=b
 s=4
-return A.f(A.ah(o,"ops_my_requests",B.F),$async$F5)
+return A.f(A.ai(o,"ops_my_requests",B.F),$async$F5)
 case 4:q=new n.v(m,b)
 s=1
 break
@@ -171157,7 +171162,7 @@ m=A.a([new A.H("subject","\u0627\u0644\u0645\u0648\u0636\u0648\u0639",B.X,B.v,!0
 if(J.d(b.h(0,"has_amount"),!0))m.push(new A.H("amount","\u0627\u0644\u0645\u0628\u0644\u063a (\u062c.\u0645)",B.an,B.v,!1,null,null,null))
 m.push(new A.H("needed_by","\u0645\u0637\u0644\u0648\u0628 \u0642\u0628\u0644",B.bl,B.v,!1,null,null,null))
 s=3
-return A.f(A.bt(a,n,m,A.ai(b.h(0,"description_ar")),"\u0627\u0628\u0639\u062a \u0627\u0644\u0637\u0644\u0628"),$async$DR)
+return A.f(A.bt(a,n,m,A.ah(b.h(0,"description_ar")),"\u0627\u0628\u0639\u062a \u0627\u0644\u0637\u0644\u0628"),$async$DR)
 case 3:o=e
 if(o==null||a.e==null){s=1
 break}s=4
@@ -171187,12 +171192,12 @@ $3(a,b,c){var s,r,q,p,o,n,m,l,k=null,j="status",i="needed_by",h="step_name",g=b.
 if(d.ga_(g))e.push(B.abr)
 for(d=d.gA(g),s=t.O,r=this.a;d.l();){q=d.gq()
 p=A.b(q.h(0,"code"))
-e.push(new A.ds(B.eG,B.dX,A.b(q.h(0,"title_ar")),A.ai(q.h(0,"description_ar")),B.dh,new A.aRO(r,a,q,c),new A.t("reqType-"+p,s)))}e.push(B.af6)
+e.push(new A.ds(B.eG,B.dX,A.b(q.h(0,"title_ar")),A.ah(q.h(0,"description_ar")),B.dh,new A.aRO(r,a,q,c),new A.t("reqType-"+p,s)))}e.push(B.af6)
 d=J.ap(f)
 if(d.ga_(f))e.push(B.abI)
 for(d=d.gA(f),r=t.s;d.l();){q=d.gq()
 p=A.b(q.h(0,"no"))
-o=A.j9(A.ai(q.h(0,j)))
+o=A.j9(A.ah(q.h(0,j)))
 n=A.w(A.b(q.h(0,"type_title"))+" \xb7 "+A.b(q.h(0,"subject")),k,k,k,k,k,B.az,k,k,k)
 m=A.a([A.b(q.h(0,"no"))],r)
 if(q.h(0,"amount")!=null)m.push(A.aD(q.h(0,"amount"),2)+" \u062c.\u0645")
@@ -171201,7 +171206,7 @@ if(q.h(0,h)!=null)m.push("\u0645\u0633\u062a\u0646\u064a: "+A.b(q.h(0,h)))
 m=A.w(B.h.aj(m," \xb7 "),k,k,k,k,k,k,k,k,k)
 l=B.eo.h(0,q.h(0,j))
 if(l==null)l=A.b(q.h(0,j))
-e.push(new A.cJ(k,k,k,A.b7(!1,k,k,k,!0,k,k,k,!0,k,k,new A.cF(B.eG,o,36,k),k,k,k,k,k,!1,k,k,k,k,k,m,k,n,k,new A.bv(l,A.j9(A.ai(q.h(0,j))),k),k),new A.t("myRequest-"+p,s)))}return A.aL(e,B.b1,k,B.L,!1)},
+e.push(new A.cJ(k,k,k,A.b7(!1,k,k,k,!0,k,k,k,!0,k,k,new A.cF(B.eG,o,36,k),k,k,k,k,k,!1,k,k,k,k,k,m,k,n,k,new A.bv(l,A.j9(A.ah(q.h(0,j))),k),k),new A.t("myRequest-"+p,s)))}return A.aL(e,B.b1,k,B.L,!1)},
 $S:109}
 A.aRO.prototype={
 $0(){var s=this
@@ -171216,7 +171221,7 @@ A.S_.prototype={
 mq(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g
 var $async$mq=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$mq)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$mq)
 case 3:h=b
 g=p.c
 if(g==null){s=1
@@ -171272,7 +171277,7 @@ $0(){var s=this
 return s.a.a.c.gJ().$2("ops_handle_incident",A.k(["p_id",s.b.h(0,"id"),"p_status",s.c,"p_action",s.d],t.N,t.z))},
 $S:4}
 A.beJ.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_incidents",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_incidents",B.F)},
 $S:6}
 A.beK.prototype={
 $3(a0,a1,a2){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="no",e="status",d="severity",c="action_taken",b="handled_by_name",a=J.ap(a1)
@@ -171287,15 +171292,15 @@ l=A.w(l+" \xb7 "+A.b(k==null?n.h(0,"kind"):k),g,g,g,g,g,B.az,g,g,g)
 k=A.w(A.b(n.h(0,"description")),g,g,g,g,g,g,g,g,g)
 j=B.blm.h(0,n.h(0,e))
 if(j==null)j=A.b(n.h(0,e))
-j=A.b7(!1,g,g,g,!0,g,g,g,!0,g,g,B.ah_,g,g,g,g,g,!1,g,g,g,g,g,k,g,l,g,new A.bv(j,A.c7Y(A.ai(n.h(0,e))),g),g)
+j=A.b7(!1,g,g,g,!0,g,g,g,!0,g,g,B.ah_,g,g,g,g,g,!1,g,g,g,g,g,k,g,l,g,new A.bv(j,A.c7Y(A.ah(n.h(0,e))),g),g)
 l=B.WX.h(0,n.h(0,d))
 l=A.b(l==null?n.h(0,d):l)
-k=A.c9N(A.ai(n.h(0,d)))
-i=A.ai(n.h(0,"to_department_name"))
+k=A.c9N(A.ah(n.h(0,d)))
+i=A.ah(n.h(0,"to_department_name"))
 h=n.h(0,"reported_by_name")
 l=A.a([j,new A.ad(B.dK,new A.eG(B.ds,g,g,new A.bv("\u062e\u0637\u0648\u0631\u0629 "+l,k,g),g),g),new A.a9("\u0645\u0648\u062c\u0651\u0647 \u0644\u0640",i,g),new A.a9("\u0645\u0646",A.b(h==null?"\u2014":h)+" \xb7 "+A.e3(n.h(0,"occurred_at")),g)],s)
-if(n.h(0,"people")!=null)l.push(new A.a9("\u0627\u0644\u0623\u0634\u062e\u0627\u0635",A.ai(n.h(0,"people")),g))
-if(n.h(0,c)!=null)l.push(new A.a9("\u0627\u0644\u0625\u062c\u0631\u0627\u0621",A.ai(n.h(0,c)),g))
+if(n.h(0,"people")!=null)l.push(new A.a9("\u0627\u0644\u0623\u0634\u062e\u0627\u0635",A.ah(n.h(0,"people")),g))
+if(n.h(0,c)!=null)l.push(new A.a9("\u0627\u0644\u0625\u062c\u0631\u0627\u0621",A.ah(n.h(0,c)),g))
 if(n.h(0,b)!=null)l.push(new A.a9("\u0627\u062a\u0639\u0627\u0645\u0644 \u0645\u0639\u0627\u0647",A.b(n.h(0,b))+" \xb7 "+A.e3(n.h(0,"handled_at")),g))
 if(!J.d(n.h(0,e),"closed"))if(!p.a.d.e.i(0,"incidents:view"))k=A.al(["head","top"],o).i(0,p.a.d.Q)&&!J.d(n.h(0,"reported_by"),p.a.d.a)
 else k=!0
@@ -171318,7 +171323,7 @@ A.Vc.prototype={
 mq(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h
 var $async$mq=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_directory",B.F),$async$mq)
+return A.f(A.ai(p.a.c.gJ(),"ops_directory",B.F),$async$mq)
 case 3:i=b
 h=p.c
 if(h==null){s=1
@@ -171348,7 +171353,7 @@ if(n==null)n=1
 return s.$2("ops_log_visitor",A.k(["p_name",q,"p_company",p,"p_purpose",o,"p_persons",n,"p_host_employee",r.h(0,"host"),"p_national_id",r.h(0,"national_id"),"p_phone",r.h(0,"phone"),"p_badge",r.h(0,"badge"),"p_vehicle",r.h(0,"vehicle")],t.N,t.z))},
 $S:4}
 A.btn.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_visitors",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_visitors",B.F)},
 $S:6}
 A.bto.prototype={
 $3(a,b,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g=null,f="check_out",e="badge_no",d="vehicle_no",c=J.ap(b)
@@ -171396,36 +171401,36 @@ case 3:i=e.a(b.h(0,"employee"))
 h=i==null?null:i.h(0,"id")
 g=new A.aUb(h)
 s=4
-return A.f(A.ah(j,"ops_announcements",B.F),$async$of)
+return A.f(A.ai(j,"ops_announcements",B.F),$async$of)
 case 4:f=b
 if(h==null){q=A.k(["employee",null,"announcements",f],t.N,t.z)
 s=1
 break}e=A
 d=J
 s=5
-return A.f(A.ah(j,"ops_leave_balance",B.F),$async$of)
+return A.f(A.ai(j,"ops_leave_balance",B.F),$async$of)
 case 5:o=e.ar(d.dE(b,g))
 e=J
 s=6
-return A.f(A.ah(j,"ops_leaves",B.F),$async$of)
+return A.f(A.ai(j,"ops_leaves",B.F),$async$of)
 case 6:n=e.dE(b,g)
 n=A.Z(n,n.$ti.j("E.E"))
 e=J
 s=7
-return A.f(A.ah(j,"ops_advances",B.F),$async$of)
+return A.f(A.ai(j,"ops_advances",B.F),$async$of)
 case 7:m=e.dE(b,g)
 m=A.Z(m,m.$ti.j("E.E"))
 e=J
 s=8
-return A.f(A.ah(j,"ops_penalties",B.F),$async$of)
+return A.f(A.ai(j,"ops_penalties",B.F),$async$of)
 case 8:g=e.dE(b,g)
 g=A.Z(g,g.$ti.j("E.E"))
 s=9
-return A.f(A.ah(j,"ops_my_payslips",B.F),$async$of)
+return A.f(A.ai(j,"ops_my_payslips",B.F),$async$of)
 case 9:l=b
 e=J
 s=10
-return A.f(A.ah(j,"ops_payslip_inquiries",B.F),$async$of)
+return A.f(A.ai(j,"ops_payslip_inquiries",B.F),$async$of)
 case 10:k=e.dE(b,new A.aUa(p))
 k=A.Z(k,k.$ti.j("E.E"))
 q=A.k(["employee",i,"balance",o,"leaves",n,"advances",m,"penalties",g,"payslips",l,"inquiries",k,"announcements",f],t.N,t.z)
@@ -171437,7 +171442,7 @@ F(a){var s=null
 return A.bC(A.bX(s,!0,s,B.bPn),new A.bk(this.gaS6(),new A.aUj(this),s,t.O0),s,s)},
 abW(a,b,c,d,e,f){var s=null,r="status",q=A.b(b.h(0,"no")),p=A.w(d,s,s,s,s,s,B.fo,s,s,s),o=A.w(e,s,s,s,s,s,s,s,s,s),n=B.rJ.h(0,b.h(0,r))
 if(n==null)n=A.b(b.h(0,r))
-n=A.a([A.b7(!1,s,s,s,!0,s,s,s,!0,s,s,s,s,s,s,s,s,!1,s,s,s,s,s,o,s,p,s,new A.bv(n,A.Wy(A.ai(b.h(0,r))),s),s)],t.p)
+n=A.a([A.b7(!1,s,s,s,!0,s,s,s,!0,s,s,s,s,s,s,s,s,!1,s,s,s,s,s,o,s,p,s,new A.bv(n,A.Wy(A.ah(b.h(0,r))),s),s)],t.p)
 if(A.al(["draft","rejected"],t.N).i(0,b.h(0,r))&&J.d(b.h(0,"created_by"),this.d.a))n.push(A.bE1(a,this.c,c,b,f))
 return A.cu(A.au(n,B.I,B.B,B.G),s,new A.t("mine-"+q,t.O),s,s)},
 adm(a,b,c,d,e){var s=null
@@ -171575,7 +171580,7 @@ JY(){return this.R(new A.bqL(this))},
 zw(){var s=0,r=A.o(t.b5),q,p=this,o,n,m,l,k,j,i
 var $async$zw=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_employees",B.F),$async$zw)
+return A.f(A.ai(p.a.c.gJ(),"ops_employees",B.F),$async$zw)
 case 3:k=b
 if(p.a.d.e.i(0,"leave_hr:approve")){q=k
 s=1
@@ -171602,7 +171607,7 @@ s=3
 return A.f(p.zw(),$async$ws)
 case 3:f=b
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$ws)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$ws)
 case 4:e=b
 d=p.c
 if(d==null){s=1
@@ -171634,10 +171639,10 @@ return A.n($async$ws,r)},
 vK(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c
 var $async$vK=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_people",B.F),$async$vK)
+return A.f(A.ai(p.a.c.gJ(),"ops_people",B.F),$async$vK)
 case 3:e=b
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$vK)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$vK)
 case 4:d=b
 c=p.c
 if(c==null){s=1
@@ -171676,7 +171681,7 @@ case 3:e=b
 d=A.a([],t.X)
 p=5
 s=8
-return A.f(A.ah(n.a.c.gJ(),"ops_machine_types",B.F),$async$vL)
+return A.f(A.ai(n.a.c.gJ(),"ops_machine_types",B.F),$async$vL)
 case 8:d=b
 p=2
 s=7
@@ -171770,7 +171775,7 @@ return s.d=A.bl(A.ag(s.gqN()),A.ao(s.gqN())+1,1,0,0,0,0)},
 $S:0}
 A.bqQ.prototype={
 $0(){var s=this.a
-return A.ah(s.a.c.gJ(),"ops_shift_schedule",A.k(["p_month",A.eV(s.gqN())],t.N,t.z))},
+return A.ai(s.a.c.gJ(),"ops_shift_schedule",A.k(["p_month",A.eV(s.gqN())],t.N,t.z))},
 $S:6}
 A.bqR.prototype={
 $3(b4,b5,b6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7="department_id",a8=null,a9="department_name",b0="emp_code",b1="shift",b2=t.P,b3=A.C(b2,t.b5)
@@ -171841,7 +171846,7 @@ A.bqN.prototype={
 $0(){return this.a.f=this.b},
 $S:0}
 A.bqU.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_shift_leads",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_shift_leads",B.F)},
 $S:6}
 A.bqV.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=null,g="active",f=A.N(a).ok.Q
@@ -171878,7 +171883,7 @@ A.bqS.prototype={
 $0(){return this.a.a.c.gJ().$2("ops_remove_shift_lead",A.k(["p_id",this.b.h(0,"id")],t.N,t.z))},
 $S:4}
 A.bqW.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_machine_licenses",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_machine_licenses",B.F)},
 $S:6}
 A.bqX.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j,i="emp_code",h="machine_type",g="days_left",f=A.a([],t.p),e=this.a
@@ -171930,7 +171935,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a.c
 n=A
 s=3
-return A.f(A.ah(o.gJ(),"ops_requisitions",B.F),$async$$0)
+return A.f(A.ai(o.gJ(),"ops_requisitions",B.F),$async$$0)
 case 3:m=b
 s=4
 return A.f(A.rB(o),$async$$0)
@@ -171996,7 +172001,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a
 n=A
 s=3
-return A.f(A.ah(o.a.c.gJ(),"ops_items",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_items",B.F),$async$$0)
 case 3:m=b
 s=4
 return A.f(A.rB(o.a.c),$async$$0)
@@ -172071,7 +172076,7 @@ A.Td.prototype={
 ww(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h
 var $async$ww=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_items",B.F),$async$ww)
+return A.f(A.ai(p.a.c.gJ(),"ops_items",B.F),$async$ww)
 case 3:i=b
 h=p.c
 if(h==null){s=1
@@ -172103,7 +172108,7 @@ A.bnU.prototype={
 $0(){return this.a.a.c.gJ().$2("ops_create_pr",A.k(["p_reason",this.b,"p_lines",this.c],t.N,t.z))},
 $S:4}
 A.bnX.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_purchase_requests",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_purchase_requests",B.F)},
 $S:6}
 A.bnY.prototype={
 $3(a,a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=null,c="status",b=J.ap(a0)
@@ -172112,7 +172117,7 @@ else{s=A.a([],t.p)
 for(b=b.gA(a0),r=this.a,q=t.j,p=t.s,o=t.O;b.l();){n=b.gq()
 m=A.b(n.h(0,"no"))
 l=J.d(n.h(0,"auto"),!0)?B.Ef:B.jO
-k=A.j9(A.ai(n.h(0,c)))
+k=A.j9(A.ah(n.h(0,c)))
 j=A.b(n.h(0,"no"))
 i=n.h(0,"department_name")
 i=A.b(i==null?"":i)
@@ -172122,7 +172127,7 @@ e=J.ap(f)
 h.push(A.b(e.h(f,"item_name"))+" \xd7 "+A.aD(e.h(f,"qty"),1))}h=B.h.aj(h,"\u060c ")
 g=B.eo.h(0,n.h(0,c))
 if(g==null)g=A.b(n.h(0,c))
-s.push(new A.ds(l,k,j+" \xb7 "+i,h,new A.bv(g,A.j9(A.ai(n.h(0,c))),d),new A.bnW(r,a,n,a1),new A.t("pr-"+m,o)))}b=A.aL(s,B.cv,d,B.L,!1)}return b},
+s.push(new A.ds(l,k,j+" \xb7 "+i,h,new A.bv(g,A.j9(A.ah(n.h(0,c))),d),new A.bnW(r,a,n,a1),new A.t("pr-"+m,o)))}b=A.aL(s,B.cv,d,B.L,!1)}return b},
 $S:12}
 A.bnW.prototype={
 $0(){var s=0,r=A.o(t.H),q=this
@@ -172144,7 +172149,7 @@ zN(a){return this.aPh(a)},
 aPh(a){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i
 var $async$zN=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_suppliers",B.F),$async$zN)
+return A.f(A.ai(p.a.c.gJ(),"ops_suppliers",B.F),$async$zN)
 case 3:j=c
 i=p.c
 if(i==null){s=1
@@ -172201,7 +172206,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a
 n=J
 s=3
-return A.f(A.ah(o.a.c.gJ(),"ops_purchase_requests",B.F),$async$$0)
+return A.f(A.ai(o.a.c.gJ(),"ops_purchase_requests",B.F),$async$$0)
 case 3:q=n.lO(b,new A.bnk(o))
 s=1
 break
@@ -172217,9 +172222,9 @@ e=A.b(e==null?"":e)
 e=A.w(e+(J.d(b.h(0,"auto"),!0)?" \xb7 \u062a\u0644\u0642\u0627\u0626\u064a \u0645\u0646 \u062d\u062f \u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u0637\u0644\u0628":""),k,k,k,k,k,k,k,k,k)
 s=B.eo.h(0,i)
 if(s==null)s=A.b(i)
-A.ai(i)
+A.ah(i)
 r=t.p
-s=A.a([A.b7(!1,k,k,k,!0,k,k,k,!0,k,k,B.ah1,k,k,k,k,k,!1,k,k,k,k,k,e,k,f,k,new A.bv(s,A.j9(i),k),k),new A.a9("\u0627\u0644\u0633\u0628\u0628",A.ai(b.h(0,"reason")),k)],r)
+s=A.a([A.b7(!1,k,k,k,!0,k,k,k,!0,k,k,B.ah1,k,k,k,k,k,!1,k,k,k,k,k,e,k,f,k,new A.bv(s,A.j9(i),k),k),new A.a9("\u0627\u0644\u0633\u0628\u0628",A.ah(b.h(0,"reason")),k)],r)
 for(h=J.P(h.a(b.h(0,"lines")));h.l();){q=h.gq()
 f=J.ap(q)
 e=A.b(f.h(q,"item_name"))
@@ -172255,7 +172260,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a.c
 n=A
 s=3
-return A.f(A.ah(o.gJ(),"ops_purchase_orders",B.F),$async$$0)
+return A.f(A.ai(o.gJ(),"ops_purchase_orders",B.F),$async$$0)
 case 3:m=b
 s=4
 return A.f(A.vu(o,"purchase_orders"),$async$$0)
@@ -172271,7 +172276,7 @@ if(d.ga_(e))e=A.aL(B.bgg,g,g,B.L,!1)
 else{s=A.a([],t.p)
 for(e=d.gA(e),d=this.a,r=b.b,q=t.O;e.l();){p=e.gq()
 o=A.b(p.h(0,"no"))
-n=A.j9(A.ai(p.h(0,f)))
+n=A.j9(A.ah(p.h(0,f)))
 m=A.b(p.h(0,"no"))
 l=A.b(p.h(0,"supplier_name"))
 k=A.aD(p.h(0,"total"),1)
@@ -172282,7 +172287,7 @@ if(i==null)i=""
 else{i=B.X9.h(0,i.h(0,"doa_level"))
 i="\u062d\u062f \u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f: "+(i==null?"\u0627\u0644\u0645\u0627\u0644\u064a\u0629":i)}i="\n"+i}h=B.eo.h(0,p.h(0,f))
 if(h==null)h=A.b(p.h(0,f))
-s.push(new A.ds(B.lN,n,m+" \xb7 "+l,k+" \u062c \xb7 \u062a\u0648\u0631\u064a\u062f "+j+i,new A.bv(h,A.j9(A.ai(p.h(0,f))),g),new A.bnR(d,a,p,c),new A.t("po-"+o,q)))}e=A.aL(s,B.b1,g,B.L,!1)}return e},
+s.push(new A.ds(B.lN,n,m+" \xb7 "+l,k+" \u062c \xb7 \u062a\u0648\u0631\u064a\u062f "+j+i,new A.bv(h,A.j9(A.ah(p.h(0,f))),g),new A.bnR(d,a,p,c),new A.t("po-"+o,q)))}e=A.aL(s,B.b1,g,B.L,!1)}return e},
 $S:169}
 A.bnR.prototype={
 $0(){var s=0,r=A.o(t.H),q=this
@@ -172309,10 +172314,10 @@ m=n.gJ()
 l=A
 k=J
 s=3
-return A.f(A.ah(m,"ops_purchase_orders",B.F),$async$$0)
+return A.f(A.ai(m,"ops_purchase_orders",B.F),$async$$0)
 case 3:k=k.lO(b,new A.bmv(o))
 s=4
-return A.f(A.ah(m,"ops_items",B.F),$async$$0)
+return A.f(A.ai(m,"ops_items",B.F),$async$$0)
 case 4:j=b
 s=5
 return A.f(A.rB(n),$async$$0)
@@ -172357,9 +172362,9 @@ c=c==null?b:J.z(c,"id")}c=A.bDH(q,c,m)}if(c)i.push(f.a(d))}m=A.w(A.b(a.b.h(0,"no
 l=A.w(A.b(a.b.h(0,"supplier_name")),b,b,b,b,b,b,b,b,b)
 g=B.eo.h(0,n)
 if(g==null)g=A.b(n)
-A.ai(n)
+A.ah(n)
 g=A.b7(!1,b,b,b,!0,b,b,b,!0,b,b,B.agT,b,b,b,b,b,!1,b,b,b,b,b,l,b,m,b,new A.bv(g,A.j9(n),b),b)
-m=A.ai(a.b.h(0,"pr_no"))
+m=A.ah(a.b.h(0,"pr_no"))
 l=A.aD(a.b.h(0,"total"),1)
 f=A.cv(a.b.h(0,"expected_date"))
 e=A.b_(o.h(0,"doa_finance_cap"))
@@ -172443,9 +172448,9 @@ case 2:o=b
 n=A
 m=J
 s=3
-return A.f(A.ah(p,"ops_receipts",B.F),$async$$0)
+return A.f(A.ai(p,"ops_receipts",B.F),$async$$0)
 case 3:p=n.ar(m.dE(b,new A.bmp(o)))
-q.b.a=A.ai(p==null?null:J.z(p,"status"))
+q.b.a=A.ah(p==null?null:J.z(p,"status"))
 return A.m(null,r)}})
 return A.n($async$$0,r)},
 $S:2}
@@ -172510,7 +172515,7 @@ var $async$$0=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=p.a.c
 n=A
 s=3
-return A.f(A.ah(o.gJ(),"ops_receipts",B.F),$async$$0)
+return A.f(A.ai(o.gJ(),"ops_receipts",B.F),$async$$0)
 case 3:m=b
 s=4
 return A.f(A.anL(o,"receipts"),$async$$0)
@@ -172536,7 +172541,7 @@ h.push("\u0623\u0645\u0631 "+g+" \xb7 \u0627\u0633\u062a\u0644\u0645 "+A.b(f==nu
 h=A.w(B.h.aj(h,"\n"),b,b,b,b,b,b,b,b,b)
 g=B.X5.h(0,k.h(0,a0))
 if(g==null)g=A.b(k.h(0,a0))
-g=A.a([A.b7(!1,b,b,b,!0,b,b,b,!0,b,b,B.agN,b,b,b,b,b,!1,b,b,b,b,b,h,b,i,b,new A.bv(g,p.aTv(A.ai(k.h(0,a0))),b),b)],s)
+g=A.a([A.b7(!1,b,b,b,!0,b,b,b,!0,b,b,B.agN,b,b,b,b,b,!1,b,b,b,b,b,h,b,i,b,new A.bv(g,p.aTv(A.ah(k.h(0,a0))),b),b)],s)
 if(q.h(0,k.h(0,"id"))!=null){i=q.h(0,k.h(0,"id"))
 i.toString
 g.push(new A.MP(i,b))}for(i=J.P(a6.a(k.h(0,"lines")));i.l();){e=i.gq()
@@ -172566,7 +172571,7 @@ A.SM.prototype={
 Af(){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f
 var $async$Af=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_employees",B.F),$async$Af)
+return A.f(A.ai(p.a.c.gJ(),"ops_employees",B.F),$async$Af)
 case 3:g=b
 f=p.c
 if(f==null){s=1
@@ -172632,7 +172637,7 @@ $0(){var s=this.c
 return this.a.a.c.gJ().$2("ops_plan_from_need",A.k(["p_need",this.b.h(0,"id"),"p_title",s.h(0,"title"),"p_trainer_type",s.h(0,"trainer_type"),"p_trainer_name",s.h(0,"trainer"),"p_start",s.h(0,"start"),"p_end",s.h(0,"end"),"p_hours",s.h(0,"hours"),"p_cost",s.h(0,"cost"),"p_location",s.h(0,"location")],t.N,t.z))},
 $S:4}
 A.bj4.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_training_needs",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_training_needs",B.F)},
 $S:6}
 A.bj5.prototype={
 $3(a0,a1,a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e="no",d="status",c="delivery",b="est_cost",a=J.ap(a1)
@@ -172653,7 +172658,7 @@ if(g==null)g=""
 g=A.w(k+" \xb7 "+j+" \xb7 "+i+" \xb7 "+h+" \u0645\u0631\u0634\u062d \xb7 \u0623\u0648\u0644\u0648\u064a\u0629 "+g,f,f,f,f,f,f,f,f,f)
 h=B.eo.h(0,n.h(0,d))
 k=h==null?A.b(n.h(0,d)):h
-k=A.a([A.b7(!1,f,f,f,!0,f,f,f,!0,f,f,B.agO,f,f,f,f,f,!1,f,f,f,f,f,g,f,l,f,new A.bv(k,A.j9(A.ai(n.h(0,d))),f),f)],s)
+k=A.a([A.b7(!1,f,f,f,!0,f,f,f,!0,f,f,B.agO,f,f,f,f,f,!1,f,f,f,f,f,g,f,l,f,new A.bv(k,A.j9(A.ah(n.h(0,d))),f),f)],s)
 if(n.h(0,c)!=null){l=B.WY.h(0,n.h(0,c))
 l=A.b(l==null?n.h(0,c):l)
 j=n.h(0,b)!=null?" \xb7 "+A.aD(n.h(0,b),1)+" \u062c":""
@@ -172671,7 +172676,7 @@ Ex(a){return this.aLF(a)},
 aLF(a){var s=0,r=A.o(t.y),q,p=this,o,n,m,l,k,j,i
 var $async$Ex=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.c.gJ(),"ops_departments",B.F),$async$Ex)
+return A.f(A.ai(p.c.gJ(),"ops_departments",B.F),$async$Ex)
 case 3:i=c
 if(a.e==null){q=!1
 s=1
@@ -172696,7 +172701,7 @@ $0(){var s=this.b
 return this.a.c.gJ().$2("ops_create_course",A.k(["p_title",s.h(0,"title"),"p_department",s.h(0,"department"),"p_trainer_type",s.h(0,"trainer_type"),"p_trainer_name",s.h(0,"trainer"),"p_start",s.h(0,"start"),"p_end",s.h(0,"end"),"p_hours",s.h(0,"hours"),"p_cost",s.h(0,"cost"),"p_location",s.h(0,"location")],t.N,t.z))},
 $S:4}
 A.bli.prototype={
-$0(){return A.ah(this.a.c.gJ(),"ops_training_plans",B.F)},
+$0(){return A.ai(this.a.c.gJ(),"ops_training_plans",B.F)},
 $S:6}
 A.blj.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=null,g="status",f=A.a([],t.p),e=this.a,d=e.d
@@ -172706,7 +172711,7 @@ d=J.ap(b)
 if(d.ga_(b))f.push(B.aca)
 for(d=d.gA(b),s=t.O;d.l();){r=d.gq()
 q=A.b(r.h(0,"no"))
-p=A.bEi(A.ai(r.h(0,g)))
+p=A.bEi(A.ah(r.h(0,g)))
 o=A.b(r.h(0,"course_title"))
 n=A.cv(r.h(0,"start_date"))
 m=A.aD(r.h(0,"hours"),1)
@@ -172716,7 +172721,7 @@ k=A.b(r.h(0,"attended"))
 j=A.b(r.h(0,"invited"))
 i=B.yz.h(0,r.h(0,g))
 if(i==null)i=A.b(r.h(0,g))
-f.push(new A.ds(B.lM,p,o,n+" \xb7 "+m+" \u0633\u0627\u0639\u0629 \xb7 "+l+" \xb7 \u062d\u0636\u0631 "+k+" \u0645\u0646 "+j,new A.bv(i,A.bEi(A.ai(r.h(0,g))),h),new A.blf(e,a,r,c),new A.t("course-"+q,s)))}return A.aL(f,B.b1,h,B.L,!1)},
+f.push(new A.ds(B.lM,p,o,n+" \xb7 "+m+" \u0633\u0627\u0639\u0629 \xb7 "+l+" \xb7 \u062d\u0636\u0631 "+k+" \u0645\u0646 "+j,new A.bv(i,A.bEi(A.ah(r.h(0,g))),h),new A.blf(e,a,r,c),new A.t("course-"+q,s)))}return A.aL(f,B.b1,h,B.L,!1)},
 $S:12}
 A.bld.prototype={
 $0(){var s=0,r=A.o(t.nW),q,p=this
@@ -172757,10 +172762,10 @@ var $async$Fq=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:o=A
 n=J
 s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_training_plans",B.F),$async$Fq)
+return A.f(A.ai(p.a.c.gJ(),"ops_training_plans",B.F),$async$Fq)
 case 3:n=n.X6(b,new A.bkU(p),new A.bkV(p))
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_attendance",A.k(["p_plan",p.a.e.h(0,"id")],t.N,t.z)),$async$Fq)
+return A.f(A.ai(p.a.c.gJ(),"ops_attendance",A.k(["p_plan",p.a.e.h(0,"id")],t.N,t.z)),$async$Fq)
 case 4:q=new o.v(n,b)
 s=1
 break
@@ -172781,7 +172786,7 @@ aRC(a){var s=0,r=A.o(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f
 var $async$Fb=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:f=p.c
 f.toString
-o=A.ai(a.h(0,"employee_name"))
+o=A.ah(a.h(0,"employee_name"))
 if(o==null)o="\u0627\u0644\u0645\u062a\u062f\u0631\u0628"
 n=a.h(0,"pre_score")
 m=a.h(0,"post_score")
@@ -172838,13 +172843,13 @@ q=A.w(A.b(s.h(0,"course_title")),d,d,d,d,d,B.eW,d,d,d)
 n=A.w(A.b(s.h(0,"no")),d,d,d,d,d,d,d,d,d)
 m=B.yz.h(0,s.h(0,a))
 if(m==null)m=A.b(s.h(0,a))
-m=A.b7(!1,d,d,d,!0,d,d,d,!0,d,d,B.ah4,d,d,d,d,d,!1,d,d,d,d,d,n,d,q,d,new A.bv(m,A.bEi(A.ai(s.h(0,a))),d),d)
+m=A.b7(!1,d,d,d,!0,d,d,d,!0,d,d,B.ah4,d,d,d,d,d,!1,d,d,d,d,d,n,d,q,d,new A.bv(m,A.bEi(A.ah(s.h(0,a))),d),d)
 q=A.cv(s.h(0,b))
 n=A.cv(s.h(0,c))
 l=J.d(s.h(0,"trainer_type"),"external")?"\u062e\u0627\u0631\u062c\u064a":"\u062f\u0627\u062e\u0644\u064a"
 k=s.h(0,"trainer_name")
 j=t.p
-k=A.a([m,new A.a9("\u0627\u0644\u0645\u064a\u0639\u0627\u062f",q+" \u2192 "+n,d),new A.a9("\u0627\u0644\u0645\u062f\u0631\u0628",l+" \xb7 "+A.b(k==null?"":k),d),new A.a9("\u0627\u0644\u0633\u0627\u0639\u0627\u062a",A.aD(s.h(0,"hours"),1),d),new A.a9("\u0627\u0644\u0645\u0643\u0627\u0646",A.ai(s.h(0,"location")),d)],j)
+k=A.a([m,new A.a9("\u0627\u0644\u0645\u064a\u0639\u0627\u062f",q+" \u2192 "+n,d),new A.a9("\u0627\u0644\u0645\u062f\u0631\u0628",l+" \xb7 "+A.b(k==null?"":k),d),new A.a9("\u0627\u0644\u0633\u0627\u0639\u0627\u062a",A.aD(s.h(0,"hours"),1),d),new A.a9("\u0627\u0644\u0645\u0643\u0627\u0646",A.ah(s.h(0,"location")),d)],j)
 if(s.h(0,"cost")!=null)k.push(new A.a9("\u0627\u0644\u062a\u0643\u0644\u0641\u0629",A.aD(s.h(0,"cost"),1)+" \u062c\u0646\u064a\u0647",d))
 k.push(B.bO)
 q=A.a([A.cu(A.au(k,B.I,B.B,B.G),d,d,d,d)],j)
@@ -173399,18 +173404,18 @@ gay4(){return this.a.d.e.i(0,"admin:update")||this.a.d.e.i(0,"assets:update")},
 EM(){var s=0,r=A.o(t.Yr),q,p=this,o,n
 var $async$EM=A.p(function(a,b){if(a===1)return A.l(b,r)
 for(;;)switch(s){case 0:s=3
-return A.f(A.ah(p.a.c.gJ(),"ops_location_tree",B.F),$async$EM)
+return A.f(A.ai(p.a.c.gJ(),"ops_location_tree",B.F),$async$EM)
 case 3:o=b
 n=A
 s=4
-return A.f(A.ah(p.a.c.gJ(),"ops_departments",B.F),$async$EM)
+return A.f(A.ai(p.a.c.gJ(),"ops_departments",B.F),$async$EM)
 case 4:q=new n.aig(b,o)
 s=1
 break
 case 1:return A.m(q,r)}})
 return A.n($async$EM,r)},
 aOw(a,b){var s=A.ar(J.dE(a,new A.bkL(b)))
-s=A.ai(s==null?null:J.z(s,"name_ar"))
+s=A.ah(s==null?null:J.z(s,"name_ar"))
 return s==null?"":s},
 aDl(a){var s,r=A.a([],t.g_),q=A.ay(t.z)
 for(s=J.P(a);s.l();)q.E(0,s.gq().h(0,"id"))
@@ -173853,7 +173858,7 @@ case 8:case 7:return A.m(null,r)}})
 return A.n($async$$0,r)},
 $S:2}
 A.bn4.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_policies",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_policies",B.F)},
 $S:6}
 A.bn5.prototype={
 $3(a,b,c){var s,r,q,p,o=A.a([],t.p)
@@ -174173,7 +174178,7 @@ $0(){A.aF(this.a,!1).cl(null)
 return null},
 $S:0}
 A.btg.prototype={
-$0(){return A.ah(this.a.a.c.gJ(),"ops_vacant_roles",B.F)},
+$0(){return A.ai(this.a.a.c.gJ(),"ops_vacant_roles",B.F)},
 $S:6}
 A.bth.prototype={
 $3(a,b,c){var s,r,q,p,o,n,m,l,k=null,j="department",i="parent_name",h=t.p,g=A.a([B.brg],h),f=J.ap(b)
@@ -174448,7 +174453,7 @@ case 5:return A.m(null,r)
 case 1:return A.l(p.at(-1),r)}})
 return A.n($async$J_,r)}}
 A.aoS.prototype={
-$1(a){return a.b===A.ai(this.a.a.h(0,"themeMode"))},
+$1(a){return a.b===A.ah(this.a.a.h(0,"themeMode"))},
 $S:991}
 A.aoT.prototype={
 $0(){return B.ni},
@@ -174524,7 +174529,7 @@ A.bw1.prototype={
 $1(a){return a.i(0,B.ah)?B.S:null},
 $S:23}
 A.a0B.prototype={
-F(a){var s=null,r="removed",q=this.c,p=A.ai(q.h(0,"url")),o=A.b(q.h(0,"id")),n=p==null,m=n&&!J.d(q.h(0,r),!0)?s:new A.azu(this,a),l=A.fH(8),k=A.fH(8)
+F(a){var s=null,r="removed",q=this.c,p=A.ah(q.h(0,"url")),o=A.b(q.h(0,"id")),n=p==null,m=n&&!J.d(q.h(0,r),!0)?s:new A.azu(this,a),l=A.fH(8),k=A.fH(8)
 if(n){n=B.a5.f3(0.15)
 n=A.ep(s,A.ca(J.d(q.h(0,r),!0)?B.hj:B.afR,B.a5,s,s),B.a7,n,s,s,s,66,s,s,s,s,s,66)}else n=A.bI6(p,new A.azv(),B.l2,66,66)
 m=A.jg(!1,l,!0,A.Ys(k,n,B.cz),s,!0,s,s,s,s,s,s,s,s,s,s,m,s,s,s,s,s,s,s)
@@ -174535,7 +174540,7 @@ Ks(a){return this.aMV(a)},
 aMV(a){var s=0,r=A.o(t.H),q=this
 var $async$Ks=A.p(function(b,c){if(b===1)return A.l(c,r)
 for(;;)switch(s){case 0:s=2
-return A.f(A.ex(null,null,!0,null,new A.azt(q,A.ai(q.c.h(0,"url"))),a,null,!0,t.H),$async$Ks)
+return A.f(A.ex(null,null,!0,null,new A.azt(q,A.ah(q.c.h(0,"url"))),a,null,!0,t.H),$async$Ks)
 case 2:return A.m(null,r)}})
 return A.n($async$Ks,r)},
 DH(){var s=0,r=A.o(t.H),q=this,p,o,n
@@ -174707,7 +174712,7 @@ r=A.w(a2,a1,a1,a1,a1,a1,a1,a1,a1,a1)
 q=a5.r
 q=q==null?a1:A.w(q,a1,a1,a1,a1,a1,a1,a1,a1,a1)
 return A.EJ(a1,a1,new A.t("f-"+s,t.O),new A.bcA(a0,a5),a1,q,r,A.rv(a0.d.h(0,s)))}if(B.bl===a4){s=a5.a
-o=A.ai(a0.d.h(0,s))
+o=A.ah(a0.d.h(0,s))
 r=A.w(a3,a1,a1,a1,a1,a1,a1,a1,a1,a1)
 return A.b7(!1,a1,a1,a1,!0,a1,a1,a1,!0,a1,new A.t("f-"+s,t.O),B.ai3,a1,a1,a1,a1,new A.bcB(a0,o,a5),!1,a1,a1,a1,a1,a1,a1,a1,r,a1,A.w(o==null?"\u0627\u062e\u062a\u0627\u0631":A.cv(o),a1,a1,a1,a1,a1,a1,a1,a1,a1),a1)}n=B.Q===a4
 if(n&&a5.d.length>6){s=a5.d
